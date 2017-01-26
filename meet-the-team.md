@@ -6,9 +6,9 @@ title: Meet The Team
 We are a group of researchers based at the University of Oxford who are passionate about research reproducibility and open research. The project aims to bring together expertise in these areas from across the University, and our members work in a diverse range of disciplines in the natural, medical, and social sciences, and in the humanities.
 
 
-<div class="row">
+<div class="row justify-content-center">
 
-<div class="col-sm-3">
+<div class="col-sm-4" style="text-align:center">
 
 <a href="../laura-fortunato"><img src="../img/profile-pic_laura-fortunato.jpg" style="border-radius: 50%;
     width: 150px;
@@ -16,7 +16,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 </div>
 
-<div class="col-sm-3">
+<div class="col-sm-4" style="text-align:center">
 
 <a href="../philip-fowler"><img src="../img/profile-pic_phillip-fowler.jpg" style="border-radius: 50%;
     width: 150px;
@@ -24,7 +24,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 </div>
 
-<div class="col-sm-3">
+<div class="col-sm-4" style="text-align:center">
 
 <a href="../martin-john-hadley"><img src="../img/profile-pic_martin-john-hadley.jpg" style="border-radius: 50%;
     width: 150px;
