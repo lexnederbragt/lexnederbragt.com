@@ -8,7 +8,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 <div class="row">
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 
 <a href="../laura-fortunato"><img src="../img/profile-pic_laura-fortunato.jpg" style="border-radius: 50%;
     width: 150px;
@@ -16,7 +16,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 
 <a href="../philip-fowler"><img src="../img/profile-pic_phillip-fowler.jpg" style="border-radius: 50%;
     width: 150px;
@@ -24,7 +24,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-3">
 
 <a href="../martin-john-hadley"><img src="../img/profile-pic_martin-john-hadley.jpg" style="border-radius: 50%;
     width: 150px;
