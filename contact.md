@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Software/Data Carpentry Workshops
-subtitle: When, where and how
+title: Contact us
 ---
 
 Are you passionate about reproducibility and open research? There are several ways to get involved, from attending a workshop to joining the [project team](http://rroxford.github.io/meet-the-team)! We are also looking for volunteers to help out with the workshops, as a host, helper, and/or instructor.

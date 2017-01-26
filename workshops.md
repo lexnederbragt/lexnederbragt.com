@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Software/Data Carpentry Workshops
-subtitle: When, where and how
 ---
 
 The workshops are open to students and staff across the University. You can find general information about Software/Data Carpentry workshops here:

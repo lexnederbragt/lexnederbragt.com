@@ -27,7 +27,7 @@ navbar-links:
   Who we are: 
     - Meet the team: "meet-the-team"
     - Laura Fortunato: "laura-fortunato"
-  When are Workshops?: "workshops"
+  Workshops: "workshops"
   Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -43,8 +43,8 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
+  name: Reproducible Research Oxfords
+  email: "ReproducibleResearchOxford@gmail.com"
   facebook: yourname  # eg. daattali
   github: RROxford    # eg. daattali
   twitter: RR_Oxford   # eg. daattali
