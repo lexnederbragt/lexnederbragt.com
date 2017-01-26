@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Laura Fortunato
-subtitle: Project Sponsor
+image: img/profile-pic_laura-fortunato.jpg
 ---
 
 Laura does all the things, all the time, all the well.
