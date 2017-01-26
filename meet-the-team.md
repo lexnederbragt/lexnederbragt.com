@@ -12,7 +12,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 <div class="col-lg-6">
 
-<a href="./laura-fortunato"><img src="./img/profile-pic_laura-fortunato.jpg" style="border-radius: 50%;
+<a href="laura-fortunato"><img src="../img/profile-pic_laura-fortunato.jpg" style="border-radius: 50%;
     width: 150px;
     height: 150px;"/></a>
 
@@ -21,7 +21,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 <div class="col-lg-6">
 
-<a href="./martin-john-hadley"><img src="./img/profile-pic_martin-john-hadley.jpg" style="border-radius: 50%;
+<a href="../martin-john-hadley"><img src="../img/profile-pic_martin-john-hadley.jpg" style="border-radius: 50%;
     width: 150px;
     height: 150px;"/></a>
 
