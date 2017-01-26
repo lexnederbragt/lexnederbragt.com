@@ -23,12 +23,12 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  About: "about"
+  Who we are: 
+    - Team Overview: "who-we-are"
+    - Laura Fortunato: "laura-fortunato"
+  When are Workshops?: "workshops"
+  Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
