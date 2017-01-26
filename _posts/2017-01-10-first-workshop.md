@@ -5,7 +5,7 @@ bigimg: /img/path.jpg
 tags: [workshop]
 ---
 
-The first workshop of the project has just wrapped up on 10th January 2017, covering; Bash, Git and Python. You can read more about the course [here](https://rroxford.github.io/2017-01-09-oxford/](https://rroxford.github.io/2017-01-09-oxford/).
+The first workshop of the project has just wrapped up on 10th January 2017, covering; Bash, Git and Python. You can read more about the course [here](https://rroxford.github.io/2017-01-09-oxford/).
 
 The following people were involved in the course
 
