@@ -6,7 +6,7 @@
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://rroxford.github.io"
 baseurl: ""
-paginate_path: "/news/page:num/"
+paginate_path: "/blog/page:num/"
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -25,7 +25,8 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 # List of links in the navigation bar
 navbar-links:
   About: "about"
-  News: "/news"
+  Blog: "blog"
+  News: "news"
   Events: "events"
   Contact: "contact"
 
