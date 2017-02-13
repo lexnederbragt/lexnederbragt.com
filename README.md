@@ -1,3 +1,5 @@
 # rroxford.github.io
 
-Reproducible Oxford is a project to make Oxford University a recognised Software & Data Carpentry partner
+Reproducible Research Oxford is a project based at the University of
+Oxford. We are working to foster a culture of research reproducibility
+at Oxford.
