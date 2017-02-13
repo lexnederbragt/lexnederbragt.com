@@ -35,5 +35,6 @@ We are a group of researchers based at the University of Oxford who are passiona
 
 </div>
 
+<br/>
 
-Are you passionate about reproducibility and open science? Then join us! [Contact us](http://rroxford.github.io/contact) to find out how you can get involved.
+The project is supported by the <a href="http://blogs.it.ox.ac.uk/innovation-challenges/researchreproducibility/" target="_blank">IT Innovation Challenges Fund</a> and the <a href="https://www.socsci.ox.ac.uk/" target="_blank">Social Sciences Division</a>, with grants to Laura Fortunato. It is based in the <a href="http://www.anthro.ox.ac.uk/" target="_blank">School of Anthropology and Museum Ethnography</a> and the <a href="www.oerc.ox.ac.uk/" target="_blank">Oxford e-Research Centre</a>.
