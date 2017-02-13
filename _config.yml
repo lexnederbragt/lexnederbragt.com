@@ -26,13 +26,8 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 navbar-links:
   About: 
     - About the project: "about"
-    - Running your own Carpentry course: 
-  News: "news"
-  Who we are: 
     - Meet the team: "meet-the-team"
-    - Laura Fortunato: "laura-fortunato"
-    - Philip Fowler: "philip-fowler"
-    - Martin John Hadley: "martin-john-hadley"
+  News: "news"
   Workshops: "workshops"
   Contact: "contact"
 
