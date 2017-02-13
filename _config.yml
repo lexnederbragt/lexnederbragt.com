@@ -32,9 +32,7 @@ navbar-links:
     - Laura Fortunato: "laura-fortunato"
     - Philip Fowler: "philip-fowler"
     - Martin John Hadley: "martin-john-hadley"
-  Workshops: 
-    - Future Workshops: "future-workshops"
-    - Past Workshops: "past-workshops"
+  Workshops: "workshops"
   Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
