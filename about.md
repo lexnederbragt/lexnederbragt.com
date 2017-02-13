@@ -9,7 +9,7 @@ who are passionate about research reproducibility and open
 research. The project aims to bring together expertise in these areas
 from across the University.
 
-The project is supported by the <a
+The project is funded by the <a
 href="http://blogs.it.ox.ac.uk/innovation-challenges/researchreproducibility/"
 target="_blank">IT Innovation Challenges Fund</a> and the <a
 href="https://www.socsci.ox.ac.uk/" target="_blank">Social Sciences
