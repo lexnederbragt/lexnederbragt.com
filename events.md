@@ -1,38 +1,41 @@
 ---
 layout: page
-title: Software/Data Carpentry Workshops
+title: Events
 ---
 
-<!---- New !---->
+Here you can find information about our events. For announcements
+about future workshops and related activities, you can subscribe to
+our [mailing list](https://web.maillist.ox.ac.uk/ox/info/rroxford) and
+follow us on Twitter [@RR_Oxford](https://twitter.com/RR_Oxford).
 
-## Future events:
+If you are interested in running a Software/Data Carpenty workshop for
+your research group or department, then we may be able to help! Do
+[get in touch](contact.md) to discuss.
 
-- [**Bash, Git and Python**, Week 4, Hilary 2017 (March 9th, March 10th)](https://rroxford.github.io/2017-01-09-oxford/)
-- [**MEta sysntactic variable names**, Week 10, Hilary 2017 (April 9th, April 10th)](https://rroxford.github.io/2017-01-09-oxford/)
+# Future events
 
+See the individual workshop websites for details, including
+information on how to register.
 
-## Past workshops
+- Week 9, Hilary Term 2017 (Mar 16--17, 2017)
 
-- [**Bash, Git and Python**, Week 0, Hilary 2017 (Jan 9th, Jan 10th)](https://rroxford.github.io/2017-01-09-oxford/)
-- [**Bish Bash Boop**, Week 10, Michaelmas 2016 (Nov 9th, Nov 10th)](https://rroxford.github.io/2017-01-09-oxford/)
+Instructor training workshop. Workshop website:
+[https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)
 
+- Week 9, Hilary Term 2017 (Mar 13--14, 2017)
 
-# Old 
+Software Carpentry workshop covering bash, git, R. Workshop website:
+[https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)
 
-We currently have three workshops planned for Hilary Term (Weeks 0, 5, 9):
+# Past events
 
-Week 0 (Jan 9--10, 2017)
-Website: [https://rroxford.github.io/2017-01-09-oxford/](https://rroxford.github.io/2017-01-09-oxford/)
+- Week 5, Hilary Term 2017 (Feb 13--14, 2017) **CANCELLED**
 
-Week 5 (Feb 13--14, 2017)
+Software Carpentry workshop covering bash, git, R. Workshop website:
+[https://rroxford.github.io/2017-02-13-oxford/](https://rroxford.github.io/2017-02-13-oxford/)
 
-Week 9 (Mar 13--14, 2017)
+- Week 0, Hilary Term 2017 (Jan 9--10, 2017)
 
-More workshops will follow in Trinity Term. For announcements about future workshops and related activities, you can subscribe to [our mailing list](https://web.maillist.ox.ac.uk/ox/info/rroxford) and follow us on Twitter [@RR_Oxford](https://twitter.com/RR_Oxford).
-
-Are you interested in running a Software/Data Carpenty workshop for your research group, department, or other unit? Then we may be able to help! Do [get in touch](http://rroxford.github.io/contact) to discuss.
-
-
-
-<!------ comments below !------->
-
+Software Carpentry workshop covering bash, git, python. Workshop
+website:
+[https://rroxford.github.io/2017-01-09-oxford/](https://rroxford.github.io/2017-01-09-oxford/)
