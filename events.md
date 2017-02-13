@@ -20,12 +20,12 @@ how to register.
 
 ## Week 9, Hilary Term 2017 (Mar 16--17, 2017)
 
-Instructor training workshop. Website:
+Instructor training workshop. Website:  
 [https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)
 
 ## Week 9, Hilary Term 2017 (Mar 13--14, 2017)
 
-Software Carpentry workshop covering bash, git, R. Website:
+Software Carpentry workshop covering bash, git, R. Website:  
 [https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)
 
 # Past events
@@ -34,12 +34,12 @@ This is what we have been up to so far.
 
 ## Week 5, Hilary Term 2017 (Feb 13--14, 2017)
 
-Software Carpentry workshop covering bash, git, R. Website:
+Software Carpentry workshop covering bash, git, R. Website:  
  [https://rroxford.github.io/2017-02-13-oxford/](https://rroxford.github.io/2017-02-13-oxford/)
 
 **Note:** this workshop was cancelled due to low uptake.
 
 ## Week 0, Hilary Term 2017 (Jan 9--10, 2017)
 
-Software Carpentry workshop covering bash, git, python. Website:
+Software Carpentry workshop covering bash, git, python. Website:  
 [https://rroxford.github.io/2017-01-09-oxford/](https://rroxford.github.io/2017-01-09-oxford/)
