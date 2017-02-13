@@ -7,9 +7,7 @@ We are a group of researchers and staff based at the <a
 href="http://www.ox.ac.uk" target="_blank">University of Oxford</a>
 who are passionate about research reproducibility and open
 research. The project aims to bring together expertise in these areas
-from across the University, and we work in a diverse range of
-disciplines in the natural, medical, and social sciences, and in the
-humanities.
+from across the University.
 
 The project is supported by the <a
 href="http://blogs.it.ox.ac.uk/innovation-challenges/researchreproducibility/"
@@ -23,6 +21,11 @@ href="www.oerc.ox.ac.uk/" target="_blank">Oxford e-Research
 Centre</a>.
 
 # Project team
+
+Our project team members work in various roles in the University,
+spanning a diverse range of disciplines in the natural, medical, and
+social sciences, and in the humanities. Do you want to get involved?
+Then <a href="/contact">get in touch</a>!
 
 <div class="row justify-content-center">
 
