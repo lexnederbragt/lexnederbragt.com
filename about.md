@@ -5,6 +5,7 @@ subtitle: Reproducible Research Oxford
 
 We are a group of researchers based at the University of Oxford who are passionate about research reproducibility and open research. The project aims to bring together expertise in these areas from across the University, and our members work in a diverse range of disciplines in the natural, medical, and social sciences, and in the humanities.
 
+## Meet the team
 
 <div class="row justify-content-center">
 
@@ -36,5 +37,7 @@ We are a group of researchers based at the University of Oxford who are passiona
 </div>
 
 <br/>
+
+## Project Funding
 
 The project is supported by the <a href="http://blogs.it.ox.ac.uk/innovation-challenges/researchreproducibility/" target="_blank">IT Innovation Challenges Fund</a> and the <a href="https://www.socsci.ox.ac.uk/" target="_blank">Social Sciences Division</a>, with grants to Laura Fortunato. It is based in the <a href="http://www.anthro.ox.ac.uk/" target="_blank">School of Anthropology and Museum Ethnography</a> and the <a href="www.oerc.ox.ac.uk/" target="_blank">Oxford e-Research Centre</a>.
