@@ -24,9 +24,7 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 
 # List of links in the navigation bar
 navbar-links:
-  About: 
-    - About the project: "about"
-    - Meet the team: "meet-the-team"
+  About: "about"
   News: "news"
   Workshops: "workshops"
   Contact: "contact"
