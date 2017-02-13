@@ -24,6 +24,7 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 # List of links in the navigation bar
 navbar-links:
   About: "about"
+  News & Events: "news-and-events"
   Who we are: 
     - Meet the team: "meet-the-team"
     - Laura Fortunato: "laura-fortunato"
