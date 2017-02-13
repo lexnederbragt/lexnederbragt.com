@@ -23,7 +23,9 @@ description: Reproducible Research Oxford promotes a cutlure of research reprodu
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
+  About: 
+    - About the project: "about"
+    - Running your own Carpentry course: 
   News & Events: "news-and-events"
   Who we are: 
     - Meet the team: "meet-the-team"
@@ -142,7 +144,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+link-tags: true
 
 # Exclude these files from production site
 exclude:
