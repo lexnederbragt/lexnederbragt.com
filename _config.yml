@@ -18,7 +18,7 @@ paginate_path: "/blog/page:num/"
 title: Reproducible Research Oxford
 
 # Short description of your site
-description: Reproducible Research Oxford promotes a cutlure of research reproducability at the University of Oxford
+description: Working to promote a culture of research reproducibility at the University of Oxford
 
 # --- Navigation bar options --- #
 
