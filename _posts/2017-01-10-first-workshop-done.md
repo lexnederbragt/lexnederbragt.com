@@ -1,7 +1,8 @@
 ---
 layout: post
-title: January 2017 workshop done!
-bigimg: /img/path.jpg
+title: First workshop done!
+subtitle: Notes about the workshop we ran in January 2017
+bigimg: /img/2017-01-10_workshop-group-photo.jpg
 tags: [workshop][Software Carpentry]
 ---
 
@@ -15,9 +16,7 @@ href="../../iain-emsley">Iain-Emsley</a>. We had ~25 participants
 drawn from across the University, making for a fun and diverse
 learning experience!
 
-![Reproducible Research Oxford, Software Carpentry workshop Jan 2017, group photo](../../img/2017-01-10_workshop-group-photo.jpg)
-
-Links:
+Related links:
 
 - [workshop website](https://rroxford.github.io/2017-01-09-oxford/)
 - [Phil's thoughts](http://fowlerlab.org/2017/01/12/5062/)
