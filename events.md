@@ -22,8 +22,8 @@ register.
 ### Instructor training workshop | March 16--17, 2017
 #### Week 9 | Hilary Term 2017
 
-Instructor training workshop.
-[https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)
+Instructor training workshop.   
+[https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)   
 **Note:** a limited number of places is available --- [get in
 touch](contact.md) if interested!
 
@@ -31,8 +31,8 @@ touch](contact.md) if interested!
 #### Week 9 | Hilary Term 2017
 
 Software Carpentry workshop covering bash, git, R.  
-[https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)
-**Note:** registration now open!
+[https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)   
+**Note:** registration is now open!
 
 ## Past events
 
