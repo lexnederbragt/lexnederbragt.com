@@ -19,6 +19,12 @@ your research group or department, then we may be able to help! Do
 See individual workshop websites for details, including information on
 how to register.
 
+## Instructor training workshop, March 16--17, 2017
+### Week 9, Hilary Term 2017
+
+Instructor training workshop. 
+[https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)
+
 ## Week 9, Hilary Term 2017 (Mar 16--17, 2017)
 
 Instructor training workshop. 
