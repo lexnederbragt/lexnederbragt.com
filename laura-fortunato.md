@@ -7,4 +7,24 @@ title: Laura Fortunato
     width: 150px;
     height: 150px;"/></center>
 
-Laura does all the things, all the time, all the well.
+Laura is an evolutionary anthropologist. Her research investigates the
+evolution of human social and cultural behaviour, focusing on topics
+at the interface of biology and anthropology.
+
+She is based in the <a href="http://www.anthro.ox.ac.uk/"
+target="_blank">School of Anthropology and Museum Ethnography</a>, as
+Associate Professor of Evolutionary Anthropology. She is also a Fellow
+of <a href="http://www.magd.ox.ac.uk/" target="_blank">Magdalen
+College, Oxford</a> and an External Professor of the <a
+href="www.santafe.edu/" target="_blank">www.santafe.edu/</a>. <a
+href="https://www.gnu.org/software/emacs/"
+target="_blank">GNU Emacs</a> nerd.
+
+Role in Reproducible Research Oxford:
+
+- Project lead
+
+- Qualified as <a href="https://software-carpentry.org/"
+target="_blank">Software Carpentry</a> and <a
+href="http://www.datacarpentry.org/" target="_blank">Data
+Carpentry</a> in January 2017
