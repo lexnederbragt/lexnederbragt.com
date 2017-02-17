@@ -7,9 +7,9 @@ title: Laura Fortunato
     width: 150px;
     height: 150px;"/></center>
 
-Laura is an evolutionary anthropologist. Her research investigates the
+Laura is an evolutionary anthropologist. Her research focuses on the
 evolution of human social and cultural behaviour, working at the
-interface of biology and anthropology.
+interface of anthropology and biology.
 
 She is based in the <a href="http://www.anthro.ox.ac.uk/"
 target="_blank">School of Anthropology and Museum Ethnography</a> as
@@ -20,9 +20,8 @@ href="www.santafe.edu" target="_blank">Santa Fe Institute</a>. <a
 href="https://www.gnu.org/software/emacs/" target="_blank">GNU
 Emacs</a> nerd.
 
-Role in Reproducible Research Oxford:
-- Project lead
-- Qualified <a href="https://software-carpentry.org/"
+Laura is the Project Lead for Reproducible Research Oxford. She
+qualified as <a href="https://software-carpentry.org/"
 target="_blank">Software Carpentry</a> and <a
 href="http://www.datacarpentry.org/" target="_blank">Data
-Carpentry</a> instructor since January 2017
+Carpentry</a> instructor in January 2017.
