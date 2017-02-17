@@ -1,25 +1,23 @@
 ---
 layout: post
-title: First Workshop
+title: January 2017 workshop done!
 bigimg: /img/path.jpg
-tags: [workshop]
+tags: [workshop][Software Carpentry]
 ---
 
-The first workshop of the project has just wrapped up on 10th January 2017, covering; Bash, Git and Python. You can read more about the course [here](https://rroxford.github.io/2017-01-09-oxford/).
+We ran our first successful Software Carpentry workshop on January
+9--10, 2017 at [TORCH | The Oxford Research Centre in the Humanities]
+(http://torch.ox.ac.uk/). The
+[workshop](https://rroxford.github.io/2017-01-09-oxford/) covered
+bash, git, and python, with sessions led by instructors <a
+href="../../phil-fowler">Phil Fowler</a> and <a
+href="../../iain-emsley">Iain-Emsley</a>. We had ~25 participants
+drawn from across the University, making for a fun and diverse
+learning experience!
 
-The following people were involved in the course
+![Reproducible Research Oxford, Software Carpentry workshop Jan 2017, group photo](../../img/2017-01-10_workshop-group-photo.jpg)
 
-- [Philip Fowler](../philip-fowler)
-- [Laura Fortunato](../laura-fortunato)
+Links:
 
-Attendance figures
-
- 
-| Department | Number Attended | Comment |
-| :------ |:--- | :--- |
-| Physics | 20 | Four |
-| English | 20 | Nine |
-
-Here's a fancy visualisation showing the data above:
-
-<iframe src="https://livedataoxford.shinyapps.io/OnlineLabourIndex/" width="100%" height="700px"></iframe>
+- [workshop website](https://rroxford.github.io/2017-01-09-oxford/)
+- [Phil's thoughts](http://fowlerlab.org/2017/01/12/5062/)
