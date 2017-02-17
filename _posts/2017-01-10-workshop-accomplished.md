@@ -21,6 +21,5 @@ natural, medical, and social sciences, and in the humanities. More
 successful workshops to come!
 
 Related links:
-
 - [workshop website](https://rroxford.github.io/2017-01-09-oxford/)
 - [Phil's thoughts on the workshop](http://fowlerlab.org/2017/01/12/5062/)
