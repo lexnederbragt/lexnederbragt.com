@@ -17,8 +17,8 @@ target="_blank">Iain Emsley</a>.
 
 We had ~25 participants drawn from across the University, including
 researchers, staff, and students, and covering disciplines in the
-natural, medical, and social sciences, and in the humanities. More to
-come!
+natural, medical, and social sciences, and in the humanities. More
+successful workshops to come!
 
 Related links:
 
