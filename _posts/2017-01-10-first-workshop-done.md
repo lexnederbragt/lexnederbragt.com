@@ -7,8 +7,8 @@ tags: [workshop][Software Carpentry]
 ---
 
 We ran our first successful Software Carpentry workshop on January
-9--10, 2017 at [TORCH | The Oxford Research Centre in the Humanities]
-(http://torch.ox.ac.uk/). The
+9--10, 2017 at [TORCH | The Oxford Research Centre in the
+Humanities](http://torch.ox.ac.uk/). The
 [workshop](https://rroxford.github.io/2017-01-09-oxford/) covered
 bash, git, and python, with sessions led by instructors <a
 href="../../phil-fowler">Phil Fowler</a> and <a
@@ -19,4 +19,4 @@ learning experience!
 Related links:
 
 - [workshop website](https://rroxford.github.io/2017-01-09-oxford/)
-- [Phil's thoughts](http://fowlerlab.org/2017/01/12/5062/)
+- [Phil's thoughts on the workshop](http://fowlerlab.org/2017/01/12/5062/)
