@@ -35,8 +35,6 @@ Then <a href="/contact">get in touch</a>!
     src="../img/profile-pic_iain-emsley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;"/></a>
 
-Iain Emsley
-
 </div>
 
 <div class="col-sm-4" style="text-align:center">
@@ -44,8 +42,6 @@ Iain Emsley
 <a href="../laura-fortunato"><img
     src="../img/profile-pic_laura-fortunato.jpg" style="border-radius:
     50%; width: 150px; height: 150px;"/></a>
-
-Laura Fortunato
 
 </div>
 
@@ -55,8 +51,6 @@ Laura Fortunato
     src="../img/profile-pic_philip-fowler.jpg" style="border-radius:
     50%; width: 150px; height: 150px;"/></a>
 
-Philip Fowler
-
 </div>
 
 <div class="col-sm-4" style="text-align:center">
@@ -64,8 +58,6 @@ Philip Fowler
 <a href="../martin-john-hadley"><img
     src="../img/profile-pic_martin-john-hadley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;"/></a>
-
-Martin John Hadley
 
 </div>
 
