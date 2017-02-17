@@ -6,8 +6,8 @@ title: About
 We are a group of researchers and staff based at the <a
 href="http://www.ox.ac.uk" target="_blank">University of Oxford</a>
 who are passionate about research reproducibility and open
-research. The project aims to bring together expertise in these areas
-from across the University.
+research. We aim to bring together expertise in these areas from
+across the University.
 
 The project is funded by the <a
 href="http://blogs.it.ox.ac.uk/innovation-challenges/researchreproducibility/"
