@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Workshop accomplished
+title: Workshop accomplished!
 subtitle: Notes on our January 2017 Software Carpentry workshop
 bigimg: /img/2017-01-10_workshop-group-photo.jpg
 tags: [workshop, Software Carpentry]
