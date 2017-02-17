@@ -26,4 +26,4 @@ Carpentry</a> instructor in January 2017. <a
 href="https://www.gnu.org/software/emacs/" target="_blank">GNU
 Emacs</a> nerd, with a strong preference for <a
 href="https://www.mercurial-scm.org/" target="_blank">hg</a> over <a
-href="https://git-scm.org/" target="_blank">git</a>.
+href="https://git-scm.com/" target="_blank">git</a>.
