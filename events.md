@@ -14,7 +14,7 @@ If you are interested in running a Software/Data Carpenty workshop for
 your research group or department, then we may be able to help! Do
 [get in touch](contact.md) to discuss.
 
-# Future events
+## Future events
 
 See individual workshop websites for details, including information on
 how to register.
@@ -31,7 +31,7 @@ Instructor training workshop.
 Software Carpentry workshop covering bash, git, R.  
 [https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)
 
-# Past events
+## Past events
 
 This is what we have been up to so far.
 
