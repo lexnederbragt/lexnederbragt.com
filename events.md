@@ -5,9 +5,10 @@ title: Events
 
 Here you can find information about our events, past and future. For
 announcements about future workshops and related activities, you can
-subscribe to our [mailing
-list](https://web.maillist.ox.ac.uk/ox/info/rroxford) and follow us on
-Twitter [@RR_Oxford](https://twitter.com/RR_Oxford).
+subscribe to our <a
+href="https://web.maillist.ox.ac.uk/ox/info/rroxford"
+target="_blank">mailing list</a> and follow us on Twitter <a
+href="https://twitter.com/RR_Oxford" target="_blank">@RR_Oxford</a>.
 
 If you are interested in running a Software/Data Carpenty workshop for
 your research group or department, then we may be able to help! Do
@@ -20,7 +21,7 @@ how to register.
 
 ## Week 9, Hilary Term 2017 (Mar 16--17, 2017)
 
-Instructor training workshop.  
+Instructor training workshop. 
 [https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)
 
 ## Week 9, Hilary Term 2017 (Mar 13--14, 2017)
