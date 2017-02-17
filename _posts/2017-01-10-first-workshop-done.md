@@ -3,7 +3,7 @@ layout: post
 title: First workshop done
 subtitle: Some notes about the workshop we ran in January 2017
 bigimg: /img/2017-01-10_workshop-group-photo.jpg
-tags: [workshop][Software Carpentry]
+tags: [workshop, Software Carpentry]
 ---
 
 We ran our first successful [Software
