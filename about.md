@@ -31,6 +31,14 @@ Then <a href="/contact">get in touch</a>!
 
 <div class="col-sm-4" style="text-align:center">
 
+<a href="../iain-emsley"><img
+    src="../img/profile-pic_iain-emsley.jpg"
+    style="border-radius: 50%; width: 150px; height: 150px;"/></a>
+
+</div>
+
+<div class="col-sm-4" style="text-align:center">
+
 <a href="../laura-fortunato"><img
     src="../img/profile-pic_laura-fortunato.jpg" style="border-radius:
     50%; width: 150px; height: 150px;"/></a>
@@ -40,7 +48,7 @@ Then <a href="/contact">get in touch</a>!
 <div class="col-sm-4" style="text-align:center">
 
 <a href="../philip-fowler"><img
-    src="../img/profile-pic_phillip-fowler.jpg" style="border-radius:
+    src="../img/profile-pic_philip-fowler.jpg" style="border-radius:
     50%; width: 150px; height: 150px;"/></a>
 
 </div>
