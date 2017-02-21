@@ -10,9 +10,9 @@ title: Laura Fortunato
 
 <p>Laura is an evolutionary anthropologist. Her <a
 href="http://www.santafe.edu/~fortunato/research/"
-target="_blank">research</a></p> focuses on the evolution of human
-social and cultural behaviour, working at the interface of
-anthropology and biology.
+target="_blank">research</a> focuses on the evolution of human social
+and cultural behaviour, working at the interface of anthropology and
+biology.</p>
 
 <p>She is based in the <a href="http://www.anthro.ox.ac.uk/"
 target="_blank">School of Anthropology and Museum Ethnography</a> as
