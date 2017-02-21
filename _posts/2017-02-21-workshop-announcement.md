@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workshop announcement
-subtitle: Registration now open for our March 2017 Software Carpentry workshop
+subtitle: Registration open for March 2017 Software Carpentry workshop
 tags: [workshop, Software Carpentry]
 ---
 
