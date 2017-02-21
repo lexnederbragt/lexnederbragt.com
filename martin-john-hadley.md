@@ -8,3 +8,20 @@ title: Martin John Hadley
     height: 150px;"/></center>
 
 Martin is going to be a Carpentry Trainer
+
+<div class="row">
+<div class="col-md-8">
+Martin is a trainer and consultant in data visualisation and reproducible research. He works in IT Services as a Research Tech Support specialist and is the technial lead for the <a href="http://www.idn.web.ox.ac.uk" target="_blank">Interactive Data Network</a> (IDN). The IDN promotes and supports researchers in the development of interactive visualisations to make Open Data visible and accessible. Martin's primary tool of choice is R and Shiny.
+
+Martin has been a helper at a few Software Carpentry courses and is looking forward to being trained as an official Carpentry instructor later in 2017.
+
+More information about Martin is available on his professional network of choice, <a href="https://www.linkedin.com/in/martinjohnhadley" target="_blank">LinkedIn</a>.
+
+<a href="https://twitter.com/martinjhnhadley" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @martinjhnhadley</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="col-md-4">
+<div style="width:100%;text-align:center"><iframe src="https://orcid.org/static/html/widget.html?orcid=0000-0002-3039-6849&t=b28e3c&locale=en" frameborder="0" height="310" width="210px" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
+</div>
+
+</div>
