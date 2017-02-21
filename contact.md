@@ -6,7 +6,7 @@ title: Contact us
 Are you passionate about reproducibility and open research? There are
 several ways to get involved, from attending a [workshop](events.md)
 to joining the [project team](about.md)! We are also looking for
-volunteers to help out with the workshops, as a host, helper, and/or
+volunteers to help out with the workshops, as host, helper, and/or
 instructor.
 
 Are you interested in running a Software/Data Carpenty workshop for
