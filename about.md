@@ -27,7 +27,7 @@ spanning a diverse range of disciplines in the natural, medical, and
 social sciences, and in the humanities. Do you want to get involved?
 Then <a href="/contact">get in touch</a>!
 
-<div class="row justify-content-center">
+<div class="row justify-content-center top-buffer">
 
 <div class="col-sm-4" style="text-align:center">
 
