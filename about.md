@@ -33,11 +33,11 @@ Then <a href="/contact">get in touch</a>!
 
 <a href="../iain-emsley"><img
     src="../img/profile-pic_iain-emsley.jpg"
-    style="border-radius: 50%; width: 150px; height: 150px;"/></a>
+    style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
     <br/>
     <a href="../martin-john-hadley"><img
     src="../img/profile-pic_martin-john-hadley.jpg"
-    style="border-radius: 50%; width: 150px; height: 150px;"/></a>
+    style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
 
 </div>
 
@@ -45,7 +45,7 @@ Then <a href="/contact">get in touch</a>!
 
 <a href="../laura-fortunato"><img
     src="../img/profile-pic_laura-fortunato.jpg" style="border-radius:
-    50%; width: 150px; height: 150px;"/></a>
+    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
 
 </div>
 
@@ -53,7 +53,7 @@ Then <a href="/contact">get in touch</a>!
 
 <a href="../philip-fowler"><img
     src="../img/profile-pic_philip-fowler.jpg" style="border-radius:
-    50%; width: 150px; height: 150px;"/></a>
+    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
 
 </div>
 
