@@ -31,10 +31,12 @@ Then <a href="/contact">get in touch</a>!
 
 <div class="col-sm-4" style="text-align:center">
 
+<!-- commenting out for now as photo not available
 <a href="../iain-emsley"><img
     src="../img/profile-pic_iain-emsley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
     <br/>
+    -->
     <a href="../martin-john-hadley"><img
     src="../img/profile-pic_martin-john-hadley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
@@ -56,6 +58,15 @@ Then <a href="/contact">get in touch</a>!
     50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
 
 </div>
+
+<div class="col-sm-4" style="text-align:center">
+
+<a href="../alejandra-gonzalez-beltran"><img
+    src="../img/profile-pic_alejandra.jpg" style="border-radius:
+    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
+
+</div>
+
 
 
 </div>
