@@ -23,9 +23,9 @@ Centre</a>.
 # Project team
 
 Our project team members work in various roles in the University,
-spanning a diverse range of disciplines in the natural, medical, computer science and
-social sciences, and in the humanities. Do you want to get involved?
-Then <a href="/contact">get in touch</a>!
+spanning a diverse range of disciplines in the natural, medical, and
+social sciences, in computer science, and in the humanities. Do you
+want to get involved?  Then <a href="/contact">get in touch</a>!
 
 <div class="row justify-content-center top-buffer">
 
