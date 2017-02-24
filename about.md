@@ -29,25 +29,20 @@ want to get involved?  Then <a href="/contact">get in touch</a>!
 
 <div class="row justify-content-center top-buffer">
 
+<!-- commenting out for now as photo not available
+
 <div class="col-sm-4" style="text-align:center">
 
-<!-- commenting out for now as photo not available
-<a href="../iain-emsley"><img
-    src="../img/profile-pic_iain-emsley.jpg"
-    style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
-    <br/>
-    -->
-    <a href="../martin-john-hadley"><img
-    src="../img/profile-pic_martin-john-hadley.jpg"
-    style="border-radius: 50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
+<a href="../iain-emsley"><img src="../img/profile-pic_iain-emsley.jpg"
+    style="border-radius: 50%; width: 150px; height: 150px;
+    margin-bottom: 25px;"/></a> </div> -->
 
-</div>
 
 <div class="col-sm-4" style="text-align:center">
 
 <a href="../laura-fortunato"><img
     src="../img/profile-pic_laura-fortunato.jpg" style="border-radius:
-    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
+    50%; width: 150px; height: 150px; margin-bottom: 25px;"/></a>
 
 </div>
 
@@ -55,18 +50,25 @@ want to get involved?  Then <a href="/contact">get in touch</a>!
 
 <a href="../philip-fowler"><img
     src="../img/profile-pic_philip-fowler.jpg" style="border-radius:
-    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
+    50%; width: 150px; height: 150px; margin-bottom: 25px;"/></a>
 
 </div>
 
 <div class="col-sm-4" style="text-align:center">
 
 <a href="../alejandra-gonzalez-beltran"><img
-    src="../img/profile-pic_alejandra.jpg" style="border-radius:
-    50%; width: 150px; height: 150px;margin-bottom: 25px;"/></a>
+    src="../img/profile-pic_alejandra.jpg" style="border-radius: 50%;
+    width: 150px; height: 150px; margin-bottom: 25px;"/></a>
 
 </div>
 
+<div class="col-sm-4" style="text-align:center">
 
+    <a href="../martin-john-hadley"><img
+    src="../img/profile-pic_martin-john-hadley.jpg"
+    style="border-radius: 50%; width: 150px; height:
+    150px; margin-bottom: 25px;"/></a>
+
+</div>
 
 </div>
