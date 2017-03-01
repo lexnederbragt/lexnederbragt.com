@@ -30,7 +30,7 @@ Instructor training workshop.
 
 Software Carpentry workshop covering bash, git, R.  
 [https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)   
-**Note:** this workshop is now [full](./_posts/2017-03-01-workshop-full.md)!
+**Note:** this workshop is now [full](2017-03-01-workshop-full.md)!
 
 ## Past events
 
