@@ -12,14 +12,13 @@ ecological and cultural influences upon human health, in particular
 the evolution of early life influences on adult cognitive,
 reproductive, and immune traits.
 
-He is a lecturer at the Institute of Cognitive and Evolutionary
-Anthropology and in Medical Anthropology at the School of Anthropology
-and Museum Ethnography at the University of Oxford and an honorary
-research fellow at Durham University Department of Anthropology.
+He is a lecturer in the <a href="http://www.anthro.ox.ac.uk/"
+target="_blank">School of Anthropology and Museum Ethnography</a>,
+where he teaches evolutionary and medical anthropology. He is also an
+honorary research fellow in the Department of Anthropology at <a
+href="https://www.dur.ac.uk/" target="_blank">Durham University</a>.
 
-Kesson helped organise the first Reproducible Research Oxford/Software
-Carpentry workshop in January 2017. Prior to that he had worked
-primarily in R, but has been picking up git and unix shell.
+Kesson is the Project Coordinator for Reproducible Reseach Oxford.
 
 <a href="https://twitter.com/kesson"
 class="twitter-follow-button" data-size="large"
