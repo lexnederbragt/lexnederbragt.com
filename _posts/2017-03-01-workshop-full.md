@@ -15,7 +15,7 @@ Building</a>, covering bash, git, and R.
 
 See the workshop website for details, including information on how to
 sign up for the waitlist in case of cancellations. We will be running
-more workshops in coming months --- check our [events](events.md)
+more workshops in the coming months --- check our [events](events.md)
 page, subscribe to our [mailing
 list](https://web.maillist.ox.ac.uk/ox/info/rroxford), and follow us
 on Twitter [@RR_Oxford](https://twitter.com/RR_Oxford) for
