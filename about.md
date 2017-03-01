@@ -17,7 +17,7 @@ Division</a>, with grants to <a href="../laura-fortunato">Laura
 Fortunato</a>. It is based in the <a
 href="http://www.anthro.ox.ac.uk/" target="_blank">School of
 Anthropology and Museum Ethnography</a> and the <a
-href="www.oerc.ox.ac.uk/" target="_blank">Oxford e-Research
+href="http://www.oerc.ox.ac.uk/" target="_blank">Oxford e-Research
 Centre</a>.
 
 # Project team
