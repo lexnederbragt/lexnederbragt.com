@@ -3,7 +3,7 @@ layout: page
 title: Iain Emsley
 ---
 
-<center><img src="../img/profile-pic_Iain-Emsley.jpg"
+<center><img src="../img/profile-pic_iain-emsley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;"/>
     </center>
 
