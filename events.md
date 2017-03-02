@@ -19,6 +19,12 @@ your research group or department, then we may be able to help! Do
 See the event websites for details, including information on how to
 register.
 
+### Session at Digital Humanities at Oxford Summer School | July 3--7, 2017
+#### Long Vacation | Trinity Term 2017
+
+Session at the [Digital Humanities at Oxford Summer
+School](http://www.dhoxss.net/). Details TBD.
+
 ### Instructor training workshop | March 16--17, 2017
 #### Week 9 | Hilary Term 2017
 
