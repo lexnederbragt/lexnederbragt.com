@@ -29,13 +29,12 @@ want to get involved?  Then <a href="/contact">get in touch</a>!
 
 <div class="row justify-content-center top-buffer">
 
-<!-- commenting out for now as photo not available
 
 <div class="col-sm-4" style="text-align:center">
 
 <a href="../iain-emsley"><img src="../img/profile-pic_iain-emsley.jpg"
     style="border-radius: 50%; width: 150px; height: 150px;
-    margin-bottom: 25px;"/></a> </div> -->
+    margin-bottom: 25px;"/></a> </div>
 
 
 <div class="col-sm-4" style="text-align:center">
