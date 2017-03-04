@@ -9,6 +9,7 @@ subscribe to our <a
 href="https://web.maillist.ox.ac.uk/ox/info/rroxford"
 target="_blank">mailing list</a> and follow us on Twitter <a
 href="https://twitter.com/RR_Oxford" target="_blank">@RR_Oxford</a>.
+**Note:** more workshops to come in Trinity Term 2017!
 
 If you are interested in running a Software/Data Carpenty workshop for
 your research group or department, then we may be able to help! Do
