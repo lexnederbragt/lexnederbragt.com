@@ -18,7 +18,7 @@ where he teaches evolutionary and medical anthropology. He is also an
 honorary research fellow in the Department of Anthropology at <a
 href="https://www.dur.ac.uk/" target="_blank">Durham University</a>.
 
-Kesson is the Project Coordinator for Reproducible Research Oxford.
+Kesson assists with workshop logistics.
 
 <a href="https://twitter.com/kesson"
 class="twitter-follow-button" data-size="large"
