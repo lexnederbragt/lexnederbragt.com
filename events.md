@@ -50,7 +50,7 @@ Software Carpentry workshop covering bash, git, R.
  [https://rroxford.github.io/2017-02-13-oxford/](https://rroxford.github.io/2017-02-13-oxford/)  
 **Note:** this workshop was cancelled due to low uptake.
 
-### Software Carpentry workshop | January 9--20, 2017
+### Software Carpentry workshop | January 9--10, 2017
 #### Week 0 | Hilary Term 2017
 
 Software Carpentry workshop covering bash, git, python.  
