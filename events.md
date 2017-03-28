@@ -26,10 +26,14 @@ register.
 Session at the [Digital Humanities at Oxford Summer
 School](http://www.dhoxss.net/). Details TBD.
 
-### Instructor training workshop | March 16--17, 2017
+## Past events
+
+This is what we have been up to so far.
+
+### Instructor training | March 16--17, 2017
 #### Week 9 | Hilary Term 2017
 
-Instructor training workshop.   
+On-site Carpentry instructor training.   
 [https://steve-crouch.github.io/2017-03-16-oxford-ttt/](https://steve-crouch.github.io/2017-03-16-oxford-ttt/)   
 
 ### Software Carpentry workshop | March 13--14, 2017
@@ -37,11 +41,6 @@ Instructor training workshop.
 
 Software Carpentry workshop covering bash, git, R.  
 [https://rroxford.github.io/2017-03-13-oxford/](https://rroxford.github.io/2017-03-13-oxford/)   
-**Note:** this workshop is now [full](../2017-03-01-workshop-full/)!
-
-## Past events
-
-This is what we have been up to so far.
 
 ### Software Carpentry workshop | February 13--14, 2017
 #### Week 5 | Hilary Term 2017
