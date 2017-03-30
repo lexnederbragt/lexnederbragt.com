@@ -1,0 +1,55 @@
+---
+layout: post
+title: Ion Torrent data on E. coli K12 MG1655 - a fairer comparison with 454
+date: 2012-02-01 20:49:59.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- '454'
+- Ion Torrent
+meta:
+  _edit_last: '12058266'
+  _oembed_9ea5641e5b281d138609f9f0fc2ccddc: '{{unknown}}'
+  _oembed_047c56a4360f9e2c0784e59f70197b8c: '{{unknown}}'
+  _oembed_6e3f979bd5eb88aeeedf758dc6db2480: '{{unknown}}'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>Each sequencing company has a workhorse genome they sequence a lot. PacBio sequences the lambda virus, Illumina uses PhiX. Both Ion Torrent and 454 use <em>E. coli</em> DNA, but while Ion Torrent takes <em>E. coli</em> K12 substr. DH10B, 454 chose <em>E. coli</em> K12 substr. MG1655.</p>
+<p>I am interested in finding out to what extent Ion reads can replace the much more expensive 454 reads for<em> de novo</em> genome assembly (my field of speciality). Currently, the Ion read length is too short for the technology to be competitve, but this might change later this year, when (if ...) the promised 400 bp reads become a reality.</p>
+<p>In my comparisons of Ion data with 454 reads, I have always been hampered by the the fact that the strains the platforms use as test samples were not completely identical. Luckily for me, today Ion Torrent <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2492">released</a> (behind the Ion Community login) a dataset on E coli MG1655, a run with ID BEL-335. Imagine my joy! (Saves me from having our centre generate one on our - yet to be unpacked- PGM). The data is from a 314 chip, has 468 thousand reads and 54 Mbp raw data. That represents around 11x coverage of the MG166 genome. This is a bit too low for what I ideally would like to have (around 30 x), but alright. I set out to try this data in a <em>de novo</em> assembly using newbler, together with an equivalent data set of 454 reads.</p>
+<p><!--more-->First, I checked the read length distribution (line marked 'BEL-335').</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/02/bel-335_length1.jpg"><img class="alignnone size-full wp-image-180" title="BEL-335_length" src="{{ site.baseurl }}/assets/bel-335_length1.jpg" alt="" width="480" height="319" /></a></p>
+<p>Note the small peak at 193 bases, such peaks are somehow usually present for Ion Torrent data.</p>
+<p>I next created a comparable 454 dataset. I used the same GS FLX sff file as for previous posts, resetting the number of cycles to 48  (shortening the GS FLX reads) to get the same length distribution, which is shown in the plot above as well. Note how the peak of the Ion reads is slightly narrower (a tighter distribution around the mode length). Finally, I randomly picked the same amount of bases as in the Ion dataset, to get the same coverage.</p>
+<p>Assemblies were done with the latest release of newbler (2.6) and default settings. As no paired end (mate pairs) were available, all that was generated were contigs. This is the first time I was able to do a direct comparsion of these data from the exact same genomic source.</p>
+<p>The table below summarizes the metrics ('large' contigs are those of at least 500 bp):</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/02/bel-335_asm_metrics.jpg"><img class="alignnone size-full wp-image-183" title="BEL-335_asm_metrics" src="{{ site.baseurl }}/assets/bel-335_asm_metrics.jpg" alt="" width="480" height="440" /></a></p>
+<p>As the table shows, newbler performed much better with the 454 data than with the Ion data, even though the read dataset was as much comparable (length and coverage) as possible. The Ion data resulted in more reads partially assembled, more singletons, and more, shorter contigs. Interestingly, the total length ('all contigs') is very similar between the two assemblies. Both were 94 kbp short of the 'real' genome size of 4,639,675 bases, probably caused by collapsed repeats.</p>
+<p>This exercise is of course not completely fair: I am using the assembly program optimized for 454 reads with reads from another technology. However, the results show that when it comes to <em>de novo</em> genome assembly, one cannot simply replace 454 reads with Ion Torrent reads and expect the same results. Assembly software needs to be tuned to the technology platform specific error model, even when the sequencing technologies are very similar (454 and Ion both measure homopolymer length, and both suffer from homopolymer length errors).</p>
+<p>The next step for this comparison would be assemblies using other programs, especially those that say they are tailored towards Ion data, or both Ion and 454 (and other types). Candidates are Mira (free), the (commercial) 'Floton assembler' from Softgenetics, CLCBio (also commercial), and I probably missed a few more.</p>
+<p><strong>Code used</strong></p>
+<p>The sff file is called BEL-355 and was downloaded via <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2492">http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2492</a> (Ion Community login required).</p>
+<p>Read length distribution (using sffinfo from the Roche/454 software suite):</p>
+<p><code>sffinfo -s BEL-335.sff|fasta_length | awk '{x[$1]++}END{for (i in x){print i"\t"x[i]}}'| sort -n &gt;read_length_hist.tsv<br />
+</code><br />
+<code>fasta_length</code> is a simple perl script which spits out the length of each fasta file (available upon request)</p>
+<p>454 data: I used the files EBO6PME01.sff and EBO6PME02.sff, which were part of a demo GS FLX data set that came with software DVD for newbler 1.1.03. To reset the trimpoints to 48 cycles (yielding a read length distribution comparable to the Ion reads), I used</p>
+<p><code>sfffile -c 48 -o EBO6PME01_48_cycles.sff EBO6PME01.sff<br />
+sfffile -c 48 -o EBO6PME02_48_cycles.sff EBO6PME02.sff<br />
+sfffile -o EBO6PME_48_cycles.sff EBO6PME01_48_cycles.sff EBO6PME02_48_cycles.sff</code></p>
+<p>The last command combines the reads into one file. The read length distribution was obtained as for the Ion reads (see above).</p>
+<p>To get the final sff file for assembly, with the same amount of bases as the Ion dataset:</p>
+<p><code>sfffile -pick 54292729 -o EBO6PME_48_cycles_54Mbp.sff EBO6PME_48_cycles.sff</code></p>
+<p>Assemblies were run with:</p>
+<p><code>runAssembly -o outputdir reads.sff<br />
+</code><br />
+Metrics were obtained with my <a href="http://sourceforge.net/projects/newblertools/files/newblermetrics">newblermetrics </a>script.</p>

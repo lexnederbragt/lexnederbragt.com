@@ -1,0 +1,63 @@
+---
+layout: post
+title: A hybrid model for a High-Performance Computing infrastructure for bioinformatics
+date: 2015-04-13 09:53:20.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- HPC
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '12058266'
+  geo_public: '0'
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/1qqxcoh3rh4
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>I work for the <a href="sequencing.uio.no">Norwegian High-Throughput Sequencing Centre</a> (NSC), but <em>at</em> the <a href="mn.uio.no/cees/english/">Centre for Ecological and Evolutionary Synthesis</a> (CEES). At CEES, numerous researchers run bioinformatic analyses, or other computation-heavy analyses, for their projects. With this post, I want to describe the infrastructure we use for calculations and storage, and the reason why we chose to set these up the way we did.</p>
+<p>In general, when one needs high-performance compute (HPC) infrastructure, a (group of) researcher(s) can purchase these and locate them in or around the office, or use a cloud solution. Many, if not most, universities offer a computer cluster for their researchers' analysis needs. We chose a hybrid model between the universitys HPC infrastructure and setting up one ourselves. In other words, our infrastructure is a mix of <em>self-owned</em>, and <em>shared</em> resources that we either apply for, or rent.</p>
+<p><!--more-->We <strong>own</strong> several high-memory (1.5 TB RAM) servers with 64 CPUs and 64 TB local disk each. We also <strong>own</strong> 256 'grid' CPUs for highly parallel calculations; these are in boxes of 16 CPUs with 64 GB RAM each. We <strong>rent</strong> project disk space, currently 60 TB, for which we pay a reasonable price. We have <strong>applied for</strong> (through the national "Norwegian metacenter for computational science" <a href="https://www.notur.no/about">Notur</a>) and been allocated CPU hours on the <a href="http://www.uio.no/english/services/it/research/hpc/abel/">University of Oslo supercomputer Abel</a>, currently 1.3 million hours per half year. Finally, we have an allocation of up to 50 TB on disk, and 50 TB on tape, at <a href="https://www.norstore.no/about">the Norwegian Storage Infrastructure NorStore</a>.</p>
+<p>[caption id="attachment_657" align="alignright" width="300"]<a href="https://flxlexblog.files.wordpress.com/2015/04/cod3.jpg"><img class="wp-image-657 size-medium" src="{{ site.baseurl }}/assets/cod3.jpg?w=300" alt="One of our servers" width="300" height="224" /></a> One of our servers[/caption]</p>
+<p>It is important to note that what we own is not located at our offices. Instead, these servers sit right next to the Abel servers, in the same rooms, sharing the same power and cooling setups, and even sharing the same disks. In other words, both our own servers and the Abel servers 'see' the same common disk areas!</p>
+<p><em>Software</em> is made available through the <a href="http://modules.sourceforge.net/">Environment 'module' package</a>. For example, to have the environment set up for using the <code>samtools</code> package, users can simply write</p>
+<p>[code lang=text]<br />
+module load samtools<br />
+[/code]</p>
+<p>Currently, this will set up <code>samtools 1.0</code> in the user's environment. A huge benefit of the module system is that it makes it easy to access different versions of software. Users can for example choose to use an older version of <code>samtools</code> by typing:</p>
+<p>[code lang=text]<br />
+module load samtools/0.1.19<br />
+[/code]</p>
+<p>This is great for reproducibility! Both the Abel supercomputer servers, and our self-owned servers have access to the same modules. <a href="http://www.uio.no/english/services/it/research/hpc/abel/help/software/">There is a large number of programs</a> available this way. In addition, we can add custom modules that only our user group has access to.</p>
+<p><em>Access</em> is in one of two ways:</p>
+<ul>
+<li>direct ssh access for the high-memory servers (users are asked to send an email to our internal mailing list to alert others of the intended use)</li>
+<li>through the <a href="https://computing.llnl.gov/linux/slurm/">SLURM</a> job submission system for the shared computer resources</li>
+</ul>
+<p>We maintain a wiki with basic information on the use of our common infrastructure, and tips and tricks that are more general. This wiki is <a href="https://wiki.uio.no/mn/bio/cees-bioinf">open to the world</a>.</p>
+<p>There are several benefits of this hybrid model:</p>
+<ul>
+<li>we do not have to worry about setting up and maintaining the infrastructure, power, cooling, servers breaking down and disks that stop spinning; all of this is taken care of by the Abel staff</li>
+<li>we do not have to have a local sysadmin (systems administrator) for operating our infrastructure. Instead, we rely on the very competent Abel staff, formally known as the <a href="http://www.usit.uio.no/english/about/organisation/bps/rc/ris/index.html">Research Infrastructure Services Group</a>. For example, if these people can not install a piece of software, none of us researchers stands a chance</li>
+<li>we would never be able to get the same good prices by trying to negotiate on our own</li>
+</ul>
+<p>But there are also some obvious disadvantages:</p>
+<ul>
+<li>we have less control of the setup; for instance, there is much software tailored towards SGE as a job submission system, while Abel uses SLURM (this bothered me for quite a while, but I have heard very good things about SLURM lately, so I am getting more and more happy with this choice)</li>
+<li>none of us has root access to our own servers (but I consider that a blessing :-) )</li>
+<li>as the Abel supercomputer is sizeable (&gt;10000 cores, serving hundreds of users from the university and other Norwegian research groups), the Abel staff are a busy group of people. They receive many requests and this sometimes means waiting time for us to get something fixed or installed</li>
+<li>also, when the Abel cluster needs to go down for maintenance, this (usually) means our servers are down too</li>
+<li>there is still a considerable overhead for us (mainly one of my colleagues and me) when it comes to the day-to-day running of the infrastructure; for example, getting new users registered, communication with all users, maintenance of the wiki, etc.</li>
+<li>as with any shared resource (common kitchens, anyone?), some people are better at being considerate of their fellow researchers than others; disks tend to run full faster than we can ask people to remove their leftover temporary run data, just to name one thing</li>
+</ul>
+<p>In conclusion, the hybrid model works very well for us. We get a lot more for our money with a lot less worries. This allows the many projects ongoing at CEES and NSC to run smoothly most of the time, something we all are very grateful for. Having access to these resources also makes us an attractive collaboration partner!</p>
+<p>If you are interested in knowing more about our HPC resources, have a look at <a href="https://wiki.uio.no/mn/bio/cees-bioinf">our wiki</a>.</p>

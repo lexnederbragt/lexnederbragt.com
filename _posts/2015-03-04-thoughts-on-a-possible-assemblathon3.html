@@ -1,0 +1,46 @@
+---
+layout: post
+title: Thoughts on a possible Assemblathon3
+date: 2015-03-04 13:09:29.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- assembly
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '12058266'
+  geo_public: '0'
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/J9H64Jmfdkp
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+  _oembed_fe74f3a60a6fd4e21d59ab27559bd56d: '{{unknown}}'
+  _oembed_926fdf2db94b409fe256cba9dece715f: '{{unknown}}'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>The <a href="https://genome10k.soe.ucsc.edu/conference_home_2015">Genome10K</a> meeting is ongoing (I am not attending but following through twitter). Today, there will be a talk by Ian Korf about the feasibility of an Assemblathon 3 contest (see <a href="https://twitter.com/assemblathon/status/572801376352223232">this tweet</a> and the <a href="https://genome10k.soe.ucsc.edu/conference_schedule_2015">schedule</a>). Earlier <a href="https://twitter.com/assemblathon">the @Assemblathon</a> twitter account <a href="https://twitter.com/assemblathon/status/561185340090642432">asked for a wishlist for an Assemblathon 3</a> through the hashtag #A3wishlist. With this post I want to share my opinion on what a possible Assemblathon 3 could and/or should be about.</p>
+<p><!--more-->First a bit of background. The Assemblathon 1 and 2 (see <a href="http://assemblathon.org/">http://assemblathon.org/</a>) were open competitions where participants were given reads and asked to submit one or more <em>de novo</em> assemblies. The assemblies were judged based on a comparison to a ground truth (Assemblathon 1, the reference genome from which the simulated reads were drawn) or by using the original reads supplemented with orthogonal data from the same genomes (Assemblathon 2, where no reference genome was available and real sequencing data was supplied). Similar assembly 'competitions' such as <a href="http://genome.cshlp.org/content/22/3/557.long">GAGE</a>, <a href="http://bioinformatics.oxfordjournals.org/content/early/2013/05/10/bioinformatics.btt273.abstract">GAGE-B</a> and <a href="http://dx.plos.org/10.1371/journal.pone.0107014">GABenchToB</a> were closed: the authors ran the assemblies and compared them to a reference genome.</p>
+<p>Allowing for a bit of oversimplification, all these competitions asked the question: "which assembler works best," to which they all concluded:</p>
+<blockquote><p>
+  It depends
+</p></blockquote>
+<p>There is no apparent way to predict, based on the data types or organism, which assembler to use. Also, the 'perfect' assembly does not exist, each assembly comes with its flaws. For more on this matter, see the <a href="http://assemblathon.org/post/56217669322/writing-the-assemblathon-2-paper-an-experiment-in">flurry of comments and posts</a> that appeared in the aftermath of the Assemblathon 2 paper.</p>
+<p>Some advances have been made in recent years. For example, complete and nearly perfect assemblies for bacterial genomes are now possible. But, in my opinion, the above conclusion still holds for larger genomes assembly projects, especially if short read data is used.</p>
+<p>Of course, a lot has been learned from running these competitions, and I am very grateful for the effort that went into them. However, I do not think we need another such competition. If there is going to be an Assemblathon 3, there are of course obvious datasets to try (PacBio, Oxford Nanopore, synthetic long reads) in different combinations using updated and new assembly software tools. But I fear that the conclusion(s) from such an effort would be more or less the same as before: it depends.</p>
+<p>When I consider the matter of choosing between assemblies, I usually take the position of the researchers running the assemblies. They have paid a lot of money to obtain a good sequence dataset, and now want to turn that into an assembly that is of high enough quality to enable them to answer the biological question that motivated the project. I would suggest anyone of those researchers to run their own mini-assemblathon: use different programs with different combinations to generate multiple assemblies. I wish this wasn't needed but we just haven't come that far in this field yet.</p>
+<p>However, these researchers do not have a reference genome to compare their assemblies to and thereby find out which one is best. What they <em>do</em> have is all the data that went into the assembly, and perhaps some orthogonal data (transcriptome reads, optical mapping data, linkage map data, etc). The question then becomes <strong>how such a researcher is able to choose which assembly (or assemblies) to continue with</strong>.</p>
+<p>I have <a href="https://flxlexblog.wordpress.com/2013/02/26/on-assembly-uncertainty-inspired-by-the-assemblathon2-debate/">previously written</a> about tools to use in to help answer this question, which will help compare assemblies based on several metrics. Some new tools could be added to the list, but the rest of the post is still relevant. Two recent additions that should be mentioned are workflow programs that perform pre-assembly steps, assembly, and post assembly validation/improvement all in one go, taking a lot of the burden away from us researchers. These are <a href="http://www.biomedcentral.com/1471-2105/15/126/abstract">iMetAMOS</a> and <a href="http://bioinformatics.oxfordjournals.org/content/early/2015/01/28/bioinformatics.btv056.short">RAMPART</a>.</p>
+<p>I believe it is here the Assemblathon 3 could make a contribution. By switching the focus from the assembly developers to the assembly users, Assemblathon 3 could help to answer the question:</p>
+<blockquote><p>
+  How to choose the 'right' assembly from a set of generated assemblies
+</p></blockquote>
+<p>The definition of 'right' depends on the biological question (is presence/absence of genes enough, or is long-range contiguity needed, e.g. for comparative genomics). Assemblathon 3 could make a competition around the methods to choose between assemblies: supply a set of assemblies generated using the most popular assemblers, supply the raw data and a set of orthogonal datasets, and let the participants predict which assembly is 'best' on different combinations of metrics. Assembly improvement could perhaps be added to this as well (e.g. breaking assemblies at areas conflicting with paired end mappings, 'polishing' bases).</p>
+<p>With this, I hope the outcome from an eventual new Assemblathon could be a concrete set of recommendations that will help researchers get the best out of their assembly projects.</p>

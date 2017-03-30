@@ -1,0 +1,72 @@
+---
+layout: post
+title: 'The longest reads yet: A look at PacBio''s contribution to the assemblathon'
+date: 2011-07-04 20:46:08.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- pacbio
+meta:
+  _edit_last: '12058266'
+  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1423196206;}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p><em>A quick summary for the impatient: </em>A set of in total more than 4 million PacBio reads, up to 17kb in length, is available as part of the assemblathon. Most of the reads are short (peaking at 600-700 or 950 bases), but a significant fraction is very long. The average read quality metrics show no reads above Q11.</p>
+<p>The <a href="http://assemblathon.org/">assemblathon</a> is a 'competition' to enhance genome assembly. After <a href="http://assemblathon.org/pages/assemblathon-1">the first round</a> earlier this year, which was solely based on simulated reads, now assemblathon 2 has started, solely based on real reads. Researchers are asked to come up with their best assemblies, which will be compared against eachother using several metrics.</p>
+<p>Two of the assemblathon 2 genomes have only Illumina sequences, but for the third one, a parrot, there are reads available from <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/">Illumina</a>, <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/">454</a> <em>and</em> <a href="http://korflab.ucdavis.edu/Datasets/Assemblathon/Assemblathon2/Parrot/PacBio_data/">PacBio</a>.</p>
+<p>As we are <a href="http://www.sequencing.uio.no/news/2011/sms-pacbio.html">about to get our PacBio RS instrument</a> later this year, I decided to have a look at the data available for the parrot.</p>
+<p>First some info from the readme file:</p>
+<blockquote><p>"Two libraries were created at 7.5kb and 13kb insert sizes. The 7.5kb library was sequenced at 45 and 90 minutes and the 13kb library was only sequenced at 90 minute movies. The raw reads are filtered on a ReadQuality metric split on the adapter region to generate 'subreads'."</p></blockquote>
+<p>I guess this is for those reads where the sequencing goes around the SMRTBell and reads the same molecule twice. It further states that reads are only included if they are 100 bp (the 7.5 kb insert runs) or 500 bp (the 13 kb insert run) long, and had an internally developed (it seems) read quality parameter of at least 0.75 'raw single pass accuracy.'</p>
+<p><!--more-->There were three files, two for the 7.5 kb inserts, with 45 and 90 minutes movie times, and one for the 13 kb insert size, with 90 minutes movie times. Read numebrs were 1.1 million, almost 0.5 million and 2.6 million respectively.</p>
+<p>The readme states that the 13 kb insert library was their first attempt at this size, and that they saw 'a much higher fraction of smaller inserts from the 13kb library than the 7.5kb library'. Also with PacBio sequencing, shorter fragments outcompete longer ones, so unfortunately they had a somewhat high amount of short reads.</p>
+<blockquote><p>"The mean raw readlengths (reads not split on adapters) for the 7.5kb and 13kb libraries are 2349bp and 3092bp respectively."</p></blockquote>
+<p>I plotted the length distribution of the three runs:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/07/pacbio_readlen.jpg"><img class="alignnone size-full wp-image-99" title="Read length distribution" src="{{ site.baseurl }}/assets/pacbio_readlen.jpg" alt="" width="480" height="448" /></a></p>
+<p>The plot shows a peak at 600-700 bases for the 7.5 kb libraries, and around 950 for the 13 kb insert library. Beyond that, the read length slowly declines. The maximum read lengths are 7618, 16947 and 15548 bases, respectively. Yes, those are reads of almost 17 kb! (for 90 minute movies, that is).</p>
+<p>The files are in fastq format, so I decided to run <a href="http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc/">the FastQC program</a> on these. This very useful program generates a report (actually, an html page) with a bunch of metrics. Here there was a surprise. The readme file states</p>
+<blockquote><p>"Filtered subreads are contained in a FASTQ files with Phred33 encoding."</p></blockquote>
+<p>The per-sequence (mean) quality score distributions showed peaks at phred score 7 or 8, for example for the 13 kb insert library:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/07/per_sequence_quality.png"><img class="alignnone size-full wp-image-100" title="Mean sequence quality" src="{{ site.baseurl }}/assets/per_sequence_quality.png" alt="" width="480" height="360" /></a></p>
+<p>The quality is very even across the read, again showing the graph for the 13 kb insert run:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/07/per_base_quality.png"><img class="alignnone size-full wp-image-101" title="Per base quality" src="{{ site.baseurl }}/assets/per_base_quality.png" alt="" width="480" height="295" /></a></p>
+<p>What is going on here? Are these quality scores really that low for these reads? An <a href="http://oelemento.wordpress.com/2011/01/03/a-closer-look-at-the-first-pacbio-sequence-dataset/">earlier report</a> on the Haiti cholera PacBio dataset (with much shorter reads) showed how the shortest reads had much lower quality than the long ones. The same effect does not seem to be the case here. My own quick check of the average quality scores showed these  never get over Q11, as the graphs above also show. Alo, I could not find an obvious relation between read length and average quality. Either these reads do indeed have such low qualities, or the PacBio quality score calculations are not really comparable to those of other platforms.</p>
+<p>I made the full fastqc reports available here:<br />
+<a href="http://folk.uio.no/alexajo/flxlexblog/PacBio_7.5kb_45min_100bp_0.75RQ_fastqc/fastqc_report.html">7.5 kb insert library, 45 minute movie</a><br />
+<a href="http://folk.uio.no/alexajo/flxlexblog/PacBio_7.5kb_90min_100bp_0.75RQ_fastqc/fastqc_report.html">7.5 kb insert library, 90 minute movie</a><br />
+<a href="http://folk.uio.no/alexajo/flxlexblog/PacBio_13kb_90min_500bp_0.75RQ_fastqc/fastqc_report.html">13 kb insert library, 90 minute movie</a><br />
+(If someone can help me make sense of the kmer content plot of the 7.5 kb insert, 45 minute run, please let me know!)</p>
+<p>So, in conclusion, this is the largest PacBio dataset availble online that I know of, and the read lengths look promising, although with a very large proportion of short reads. Well, short: these are peaking at Sanger read length, which is quite a feat already. I need some more background information on the quality scoring calculations to say anything meaningful on the low average scores for these reads, however.</p>
+<p>Lack of a reference genome does not allow for precise mapping quality measurements, but once assemblies of the parrot data using the other platforms are available, one can start comparing these PacBio reads to them.</p>
+<p><strong>Code used</strong></p>
+<p>fastqc</p>
+<blockquote><p><code>fastqc --noextract PacBio_7.5kb_90min_100bp_0.75RQ.fastq</code></p></blockquote>
+<p>Read length distributions:</p>
+<blockquote><p><code>cat PacBio_13kb_90min_500bp_0.75RQ.fastq | awk 'NR%4==2 {cnt[length($0)]++}END{for (x in cnt){print x"\t"cnt[x]}}'|sort -n -k1,1 &gt; PacBio_13kb_90min_500bp_length.tsv</code></p></blockquote>
+<p>R code:</p>
+<blockquote><p><code>dat1 = read.table("PacBio_7.5kb_45min_100bp_length.tsv", header=F, sep="\t")<br />
+dat2 = read.table("PacBio_7.5kb_90min_100bp_length.tsv", header=F, sep="\t")<br />
+dat3 = read.table("PacBio_13kb_90min_500bp_length.tsv", header=F, sep="\t")</code></p>
+<p><code>main = "Read length distribution"<br />
+xlab = "Read length"<br />
+ylab = "Count"</code></p>
+<p><code>peak1=dat1$V1[which(dat1$V2==max(dat1$V2))]<br />
+peak2=dat2$V1[which(dat2$V2==max(dat2$V2))]<br />
+peak3=dat3$V1[which(dat3$V2==max(dat3$V2))]</code></p>
+<p><code>pdf(file="readlen.pdf")<br />
+plot(dat3$V1,dat3$V2,type="l", main=main, xlab=xlab, ylab=ylab,xlim=c(0,6000))<br />
+lines(dat2$V1,dat2$V2,col="blue")<br />
+lines(dat1$V1,dat1$V2,col="red")<br />
+text(2000,1700,pos=4,labels=paste("PacBio_13kb_90min_500bp, peak length: ",round(peak3)))<br />
+text(2000,1600,pos=4,labels=paste("PacBio_7.5kb_45min_100bp, peak length: ",round(peak1)), col="red")<br />
+text(2000,1500,pos=4,labels=paste("PacBio_7.5kb_90min_100bp, peak length: ",round(peak2)), col="blue")<br />
+dev.off()</code></p></blockquote>

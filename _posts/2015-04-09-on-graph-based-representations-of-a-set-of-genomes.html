@@ -1,0 +1,97 @@
+---
+layout: post
+title: On graph-based representations of a (set of) genomes
+date: 2015-04-09 09:19:09.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- assembly
+- graphs
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '12058266'
+  geo_public: '0'
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/Weumfu37cUC
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+  _wpas_skip_6015510: '1'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>In 1986, in a <a href="http://dx.doi.org/10.1038/322590a0">letter to the journal Nature</a>, James Bruce Walsh and Jon Marks lamented that the upcoming human genome sequencing project "violates one of the most fundamental principles of modern biology: that species consist of variable populations of organisms". They further wrote: "As molecular biologists generally ignore any variability within a population, the individual whose haploid [sic] genome will be chosen will provide the genetic benchmark against which deviants are determined". They conclude that " 'the' genome of 'the' human will be sequenced gel by acrylamide gel".</p>
+<p>We have come a long way when it comes to taking population variation into account in molecular/genetic/genomic studies. But these sentiments, expressed already in 1986, echo some of the trends in the human genetics field: the move away from a single, linear representation of 'the' human genome. In this post I will provide some background, explain the reasons for moving towards graph-based representations, and indicate some challenges associated with this development.</p>
+<p><!--more--><strong>Reference genome as a line</strong><br />
+Traditionally, reference genomes are represented as one or multiple sequences, interrupted with strings of ‘N’s to indicate gaps if the reference is incomplete. Graphically, the sequences are represented as straight lines. Annotations are represented as genomic tracks. A <a href="http://www.biomedcentral.com/1471-2105/12/494">paper by Gundersen et al</a> identified 15 different track types.</p>
+<p><strong>Limitations of the linear representation</strong><br />
+<em>Diploid</em> organisms receive two sets of <em>chromosomes</em>, one from each<br />
+parent. The sequences of these chromosomes are similar (technically they are <a href="http://en.wikipedia.org/wiki/Homologous_chromosome"><em>‘homologous’</em></a>), but have many differences (so-called ‘<a href="http://en.wikipedia.org/wiki/Zygosity#Heterozygous"><em>heterozygosities</em></a>’). These variations can be small, such as Single Nucleotide Variants (SNVs, also known as Single Nucleotide Polymorphisms, <a href="http://en.wikipedia.org/wiki/Single-nucleotide_polymorphism"><em>SNPs</em></a>), small insertions and deletions (collectively known as <a href="http://en.wikipedia.org/wiki/Indel"><em>Indels</em></a>), copy number variations; they can also span larger distances, such as <a href="http://en.wikipedia.org/wiki/Chromosomal_rearrangement"><em>chromosomal rearrangements</em></a> (deletions, duplications, inversions, and translocations). To represent this diploid genome as a single linear sequence necessarily removes some of this variation, or requires an additional way of reporting the variations of the individual chromosomes relative to the linear representation. A complicating factor is that every new studied instance of a genome may contain sequences not represented in the reference (see for example the <a href="http://www.biomedcentral.com/1471-2164/15/685"><em>paper</em></a> by Liu et al and references therein). When sequencing a new individual, and mapping the reads to the linear representation of the reference, the parts of the sequenced sample not present in the reference may thus be missed.</p>
+<p><strong>Solutions that are not graph-based</strong><br />
+The most recent release of the human genome (build 38, GRCh38) contains so-called <a href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/"><em>alternate loci</em></a>, defined as “multiple representations for regions that are too complex to be represented by a single path”. These are regions, at most 1Mbp (million base pair), that are found in some genomes, but are not part of the default reference representation (see the official <a href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/grc/human/"><em>website for the<br />
+human genome</em></a>). Read mapping software is being developed that takes these alternate loci into consideration, allowing for more reads to be mapped to the right position, thus reducing false mappings, and false positive variant calls. The popular read mapper <code>bwa</code> <a href="https://github.com/lh3/bwa/blob/master/README-alt.md">has been made 'alt-aware'</a> to cope with these alternate loci. There also is an unpublished read mapper called <code>SRPRISM</code> mentioned in a <a href="http://biorxiv.org/content/early/2014/07/03/006841"><em>preprint paper</em></a> on a haploid human genome assembly.</p>
+<p><strong>Graph-based representation as a solution</strong><br />
+Using graphs to represent DNA sequences has a long history. Most, if not all, assembly programs use graph representations and graph algorithms to assemble reads into a genome representation. Both <a href="http://en.wikipedia.org/wiki/String_graph"><em>String Graphs</em></a> (e.g., <a href="http://bioinformatics.oxfordjournals.org/content/21/suppl_2/ii79.abstract">Myers et al 2005</a>), and <a href="http://en.wikipedia.org/wiki/De_Bruijn_graph"><em>De Bruijn graphs</em></a> (see e.g. [Compeau et al 2011(http://www.nature.com/nbt/journal/v29/n11/full/nbt.2023.html)) are used in this context. Representing a diploid genome as a graph allows for alternative paths (‘bubbles’) for regions where the chromosomes differ.</p>
+<p>But a graph could also be used to represent the genomes of <em>multiple individuals</em>, capturing all variation between them, and potentially containing all sequences found in the represented organisms. The graph could have ‘colored’ paths, where parts of the graph are annotated with the sample(s) they represent. A ‘colored de Bruijn graph’ approach has been used for the global ‘superassembly’ program <a href="http://www.nature.com/ng/journal/v44/n2/full/ng.1028.html">cortex</a>, or for the local ‘variant-calling through assembly’ tool <a href="http://www.nature.com/ng/journal/v46/n8/full/ng.3036.html"><em>platypus</em></a>. A different approach is taken by the (unpublished, but <a href="https://github.com/ekg/vg/">openly developed</a>) program <code>vg</code> (<em>variant graph</em>). This program starts from a reference genome, and a <code>vcf</code> file of variants between the reference and one or more samples, and then builds a graph to which reads can be mapped.</p>
+<p><strong>Potential gains</strong><br />
+Having a graph to represent all that is known about a genome would allow for a higher percentage of reads of a new instance of the genome to be mapped correctly. It is probably easier to map reads corresponding to variants if those variants are present in the reference graph (e.g. indels, structural variations). The example below shows two different alignments of the same variant read to a reference:</p>
+<p>[caption id="attachment_647" align="alignnone" width="660"]<a href="https://flxlexblog.files.wordpress.com/2015/04/paten_et_al_equivalent_mapping.jpg"><img class="wp-image-647 size-large" src="{{ site.baseurl }}/assets/paten_et_al_equivalent_mapping.jpg?w=660" alt="The problem of equivalent mappings. Image source: Paten, Benedict, Adam Novak, and David Haussler (2014) arXiv:1404.5010" width="660" height="191" /></a> The problem of equivalent mappings. Image source: Paten, Benedict, Adam Novak, and David Haussler (2014) arXiv:1404.5010[/caption]</p>
+<p>Source: Paten, Benedict, Adam Novak, and David Haussler (2014) arXiv:1404.5010</p>
+<p>Also, graph-based representations enable new ways to integrate multiple different '-omics' datatypes. For example, coupling genetic variation with epigenetic information (bases methylated in some organisms may be absent from the genomes of other individuals).</p>
+<p><strong>What to represent in the graph</strong><br />
+There are several different possibilities to represent genomes with a graph:</p>
+<ul>
+<li>the genome of a single diploid (or polypoid) individual, for example after assembly. For this, a ‘diploid aware assembler’ would be needed. There are developments towards this goal, see for example the experimental PacBio diploid assembler <em>FALCON</em></li>
+<li>the genomes of multiple individuals of the same species</li>
+<li>based on reads: superassembly</li>
+<li>based on multiple (complete) reference genomes, e.g. for multiple strains of bacteria</li>
+<li>the genomes of multiple species</li>
+<li>building a graph to represent multiple reference genomes for comparative genomics</li>
+</ul>
+<p><strong>Challenges</strong><br />
+A few of the challenges of using a graph to represent a genome are<br />
+briefly discussed here.</p>
+<ul>
+<li>a linear representation allows an unambiguous coordinate system: sequence X at position Y has this base, or this feature. Defining distances between features is then very straightforward (e.g. the transcription binding factor recognition site is located Z bases upstream of the gene). A graphical representation makes unambiguous coordinates challenging. For regions with alternative paths, new ways to define coordinates (absolute, relative) are needed. The concept of proximity, i.e. ‘distance between features’, may have to be defined in other (statistical?) terms</li>
+<li>similarly, annotations (genomic tracks) currently simply refer to the linear genome representation in a one-to-one fashion: coordinates on the track correspond to coordinates on the reference genome. With a graph, in certain parts of the genome the annotation will be for not just one path, but several (variant) paths. The annotation would need to refer to the entire subgraph that represents the feature. For example, to annotation gene X, the collective set of paths through the graph at the ‘locus’ of gene X must be annotated as such</li>
+<li>in many cases, it is useful to randomize annotations. One may for instance randomize the location of genes, and compare some characteristics of the real gene locations with the randomized ones. With a linear genome, this is essentially just to draw a random number (position on the line) for each gene. For a graph, it is not apparent how one should take the alternative paths into account when randomizing for example positions</li>
+<li>a graph representing the genome of a species will grow (be updated) as more data on that species becomes available. Strategies to ‘lift over’ findings from earlier versions need to be developed</li>
+<li>file formats to represent the graph are needed, but they would preferably be based on/compatible with existing community standards, or those standards should be easily derived from them</li>
+<li>mapping to the graph instead of a linear reference genome requires specialized software</li>
+<li>the current most popular visualisation of genomes and their annotation is through genome browsers. These work very well with linearly represented sequences and annotation tracks. The challenge is to visualise a graphical representation in an intuitive way</li>
+<li>closer to home, the <a href="https://hyperbrowser.uio.no/hb/">hyperbrowser statistical genomics framework</a> was developed at the University of Oslo around the concept of the genomic track (the hyperbrowser slogan is “If you have a genomic track, this is the place to analyze it!”). A graphical representation of a genome adds a layer of complexity, at the same time opening for new way of doing statistics on (groups of) genomes</li>
+<li>combining reference genomes of multiple species into a single graph requires handling of (imperfect or non-equivalent) annotations as well as structural variations between the chromosomes</li>
+</ul>
+<p><strong>Prior work</strong><br />
+The concept of representing (reference) genomes as graphs is attracting more and more attention. There are a few relevant published papers, see the bibliography at the end. Heng Li, author of, among other programs, BWA and Samtools has written an excellent summary <a href="http://lh3.github.io/2014/07/25/on-the-graphical-representation-of-sequences">blog post</a> in which he succinctly summarises the material, including prior work from computer science and computational biology.</p>
+<p>Two file formats to represent the graph been developed: <a href="http://fastg.sourceforge.net"><em>fastg</em></a> and <a href="http://lh3.github.io/2014/07/25/on-the-graphical-representation-of-sequences"><em>GFA</em></a>. Fastg has limited uptake, only two assembly programs (ALLPATHS_LG and SPAdes) will output in that format. GFA parsing is currently only experimentally in the <a href="https://github.com/bcgsc/abyss/tree/gfa">ABYSS assembler</a>, and also <code>vg</code> mentioned above is able to output it.</p>
+<p><strong>Why are we interested in Graph-based representations of reference genomes</strong><br />
+* we are involved in projects sequencing many individuals of the same species. For example, in <a href="http://www.aquagenome.uio.no/">the AquaGenome project</a> we will obtain short-read sequencing data for 1000 individuals of Atlantic cod. Making sense of this data will be helped hugely if we can use graph-based methods instead of a single linear reference genome<br />
+* other projects we contribute to will generate assemblies for different species with the aim of doing comparative genomics. We are interested in exploring graph-based methods also in this area<br />
+* the <a href="https://hyperbrowser.uio.no/hb/">Genomic hyperbrowser</a> group has many tools for comparing genomic tracks, and is interested in developing their analysis platform in the light of graph-based reference genomes</p>
+<p><strong>Conclusion</strong><br />
+‘The’ genome of ‘the’ human has been sequenced, gel by acrylamide gel, and new human genomes are being resequenced, flowcell by flowcell. Many organisms have similar reference genomes available now, and deviants are being determined against these genetic benchmarks. But my hope is that in the not too distance future, we'll have ways to truly represent the genomes of the 'variable populations of organisms' that Walsh and Marks rightly consider so fundamental for our understanding of biology.</p>
+<p><strong>Recent papers of relevance</strong><br />
+The UCSC genome browser group (Haussler D, Paten B) uploaded a few<br />
+highly relevant papers to arXiv in 2014 and 2015:</p>
+<ul>
+<li>Paten, Benedict, Adam Novak, and David Haussler. "Mapping to a reference genome structure." <a href="http://arxiv.org/abs/1404.5010">arXiv:1404.5010</a> (2014).</li>
+<li>Novak, Adam et al. "Canonical, Stable, General Mapping using Context Schemes." <a href="http://arxiv.org/abs/1501.04128">arXiv:1501.04128</a> (2015)</li>
+</ul>
+<p>Other important recent papers:</p>
+<ul>
+<li>Dilthey, Alexander et al. "Improved genome inference in the MHC<br />
+using a population reference graph." <a href="http://biorxiv.org/content/early/2014/07/08/006973.abstract">bioRxiv</a> (2014): 006973.</li>
+<li>Nguyen, Ngan et al. "Building a pangenome reference for a population." <a href="http://online.liebertpub.com/doi/abs/10.1089/cmb.2014.0146">Research in Computational Molecular Biology</a> (2014): 207-221.</li>
+<li>Church, Deanna M et al. "Extending reference assembly models." <a href="http://genomebiology.com/2015/16/1/13">Genome biology</a> 16.1 (2015): 13.</li>
+</ul>
+<p><strong>Further reading</strong><br />
+See the aforementioned summary <a href="http://lh3.github.io/2014/07/25/on-the-graphical-representation-of-sequences">blog post</a> by Heng Li with additional references from computer science and computational biology.</p>

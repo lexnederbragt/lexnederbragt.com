@@ -1,0 +1,225 @@
+---
+layout: post
+title: 'De novo bacterial genome assembly: a solved problem?'
+date: 2013-07-05 16:22:30.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+tags:
+- assembly
+- celera
+- hgap
+- pacbio
+meta:
+  _edit_last: '12058266'
+  _publicize_pending: '1'
+  twitter_cards_summary_img_size: a:6:{i:0;i:480;i:1;i:360;i:2;i:3;i:3;s:24:"width="480"
+    height="360"";s:4:"bits";i:8;s:4:"mime";s:9:"image/png";}
+  _oembed_6ba863d74e648ce7c429d418c4cf2410: '{{unknown}}'
+  _oembed_403d3eff5dfbd65844e64675ba9c12e1: '{{unknown}}'
+  _oembed_7ffba01d5c40d968c581ed8978168921: '{{unknown}}'
+  _oembed_d83d68c207e7f9b3f021d0a0a251688c: '{{unknown}}'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>Pacific Biosciences published <a href="http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2474.html">a paper</a> earlier this year on an approach to sequence and assemble a bacterial genome leading to a near-finished, or finished genome. The approach, dubbed Hierarchical Genome Assembly Process (HGAP), is based on only PacBio reads without the need for short-reads. This is how it works:</p>
+<ul>
+<li>generate a high-coverage dataset of the longest reads possible, aim for 60-100x in raw reads</li>
+<li>pre-assembly: use the reads from the shorter part of the raw read length distribution, to error-correct the longest reads, set the cutoff in such a way so that the longest reads make up about 30x coverage</li>
+<li>use the long, error-corrected reads in a suitable assembler, e.g. Celera, to produce contigs</li>
+<li>map the raw PacBio reads back to the contigs to polish the final sequence (rather, recall the consensus using the raw reads as evidence) with the Quiver tool</li>
+</ul>
+<p>The approach is very well explained on <a href="https://github.com/PacificBiosciences/Bioinformatics-Training/wiki/HGAP-1.4">this website</a>. As an aside, the same principle can now be used with the <a href="http://sourceforge.net/apps/mediawiki/wgs-assembler/index.php?title=PacBioToCA#Self-Correction_With_C2_Sequences_.28or_newer.29">PacBioToCA</a> pipeline.</p>
+<p><!--more-->In principle, this approach could result in a finished genome, i.e. a gapless contig per chromosomal element (chromosomes and plasmids). A more theoretical study confirms this:</p>
+<blockquote><p>"Our results indicate that the majority of known bacterial and archaeal genomes can be assembled without gaps, at finished-grade quality, using a single PacBio RS sequencing library." (Koren et al, <a href="http://arxiv.org/abs/1304.3752">arXiv:1304.3752</a>)</p></blockquote>
+<p>As always, the proof is in the pudding. There have been reports, and even a publication here and there, that the HGAp approach actually works. In this blog post I would like to add our experiences, which in short are that HGAP can indeed result in (close-to) finished genomes.</p>
+<p>At the <a href="http://www.sequencing.uio.no/">Norwegian Sequencing Centre</a>,with which I am affiliated, we recently received several bacterial genome DNA samples for PacBio sequencing. Given our very positive first experiences with size selecting PacBio libraries using the BluePippin, see <a href="http://flxlexblog.wordpress.com/2013/06/19/longing-for-the-longest-reads-pacbio-and-bluepippin/">my previous post</a>, we decided to use this instrument also for these samples. Four of the samples yielded very nice libraries, which were sequenced, two SMRTcells each, on our (recently upgraded) PacBio RSII instrument.</p>
+<p><strong>Raw reads</strong><br />
+We have never seen such long reads:</p>
+<table style="border-collapse:collapse;table-layout:fixed;width:600pt;" width="600" border="0" cellspacing="0" cellpadding="0">
+<col style="width:120pt;" span="5" width="120" />
+<tbody>
+<tr style="height:15pt;">
+<td style="height:15pt;width:120pt;" width="120" height="15"></td>
+<td style="width:120pt;" align="right"><span style="text-decoration:underline;">PB_0027</span></td>
+<td style="width:120pt;" align="right" width="120"><span style="text-decoration:underline;">PB_0028</span></td>
+<td style="width:120pt;" align="right" width="120"><span style="text-decoration:underline;">PB_0029</span></td>
+<td style="width:120pt;" align="right" width="120"><span style="text-decoration:underline;">PB_0031</span></td>
+</tr>
+<tr style="height:15pt;">
+<td style="height:15pt;" height="15"><strong>Count</strong></td>
+<td align="right">80512</td>
+<td align="right">58524</td>
+<td align="right">45514</td>
+<td align="right">84169</td>
+</tr>
+<tr style="height:15pt;">
+<td style="height:15pt;" height="15"><strong>Sum</strong></td>
+<td align="right">595 Mbp</td>
+<td align="right">462 Mbp</td>
+<td align="right">351 Mbp</td>
+<td align="right">669 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td style="height:15pt;" height="15"><strong>Av. (bp)<span style="display:none;">ngth</span></strong></td>
+<td align="right">7393</td>
+<td align="right">7893</td>
+<td align="right">7714</td>
+<td align="right">7951</td>
+</tr>
+<tr style="height:15pt;">
+<td style="height:15pt;" height="15"><strong>N50 (bp)</strong></td>
+<td align="right">10662</td>
+<td align="right">11205</td>
+<td align="right">11109</td>
+<td align="right">11162</td>
+</tr>
+<tr style="height:15pt;">
+<td style="height:15pt;" height="15"><strong>Largest (bp)</strong></td>
+<td align="right">24397</td>
+<td align="right">25552</td>
+<td align="right">23992</td>
+<td align="right">25678</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the average read length is much longer than the specifications of the RSII, which is about 4.6 kbp.</p>
+<p>These reads were then used in HGAP. We have smrtpipe, the analysis suite of Pacific Biosciences, installed, so I could simply make a file with the names of the input files, a default HGAP settings xml file, and run the whole thing on one of our big servers. The assemblies took about two days when given 32 CPUs and a lot of memory - I haven't logged how much RAM they actually used.</p>
+<p><strong>Pre-assembly</strong><br />
+Here are the results of pre-assembly, the correction of the largest 30x in raw reads with the rest of the reads:</p>
+<table style="border-collapse:collapse;table-layout:fixed;width:600pt;" width="600" border="0" cellspacing="0" cellpadding="0">
+<col style="width:120pt;" span="5" width="120" />
+<tbody>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;width:120pt;" width="120" height="15"></td>
+<td style="text-align:right;"><span style="text-decoration:underline;">PB_0027</span></td>
+<td style="text-align:right;"><span style="text-decoration:underline;">PB_0028</span></td>
+<td style="text-align:right;"><span style="text-decoration:underline;">PB_0029</span></td>
+<td style="text-align:right;"><span style="text-decoration:underline;">PB_0031</span></td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>Cutoff (bp)*</strong></td>
+<td style="text-align:right;">12106</td>
+<td style="text-align:right;">12077</td>
+<td style="text-align:right;">10371</td>
+<td style="text-align:right;">12780</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>Count</strong></td>
+<td style="text-align:right;">9186</td>
+<td style="text-align:right;">8636</td>
+<td style="text-align:right;">10059</td>
+<td style="text-align:right;">9252</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>Sum</strong></td>
+<td style="text-align:right;">107 Mbp</td>
+<td style="text-align:right;">100 Mbp</td>
+<td style="text-align:right;">106 Mbp</td>
+<td style="text-align:right;">110 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>Av. (bp)</strong></td>
+<td style="text-align:right;">11594</td>
+<td style="text-align:right;">11562</td>
+<td style="text-align:right;">10540</td>
+<td style="text-align:right;">11876</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>N50 (bp)</strong></td>
+<td style="text-align:right;">12519</td>
+<td style="text-align:right;">12770</td>
+<td style="text-align:right;">11513</td>
+<td style="text-align:right;">13120</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"><strong>Largest</strong></td>
+<td style="text-align:right;">20043</td>
+<td style="text-align:right;">19090</td>
+<td style="text-align:right;">19030</td>
+<td style="text-align:right;">18681</td>
+</tr>
+</tbody>
+</table>
+<p>*Cutoff: minimum length of seeds for error-correction.</p>
+<p>After pre-assembly, there was more than a 100 Mbp in error-corrected, potentially high-quality reads with an N50 higher than one sometimes see for contigs of a short-read bacterial genome assembly!</p>
+<p><strong>Assembly</strong><br />
+These 8 - 10 thousand reads were assembled by Celera, with Quiver polishing, into:</p>
+<table style="border-collapse:collapse;table-layout:fixed;width:600pt;" width="600" border="0" cellspacing="0" cellpadding="0">
+<col style="width:120pt;" span="5" width="120" />
+<tbody>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;width:120pt;text-align:right;" width="120" height="15"></td>
+<td class="xl66" style="width:120pt;text-align:right;" width="120"><span style="text-decoration:underline;">PB_0027</span></td>
+<td class="xl66" style="width:120pt;text-align:right;" width="120"><span style="text-decoration:underline;">PB_0028</span></td>
+<td class="xl66" style="width:120pt;text-align:right;" width="120"><span style="text-decoration:underline;">PB_0029</span></td>
+<td class="xl66" style="width:120pt;text-align:right;" width="120"><span style="text-decoration:underline;">PB_0031</span></td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;text-align:left;" height="15"><strong>Contigs</strong></td>
+<td class="xl66" style="text-align:right;">3.4 Mbp</td>
+<td class="xl66" style="text-align:right;">3.2 Mbp</td>
+<td class="xl66" style="text-align:right;">4.3 Mbp</td>
+<td class="xl66" style="text-align:right;">1.8 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"></td>
+<td class="xl66" style="text-align:right;">45 kbp</td>
+<td class="xl66" style="text-align:right;">76 kbp</td>
+<td class="xl66" style="text-align:right;">80kbp</td>
+<td class="xl66" style="text-align:right;">1.3 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;" height="15"></td>
+<td class="xl66"></td>
+<td class="xl66" style="text-align:right;">64 Kbp</td>
+<td class="xl66" style="text-align:right;"></td>
+<td class="xl66" style="text-align:right;">1.1 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;text-align:right;" height="15"></td>
+<td class="xl66" style="text-align:right;"></td>
+<td class="xl66" style="text-align:right;">45 Kbp</td>
+<td class="xl66" style="text-align:right;"></td>
+<td class="xl66" style="text-align:right;">0.95 Mbp</td>
+</tr>
+<tr style="height:15pt;">
+<td class="xl120" style="height:15pt;text-align:right;" height="15"></td>
+<td class="xl66" style="text-align:right;"></td>
+<td class="xl66" style="text-align:right;">17 kbp</td>
+<td class="xl66" style="text-align:right;"></td>
+<td class="xl66" style="text-align:right;">95 kbp</td>
+</tr>
+</tbody>
+</table>
+<p>Wow, mostly one laaarge contig (and I checked, these are without 'N' bases) and a few shorter ones. The exception was the last strain which assembled into a few large pieces, that together, according to what I understand, are too large. A further step for this assembly is trying the <a href="http://sourceforge.net/apps/mediawiki/amos/index.php?title=Minimus2">Minimus2</a> tool, to see whether there is enough overlap between the contigs to further reduce their number -  a step generally recommended for HGAp assemblies. I haven't tried this yet for this assembly.</p>
+<p>So, it looks like 'it just works'. Well, there was at least one case where a misassembly is suspected. Looking at the coverage plot (of the remapped raw pacbio reads) for the 4,3 Mbp contig of PB0029, we saw this:</p>
+<p>[caption id="attachment_437" align="aligncenter" width="480"]<a href="http://flxlexblog.files.wordpress.com/2013/07/pb0029_coverage.png"><img class="size-full wp-image-437" alt="Mapping coverage of raw PacBio reads to the largest contig of the PB_0029 assembly" src="{{ site.baseurl }}/assets/pb0029_coverage.png" width="480" height="360" /></a> Mapping coverage of raw PacBio reads to the largest contig of the PB_0029 assembly[/caption]</p>
+<p>The sudden jump in coverage after 1.2 Mbp points to a fusion of the sequences of two chromosomes - and in fact this is quite likely the case given what is know about these strains. For the others, it reamins to be seen whether the smaller pieces are in fact plasmids, or should be part of the major chromosome.</p>
+<p>A few remarks before I conclude:</p>
+<ul>
+<li>these four samples are clearly success stories</li>
+<li>all had modest GC percentages, around 35 - 50%</li>
+<li>we also have had a sample that didn't fragment very well and only yielded a 2 kbp insert library (giving CCS reads after sequencing)</li>
+<li>another strain didn't behave as well either, resulting in reads averaging 3.5 kbp - assembly for this one has not been started yet</li>
+<li>there is no reference genome for these samples, so assembly accuracy, and per-base quality, could not be assessed fully</li>
+</ul>
+<p><strong>Conclusion</strong><br />
+It looks like that for well-behaved samples, the approach of combining PacBio library creation, BluePippin size selection (optional, but highly recommended) and sequencing of two SMRTcells, works very well to give finished, or near finished bacterial genome assemblies. I want to emphasise the following, though: even though the assembly looks great, it is afterwards up to the biologist/researcher to make sure the contigs actually make sense given:</p>
+<ul>
+<li>the remapping of the reads</li>
+<li>what is known about the species (e.g. expected number of chromosomes)</li>
+<li>what is known about the sample (e.g., presence of plasmids)</li>
+<li>other, independent evidence, e.g. illumina reads, optical mapping results, etc</li>
+</ul>
+<p>The title of this post aks: "<em>De novo</em> bacterial genome assembly: a solved problem?". I dare to say we're pretty close...</p>
+<p><strong>A bioinformaticians side-note</strong><br />
+The bottleneck of the HGAp process was the two consensus calling steps: when the consensus of the longest reads are being called (based on the mapped shortest ones), and especially for the Celera contig consensus calling. The latter takes one contig at a time, and since these now are becoming millions of basepairs long, this can take up many hours, perhaps even half the total assembly time. By the way, overlapping the error-corrected reads was done in minutes... So, if someone is interested in developing a parallelised consensus caller, than can work with parts of a long contigs, and stitch the consensi back together when done, we bioinformaticians doing HGAP would be very grateful...</p>
+<p><strong>Acknowledgments<br />
+</strong>This post would not have been possible without the excellent skills of the NSC lab team, and I thank the owners of the Bacterial samples for which this post describes results for permission to use the metrics for this post. I apologize in advance for not being able to share the (raw and assembled) data presented here...</p>

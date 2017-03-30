@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://rroxford.github.io"
+url: "http://lexnederbragt.github.io"
 baseurl: ""
 paginate_path: "/blog/page:num/"
 
@@ -15,23 +15,32 @@ paginate_path: "/blog/page:num/"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Reproducible Research Oxford
+title: Lex Nederbragt
 
 # Short description of your site
-description: Working to promote a culture of research reproducibility at the University of Oxford
+description: Personal webpage of Lex Nederbragt
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
-  News: "blog"
-  Events: "events"
-  Contact: "contact"
+  Blog: "blog"
+  About:
+   - About me: "about"
+   - CV: "cv"
+   - Contact: "contact"
+  Links:
+    - University of Oslo: "http://folk.uio.no/alexajo"
+    - Github: "https://github.com/lexnederbragt"
+    - LinkedIn: "https://linkedin.com/in/lexnederbragt"
+    - Peer review: "https://publons.com/author/18712/alexander-j-nederbragt"
+    - FigShare: "https://figshare.com/authors/Lex_Nederbragt/100720"
+    - Slides: "https://figshare.com/collections/Slides_of_my_talks_presentations/3488832"
+    - Older slides: "https://www.slideshare.net/flxlex"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/avatar-icon.jpg"
+avatar: "/img/me.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -42,14 +51,14 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Reproducible Research Oxford
-  email: "ReproducibleResearchOxford@gmail.com"
+  name: Personal webpage of Lex Nederbragt
+  email: "lex dot nederbragt at gmail.com"
   # facebook: yourname  # eg. daattali
-  github: RROxford    # eg. daattali
-  twitter: RR_Oxford   # eg. daattali
+  github: lexnederbragt    # eg. daattali
+  twitter: lexnederbragt   # eg. daattali
   # reddit: yourname    # eg. daattali
   # google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  # linkedin: yourname  # eg. daattali
+  linkedin: lexnederbragt  # eg. daattali
   # xing: yourname      # eg. daattali
   # stackoverflow: yourlink  # eg. "3943160/daattali"
   # snapchat: yourname  # eg. daattali
@@ -60,14 +69,14 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: false
-  email: true
+  email: false
   twitter: true
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
@@ -79,13 +88,13 @@ footer-links-active:
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  facebook: false
   google: false
   linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "https://rroxford.github.io/"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "https://lexnederbragt.github.io/"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -110,11 +119,15 @@ title-separator: "-"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
+# Reading Files
+include:
+  - _pages
+
 # Output options (more information on Jekyll's site)
-timezone: "Europe/London"
+timezone: "Europe/Oslo"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
@@ -138,7 +151,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+link-tags: true
 
 # Exclude these files from production site
 exclude:

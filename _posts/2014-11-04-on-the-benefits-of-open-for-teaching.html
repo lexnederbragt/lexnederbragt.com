@@ -1,0 +1,68 @@
+---
+layout: post
+title: On the benefits of 'open' for teaching
+date: 2014-11-04 12:08:22.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Experiences
+tags:
+- assembly
+- Teaching
+meta:
+  _wpcom_is_markdown: '1'
+  _wpas_skip_facebook: '1'
+  _wpas_skip_twitter: '1'
+  _wpas_skip_linkedin: '1'
+  _wpas_skip_tumblr: '1'
+  _wpas_skip_path: '1'
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/GQsGgHvqqvA
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<h4>Open source, open data, open course</h4>
+<p>We recently had the third instalment of the course in <a href="https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H14">Throughput Sequencing technologies and bioinformatics analysis</a>. This course aims to provide students, as well as users of the organising service platforms, basic skills to analyse their own sequencing data using existing tools. We teach both unix command line-based tools, as well as the Galaxy web-based framework.</p>
+<p>I coordinate the course, but also teach a two-day module on <em>de novo</em> genome assembly. I keep developing the material for this course, and am increasingly relying on material openly licensed by others. To me, it is fantastic that others are willing to share material they developed openly for others to (re)use. It was hugely inspiring to discover material such as the assembly exercise, and the IPython notebook to build small De Bruijn Graphs (see below). To me, this confirms that 'opening up' in science increases the value of material many orders of magnitude. I am not saying that the course would have been impossible without having this material available, but I do feel the course has become much better because of it.</p>
+<h4>'Open' made this course possible</h4>
+<p>This course used:</p>
+<ul>
+<li>openly available sequencing data released by the sequencing companies (although some of the Illumina reads are behind a - free - login account)</li>
+<li>sequencing data made openly available by individual researchers</li>
+<li>code developed for teaching made available by individual researchers under a permissive license</li>
+<li>open source software programs</li>
+</ul>
+<p>(for a full list or resources, see <a href="https://github.com/lexnederbragt/INF-BIOx121_fall2014_de_novo_assembly/blob/master/Sources.md">this document</a>).</p>
+<p>I am extremely grateful to the authors/providers of these resources, as they greatly benefitted this course!</p>
+<p>Thanks to:</p>
+<ul>
+<li><a href="https://twitter.com/ctitusbrown">Titus Brown</a></li>
+<li><a href="https://twitter.com/BenLangmead">Ben Langmead</a></li>
+<li><a href="https://twitter.com/scalene">Josh Quick</a> and <a href="https://twitter.com/pathogenomenick">Nick Loman</a></li>
+<li><a href="https://twitter.com/illumina">Illumina</a> and <a href="https://twitter.com/pacbio">PacBio</a></li>
+</ul>
+<h4>'Opening up' is the least I can do to pay back</h4>
+<p>In exchange, the very least I can do is making my final course module <a href="https://github.com/lexnederbragt/INF-BIOx121_fall2014_de_novo_assembly">openly available as well</a>.</p>
+<p>The rest of this post describes the material and it's sources in more detail.</p>
+<p><!--more--></p>
+<h4>Assembly exercise</h4>
+<p>Here I used the excellent <a href="http://ivory.idyll.org/blog/the-assembly-exercise.html">tool developed by Titus Brown</a> to generate 'reads' from a piece of text. I started with a text based on a quote I found online, and modified it to add a few more repeated regions. Students received ~5x coverage in reads of 14 characters (spaces were replacers with underscores) and were asked in groups of 4 to 5 students to reconstruct the original text. I've added this part two years ago and it is a great way to start the module. Not only is there a lot of student activity, each group comes up with strategies that are aspects of algorithms actually used in programs for <em>de novo</em> assembly. Some cut out the reads with scissors, find overlapping ones and physically build the 'ladder'. Others use a text editor for this, and put the consensus sequence below. Students keep track of reads they already used. Some start at multiple sections, or draw connections between the reads. Usually, at least one group googles the first part they reconstruct, find the original text and do 'reference guided assembly' (they often think they're done, at which point I ask them to check the online version with the reads they were given).</p>
+<p>[caption id="attachment_614" align="alignleft" width="300"]<a href="https://flxlexblog.files.wordpress.com/2014/11/2014_asm_exercise2.jpg"><img class="wp-image-614 size-medium" src="{{ site.baseurl }}/assets/2014_asm_exercise2.jpg?w=300" alt="Different approaches for the assembly exercise" width="300" height="154" /></a> Different approaches for the assembly exercise[/caption]</p>
+<p><a href="https://flxlexblog.files.wordpress.com/2014/11/2014_asm_exercise1.jpg"><img class="alignright wp-image-615 size-medium" src="{{ site.baseurl }}/assets/2014_asm_exercise1.jpg?w=225" alt="2014_asm_exercise1" width="225" height="300" /></a></p>
+<h4>Playing around with small De Bruijn Graphs</h4>
+<p>This part I added this year. Reusing the very useful <a href="http://nbviewer.ipython.org/github/BenLangmead/comp-genomics-class/blob/master/notebooks/CG_deBruijn.ipynb">python code generated by Ben Langmead</a> for his computational genomics classes, I made an IPython notebook where students could build small de Bruijn Graphs at different kmer sizes. This showed them how longer kmers resolve repeats, as well as that too long kmers reduce overlaps between reads. Also, the graphs were excellent to demonstrate the effect of single-base errors in reads (build a graph based on 5 identical reads, add one read with a single base change in the middle to visualise that many new nodes are added to the graph because of this). Check out the results <a href="http://nbviewer.ipython.org/urls/gist.githubusercontent.com/lexnederbragt/c4dac59798a962573fba/raw/4e8b238e5da4aff81b160f02600005139980ad6a/DeBruijnGraph.ipynb">here</a>.</p>
+<p>[caption id="attachment_612" align="alignright" width="166"]<a href="https://flxlexblog.files.wordpress.com/2014/11/dbg_gctgatcgattt_k_3.png"><img class="wp-image-612 size-medium" src="{{ site.baseurl }}/assets/dbg_gctgatcgattt_k_3.png?w=166" alt="De Bruijn Graph of the sequence &quot;GCTGATCGATTT&quot; at k = 3" width="166" height="300" /></a> De Bruijn Graph of the sequence "GCTGATCGATTT" at k = 3[/caption]</p>
+<h4>Assembly using Velvet</h4>
+<p>The structure of this part was developed by Nick Loman when he came over to help me teach the very first instance <a href="https://github.com/lexnederbragt/denovo-assembly-tutorial">back in 2011</a>. Students run velvet on MiSeq reads <a href="http://www.illumina.com/science/data_library.ilmn">released by Illumina</a>, each with their own kmer size, and the resulting N50s are plotted against kmer size in a google spreadsheet (see this year spreadsheet <a href="https://docs.google.com/spreadsheet/ccc?key=0AvVu8X5Bmn8EdFRlVGxWRHZhSW1pSlVZbTM3QkJFR2c#gid=0">here</a>). This graph builds over time and beautifully shows how the N50 peaks at a certain kmer. Then paired end information and mate pairs (also <a href="https://basespace.illumina.com/project/294296/Nextera-Mate-Pair-E-Coli">released by Illumina</a>) are added.</p>
+<h4>Assembly using HGAP or SPAdes</h4>
+<p>The course ran on a Thursday and the following Monday. This enabled me to ask the students to start a long-running assembly at the end of day 1 (we had 2 CPUs and about 32GB RAM per student). Students could choose to assembly a pure PacBio dataset (<a href="https://github.com/PacificBiosciences/DevNet/wiki/E.-coli-20kb-Size-Selected-Library-with-P4-C2">from the company</a>) with HGAP, or a combined Illumina paired end + Oxford Nanopore MinION dataset with SPAdes. The MinION data was <a href="http://gigadb.org/dataset/100102">released by Nick Loman et al</a> shortly before the course started, making this the first course to use actual MinION data for a hands-on practical.</p>
+<h4>Assembly evaluation</h4>
+<p>Students mapped reads back to the assemblies using bwa and visualised alignments in the IGV genome browser. Quality was assessed with <a href="http://www.sanger.ac.uk/resources/software/reapr/">REAPR</a>, which also indicated where it thought the assembly should be broken due to conflicts with the mate pair data. Students visually inspected the regions indicated by REAPR and were asked to decide whether they agreed with the program. This part was deliberately ran without the reference genome, although this was available. I wanted to teach the students how to perform validation in the absence of a ground-truth reference (given more time, I would have probably repeated this part with the reference).</p>

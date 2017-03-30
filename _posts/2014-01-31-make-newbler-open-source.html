@@ -1,0 +1,40 @@
+---
+layout: post
+title: Make Newbler open source
+date: 2014-01-31 09:40:52.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- '454'
+- newbler
+- reproducible science
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '12058266'
+  draftfeedback_requests: a:1:{s:13:"52e6150752caf";a:3:{s:3:"key";s:13:"52e6150752caf";s:4:"time";s:10:"1390810375";s:7:"user_id";s:8:"12058266";}}
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/Wb8whxf5WUK
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+  _wpas_skip_6015510: '1'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>(Cross-posted at <a href="http://contig.wordpress.com/2014/01/31/cross-posted-make-newbler-open-source-2">contig.wordpress.com</a>)</p>
+<p>[caption id="attachment_482" align="alignright" width="256"]<a href="http://flxlexblog.files.wordpress.com/2014/01/typical_newbler_output.jpg"><img class=" wp-image-482" title="Typical newbler assembly output" alt="Typical newbler assembly output" src="{{ site.baseurl }}/assets/typical_newbler_output.jpg" width="256" height="365" /></a> Typical Newbler assembly output[/caption]</p>
+<p>The Newbler assembler and mapper (gsAssembler, gsMapper) was developed especially for working with the reads from the Roche/454 Life Science sequencing technology. It is one of the best programs to deal with this type of data, scoring well in the <a href="http://www.gigasciencejournal.com/content/2/1/10">assemblathon 2 competition</a>. Newbler has been used for many large and small genome assemblies (numerous bacteria, Atlantic cod, bonobo, tomato, to name a few). Recently, Newbler has added support for using multiple sequencing technologies, making it one of the few hybrid assembly programs available. At the Advances in Genome Biology and Technology (AGBT) in 2013, <a href="http://www.roche.com/media/media_releases/med_dia_2013-02-22.htm">Roche announced</a> having used the Newbler program with a hybrid 454 and Illumina dataset to improve upon the human genome.</p>
+<p>However, the Newbler program is not open source. Luckily, researchers only need to fill out an <a href="http://454.com/contact-us/software-request.asp">online form</a> to get a free copy of the software. Still, this has hampered the wide-spread adoption of this program. Newbler, for example, was not included in assembly evaluations like <a href="http://gage.cbcb.umd.edu/assemblers/index.html">GAGE</a> and <a href="http://ccb.jhu.edu/gage_b/genomeAssemblers/index.html">GAGE-B</a>. That Roche/454 does not want to make the source code for Newbler available is partly understandable from a commercial standpoint: at least one competitor technology (Life Tech/Ion Torrent) with a similar sequencing error-model could benefit from access to the code. In fact, <a href="http://flxlexblog.wordpress.com/2012/03/02/ion-torrent-mate-pairs-and-a-single-scaffold-for-e-coli-k12-substr-mg1655/">in a blog post</a>, I showed Newbler to be superior to an open-source program when assembling Ion Torrent mate-pair data.</p>
+<p>More worringly is that the hundreds of projects that used Newbler as part of the analysis are fundamentally irreproducible without the source code for each of the different versions. This is especially the case for projects, such as the <a href="http://www.codgenome.no">Atlantic cod genome project</a>, that have been given access to development versions of the code, incorporating elements not available to the general community.</p>
+<p>Last October, <a href="http://www.genomeweb.com/sequencing/roche-shutting-down-454-sequencing-business">Roche announced</a> it will shutdown its 454 sequencing business in mid-2016. Whatever one may feel about this decision, this further strengthens the argument for Roche/454 to make the Newbler source code open source. After the 454 shutdown, Newbler is otherwise likely to disappear too, meaning that large swathes of the literature cannot be recapitulated from the raw data. Also, long after the 454 shutdown, many researchers will have to process their 454 sequencing data, and many may still want to rely on Newbler for that purpose.</p>
+<p>There are several other reasons why I feel the research community should be given access to the source code of Newbler. Newbler represents a very valuable contribution to the field of genome assembly and mapping. Software developers can learn from the algorithms and implementations of the Newbler code, opening up for reusing these in other programs. Also, there is the hope that developers will improve upon the program, for example by adding support for other sequencing technologies, or assembling with reads longer than the current maximum of 2 kbp.</p>
+<p>So I hereby ask the readers of this blog for help: I have set up an online petition asking for Roche/454 to make the Newbler source code available at the latest at the time of the 454 shutdown. <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHRvZDFUcldvZXVnWmhvSnlMWDBLQ1E6MA"><strong>Please sign the petition here</strong></a>. Additionally, spread the word (e.g., on twitter or your own blog). Thanks in advance!</p>
+<p>I intend to hand over the results of the petition to a Roche representative at the Advances in Genome Biology and Technology (AGBT) meeting (February 12-15, 2014).</p>
+<p>Finally, feel free to use the comments to tell me about your Newbler experiences!</p>
+<p>(Thanks to <a href="https://twitter.com/pathogenomenick">Nick Loman</a> for his constructive comments on an earlier version of this post)</p>

@@ -1,0 +1,144 @@
+---
+layout: post
+title: Ion Torrent Mate Pairs and a single scaffold for E coli K12 substr. MG1655
+date: 2012-03-02 15:44:58.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- assembly
+- Ion Torrent
+- newbler
+meta:
+  _edit_last: '12058266'
+  _oembed_5fe07f1eaa55c4f8df611c83837da1e8: '{{unknown}}'
+  _oembed_0cd392f480f4bf2a144c91b3385c6b69: '{{unknown}}'
+  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1423199111;}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>(The impatient reader might want to skip to the conclusion at the end of this post...)</p>
+<p>Last wednesday, Ion Torrent released a <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2656">tech note</a> and <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2265">associated run data</a> with shotgun (single-end) and Mate Pair runs for Escherichia coli K12, substrain MG1655. Both a 3.5 kb and 8.9 kbp insert size, as well as a shotgun library, were sequenced on a 316 chip each. In the tech note, they describe assemblies using different combinations of the data, and show how adding the mate pairs yields assemblies with fewer scaffolds and gaps. The Ion mate-pair protocol is very similar to the one used by 454 Life Sciences for their (unfortunately called) Paired-end libraries: long fragments are circularized using a linker sequence, and sequencing is peformed across this linker, allowing for easy identification of the pair halves.</p>
+<p>This is the first real 'long-distance' Mate Pair data from Ion Torrent, which is exciting and made me have a close look at it. I was especially interested in how the newbler program, developed by 454 Life Science for their 454 reads, would perform on these data.</p>
+<p><strong><!--more-->Mapping</strong></p>
+<p>First, some impressive numbers: the mate pair runs yielded 2.5 - 3 million reads (average lengths 192 and 200 bp). When you generate these kinds of libraries for bacterial genomes using 454, one would ordinarily sequence 1 lane of a plate divided into 8 lanes, and get less then 1 tenth of the throughput.</p>
+<p>I first mapped the mate pair runs to the reference genome sequence using gsMapper from the newbler software suite. I immediately came across the first problem: the linker sequence used by Ion is different from the one used by 454. This means that newbler does not recognize the reads as mate pairs. I am really hoping a future version of newbler will allow for custom mate pair linker sequences, but given that Ion Torrent is a big competitor for Roche/454, I doubt this will ever happen...</p>
+<p>So, I resorted to what Ion also used: taking the sff_extract program to split the mate pair reads, and outputting them as fasta and qual files. Examining the results showed that 37% of the reads from the 3.5kb run were mate pairs (had the linker according to sff_extract), and 25% for the 8.9 kbp run. The remainder of the reads were shotgun reads. As for the 454 mate pair protocol, there is always going to be a fraction of non-linker-containing reads. However, the fractions for the Ion runs are considerably higher than what we usually get for 454 mate pair ('paired end') runs. However, the higher throughput with Ion Torrent more than compensates for the low fraction of mates.</p>
+<p>After extracting the pair halves, I adjusted the files so that newbler would accept them as mate pairs, and performed mapping using newbler (gsMapping/runMapping program). Then I plotted the distances between the mapped mate halves for both libraries:<br />
+<a href="http://flxlexblog.files.wordpress.com/2012/03/march2012_allpairdist.jpg"><img class="alignnone size-full wp-image-198" title="March2012_AllPairDist" src="{{ site.baseurl }}/assets/march2012_allpairdist.jpg" alt="" width="480" height="480" /></a></p>
+<p>The figure shows a nice distribution with sharp peaks around 3.3kb and 9kb, respectively, confirming the mapping shown in Ion Torrents tech note.</p>
+<p><strong>Assembly</strong></p>
+<p>Next, I set out to perform assemblies. Ion Torrent provided files with reduced amounts of reads so that there would be about 20X and 40X coverage of the 5.4 Mbp genome. I decided to use these files, rather than make my own scaled down versions. I do note, however, that the 20X and 40X files of the mate pair library runs mostly contain mate pair reads, and very few singletons (based on the sff_extract results). Whether Ion determined which reads were mate pair reads by mapping to the reference genome, or by using sff_extract, and only taking reads that were split along the linker, I cannot tell (in a real <em>de novo</em> setting, the second option is the only possible, of course).</p>
+<p>The table below shows metrics for five assemblies. The first two are described in the Ion Torrent tech note as being done using MIRA for contig building and SSPACE for scaffolding:<br />
+- the first column is for the shotgun (single-end, fragment reads) only contigs<br />
+- the second column for the scaffold.<br />
+Column 3 to 5 describe the three assemblies I produced for this post using newbler:<br />
+- using the shotgun reads only (40X coverage)<br />
+- using shotgun (20X) plus the 3.5 kb and 8.9 kb mate pair reads (20X each)<br />
+- using shotgun (20X) plus the 3.5 kb and 8.9 kb mate pair reads (20X each) but with the addition of the 'scaffold' option; newbler here fills gaps caused by repeats with a consensus sequence of the repeat copies</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/03/march2012_assemblies3.jpg"><img class="alignnone size-full wp-image-208" title="March2012_Assemblies" src="{{ site.baseurl }}/assets/march2012_assemblies3.jpg" alt="" width="480" height="323" /></a></p>
+<p>Newbler manages to generate a single scaffold for the this genome! (the second scaffold in the '20X SG+20X MP' assmbly is a contig larger than 2 kb, which newbler automatically lists under the scaffolds). However, the contigs produced by MIRA are longer than those produced by newbler. Also, MIRA assembled the genome into fewer contigs compared to newbler, and with less gap bases. Looking closer at the MIRA/SSPACE scaffolds shows that the genome is in fact assembled in four large pieces of 2.3 Mbp, 1.3 Mbp, 700 kbp and 200 kbp, with another 10 kbp scaffold (rRNA?) and 17 very small scaffolds.</p>
+<p>I tried different assembly strategies, but I could not improve on the N50 and longest size reported here. By the way, the N50 contig size in brackets is for the scaffolded contigs in the '-scaffold' assembly, where gaps have been filled using consensus repeat sequences, thereby merging contigs into single, bigger ones.</p>
+<p>Reducing the coverage to 20X shotgun + 10X mate pair (each library), or even 20X shotgun and only the 8.9 kbp mate pair reads also resulted in a single scaffold for the genome ('not shown').</p>
+<p>Now, it is nice to have 'better' assemblies in terms of contig or scaffold lengths, but how good are these, really? Luckily, we can compare the assemblies to the reference genome. For this, I used <a href="http://code.google.com/p/ngopt/">Mauve Assembly Metrics</a> (see also Nick Loman's post about this program <a href="http://pathogenomics.bham.ac.uk/blog/2011/08/assessing-assembly-quality-with-mauve-assembly-metrics/">here</a>). (Due to a bug in the Mauve, at least that is what I think caused the crash, I could not get the '-scaffold' newbler assembly analysed). The program gives a lot of results, but I will only share the most important ones here. First, the alignment of the scaffolds against the reference (scaffolds reordered relative to the reference genome for the Ion Torrent assembly). Newbler scaffolds:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/03/march2012_newbler_scafs1.jpg"><img class="alignnone size-full wp-image-214" title="March2012_Newbler_scafs" src="{{ site.baseurl }}/assets/march2012_newbler_scafs1.jpg" alt="" width="480" height="221" /></a></p>
+<p>MIRA/SSPACE (done by Ion Torrent) scaffolds:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/03/march2012_ion_mira_scafs.jpg"><img class="alignnone size-full wp-image-215" title="March2012_Ion_MIRA_scafs" src="{{ site.baseurl }}/assets/march2012_ion_mira_scafs.jpg" alt="" width="480" height="221" /></a></p>
+<p>Whereas the alignment is perfect for the single newbler scaffold, the MIRA/SSPACE scaffolds show numerous misassemblies (vertical red bars depict scaffold boundaries).</p>
+<p>Some numbers from Mauve:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2012/03/march2012_mauve1.jpg"><img class="alignnone size-full wp-image-218" title="March2012_Mauve" src="{{ site.baseurl }}/assets/march2012_mauve1.jpg" alt="" width="480" height="136" /></a></p>
+<p>SNPs seems to be the sum of uncalled bases  ('N's) and miscalled bases. Newbler seems to be able to assemble with fewer miscalled bases, but with many more uncalled bases (although Mauve reports far fewer than the assembly does). I don't really understand the difference between gaps in the reference and in the assembly. MIRA misses fewer bases (gaps), but it's contigs (not it's scaffolds) have more extra bases (insertions). Also, the set of newbler contigs contains some few (probably very small) contigs that could not be mapped to the reference genome. Finally, the number of intact and broken CDSs (coding sequences of genes) numbers don't surprise me, as the contigs of MIRA are so much longer, they are able to capture much more of the gene space. MIRA contigs already have 98% of the CDSs complete.</p>
+<p><strong>Conclusions</strong></p>
+<p>Ion Torrent seems to have done a good job in enabling mate pair sequencing on their platform, with nice tight size distributions, and impressive throughput relative to 454. These mate pair reads, together with the shotgun (single end) reads, are very useful for <em>de novo</em> assembly. The <em>de novo</em> assembly approach Ion Torrent chose, using sff_extract, MIRA and SSPACE, seems to be giving quite long contigs, with almost all genes complete. However, newbler outperfoms SSPACE in scaffolding. Newbler is able to assemble the reads into a single scaffold, even with shotgun reads only supplemented with the 8.9 kb mate pairs. However, newbler's algorithm is not able to produce as long contigs as MIRA does. So, a viable strategy for <em>de novo</em> assembly, using Ion Torrent shotgun (single end) plus mate pair reads, would be to generate contigs with MIRA, contigs and scaffolds with newbler, and elongate the newbler contigs with the MIRA contigs to reduce the number of gaps in the newbler scaffold(s). What is missing from this analysis, though, is a comparison of a similar assembly using 454 reads, something I hope to be able to do in the near future...</p>
+<p>With adding the possibility of long insert mate pair library construction and sequencing, Ion Torrent has moved into another niche of Roche/454 Life Sciences. With the fast run time and high throughput of the PGM relative to the 454, Ion Torrent is on its way to become a viable option for<em> de novo</em> small genome sequencing. Apparently, making longer insert libraries (&gt; 10kb) is cumbersome using the Illumina protocols, but not so much with the 454 version, and hopefully also feasible with the Ion Torrent protocol. In addition, the use of a linker allows for easy separation of the mate halves relative to the linker-less Illumina mate-pair reads. It remains to be seen, though, if research groups are able to generate these mate pairs independent of the Ion Torrent labs.</p>
+<p><strong>Code Used</strong><br />
+(As always, let me know in the comments if things are unclear of missing, or didn't work out for you.)</p>
+<p><em>Data and programs</em><br />
+I downloaded some of the sequencing run files mentioned in the <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-2656">tech note</a>, and unzipped them. For the 'whole run' files, I needed a newer version of unzip than the default installed on our system. So, I downloaded that from <a href="http://www.info-zip.org/">http://www.info-zip.org/</a>. I also downloaded the MIRA assemblies, the linker sequence file and the reference sequence, but for the annotated version (for Mauve), I went to Genbank instead.<br />
+I download <a href="http://bioinf.comav.upv.es/_downloads/sff_extract_0_2_13">sff_extract 0.2.13</a> and, since it needs this program to find the linkers, <a href="ftp://ftp.sanger.ac.uk/pub4/resources/software/ssaha2/ssaha2_v2.5.5_x86_64.tgz">ssaha 2.5.5</a>. I also installed <a href="http://asap.ahabs.wisc.edu/mauve/download.php">Mauve 2.3.1</a> and <a href="http://code.google.com/p/ngopt/wiki/How_To_Score_Genome_Assemblies_with_Mauve">Mauve assembly metrics scripts</a>.</p>
+<p><em>Preparing the reads<br />
+</em>For getting the mate pairs split along the linker, I used (for runs FRA-257 and C28-140)</p>
+<p><code>sff_extract_0_2_13 -c -l LMP_Linkers.fasta somefile.sff<br />
+</code><br />
+<em></em>The '-c' option ensures the clipping points present in the sff file are used to give trimmed sequences. This takes quite some time and uses a lot of space on /tmp (I could only run one sff_extract at a time). This gives three files: a fasta file, a corresponding qual file, and an xml file which I didn't need (but MIRA, for example, needs it).</p>
+<p>The sequence headers of the resulting fasta files look like this:</p>
+<p><code>&gt;PT1DY:2303:781.r<br />
+&gt;PT1DY:2303:781.f<br />
+</code><br />
+(for the forward and reverse half, respectively).</p>
+<p>In order for newbler to accept these reads as paired (mate pairs), they need to look like this:</p>
+<p><code>&gt;PT1DY:2303:781.r template=PT1DY:2303:781 dir=r library=FRA-257_3.5kb<br />
+&gt;PT1DY:2303:781.f template=PT1DY:2303:781 dir=f library=FRA-257_3.5kb<br />
+</code><br />
+I used the following command to change the headers:</p>
+<p><code>cat FRA-257_3.5kb.fasta |awk '{if (!/&gt;/){print $0}<br />
+else{split($1,e,"."); print $1" template="substr(e[1],2)" dir="e[2]" library=FRA-257_3.5kb"<br />
+}}' &gt;FRA-257_40X_for_newbler.fasta</code></p>
+<p>Same for the corresponding 'qual' file. <em>Important</em>: in order for newbler to incorporate the quality vaules, the qual file needs to have the same name, with 'fasta' replaced by 'qual', so in this case 'FRA-257_40X_for_newbler.qual'</p>
+<p>I adjusted the 'library=' accordingly for the 8.9 kbp mate pair reads.</p>
+<p><em>Read statistics</em></p>
+<p><em></em>In order to get the statistics for the percentage of mate pair reads, I used the sff_extract output. this program will annotate reads as being 'f' and 'r', mate par halves, 'fn', no-mate pair read (regular shotgun read), and 'part#', when only a partial linker was found. As an example, for the full run for the 3.5 kbp library, FRA-257, I used these commands.</p>
+<p>To summarize the different sff_extract 'categories' (with output from the command):</p>
+<p><code>cat FRA-257.fasta |awk '/&gt;/ {split($1,a,"."); x[a[2]]++}END{for(i in x){print i"\t"x[i]}}'<br />
+fn 1557426<br />
+f 880617<br />
+r 880617<br />
+part1 23495<br />
+part2 22337<br />
+part3 5<br />
+</code><br />
+To get the total number of unique reads:</p>
+<p><code>cat FRA-257.fasta |awk '/&gt;/ {split($1,a,"."); x[a[1]]++}END{for(i in x){print i"\t"x[i]}}' |wc -l<br />
+2461538<br />
+</code><br />
+So, 1557426 'fn' reads out of 2461538 = 63%, leaving 37% of reads being mate pairs.</p>
+<p><em>Mapping</em></p>
+<p>Using newbler 2.6, and with the provided reference file (MG1655.fasta), I ran:</p>
+<p><code>runMapping -o map_all_matepair MG1655.fasta FRA-257_for_newbler.fasta C28-140_for_newbler.fasta<br />
+</code><br />
+(newbler will recoginze the '.qual' file if has the same name, and is located in the same folder as the '.fasta' file).</p>
+<p>For plotting the insert distances, I used the following R script:</p>
+<p><code># extract from the 454PairStatus.txt file:<br />
+# - the first 5 characters from the read name<br />
+# - the pair-halves distances</p>
+<p>d = read.table(pipe("cat 454PairStatus.txt | awk '$3&gt;0{print substr($1,1,5),$3}'"), header=T)</p>
+<p># 3.5 kb library<br />
+h3=hist(d[d$Templ=="PT1DY",2],breaks=0.25*max(d$Distance),plot=F)<br />
+peak3=h3$mids[which(h3$counts==max(h3$counts))]</p>
+<p># 8.9 kb<br />
+h9=hist(d[d$Templ=="6S604",2],breaks=0.25*max(d$Distance),plot=F)<br />
+peak9=h9$mids[which(h9$counts==max(h9$counts))]</p>
+<p>pdf("AllPairDist.pdf")<br />
+plot(h3$mids,h3$counts,type="l",xlim=c(0,12000),main="Mapped paired-end distances",xlab="distance (bp)", ylab="Count")<br />
+lines(h9$mids,h9$counts, col="blue")<br />
+abline(v=peak3,lty=6,col=gray(0.4))<br />
+text(peak3,100,labels=round(peak3))<br />
+abline(v=peak9,lty=6,col=gray(0.4))<br />
+text(peak9,100,labels=round(peak9))<br />
+legend(x="topright", legend=c("3.5 kbp, FRA-257","8.9 kbp, C28-140"),text.col=c("black","blue"),bg=gray(1))<br />
+dev.off()<br />
+</code><br />
+Note how, instead of reading in the entire 454PairStatus.txt file, I use the 'pipe' trick of R to get the output of a shell command instead...</p>
+<p><em>Assemblies</em></p>
+<p>Using again newbler 2.6, I ran, for instance:</p>
+<p><code>runAssembly -o 20xSG+20xMP  -p FRA-257_20X_for_newbler.fasta -p C28-140_20X_for_newbler.fasta C11-127_20X.sff</code></p>
+<p>The '-p' flag forces newbler to trat the files as mate pairs (paired end, in newbler technology). I used the native sff file for the shotgun run.</p>
+<p>Assembly statistics were obtained using my <a href="http://sourceforge.net/projects/newblertools/files/newblermetrics">newblermetrics </a>script, MIRA assembly metrics were from the tech note.</p>
+<p><em>Mauve</em></p>
+<p>I first collected the genbank reference file, and relevant assemblies (either contigs, or scaffolds) in a single folder, but rather then copying the files, I made symlinks to them. Then, I used a shell script to run this programn, as per the website:</p>
+<p><code>export PATH=$PATH:/path/to/mauve_snapshot_2011-07-18<br />
+export CLASSPATH="/path/to/mauve_snapshot_2011-07-18/ext/*"</p>
+<p># run the scoring<br />
+java -cp /path/to/mauve_snapshot_2011-07-18/Mauve.jar org.gel.mauve.assembly.ScoreAssembly -reference NC_000913.gbk -assembly Ion.fa -reorder Ion -outputDir Ion<br />
+java -cp /path/to/mauve_snapshot_2011-07-18/Mauve.jar org.gel.mauve.assembly.ScoreAssembly -reference NC_000913.gbk -assembly newbler.fa -reorder newbler -outputDir newbler</p>
+<p># Generate plots of metrics<br />
+# ./ indicates the parent directory containing the assembly scoring directories -- the current working directory in our example<br />
+mauveAssemblyMetrics.pl ./</code></p>
+<p>I opened the 'alignmentx' file in mauve from the 'alignmentx' folder with the highest number. The table was based on the 'summaries.txt' files produced.</p>

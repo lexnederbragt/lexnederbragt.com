@@ -1,0 +1,148 @@
+---
+layout: post
+title: There is more (length) to Ion Torrent reads than meets the eye (and is Ion
+  Torrent hiding it?)
+date: 2011-06-16 09:17:28.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- Ion Torrent
+- sff
+meta:
+  _edit_last: '12058266'
+  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1412781198;}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p><em>A quick summary for the impatient:</em></p>
+<p>The sff files from the E coli Ion Torrent runs released by EdgeBio show much longer <em>raw</em> reads than the trimmed reads in the corresponing fastq/fasta files. The quality of those extra bases, however, is very low. This shows the potential for longer reads from the Ion Torrent platform.<br />
+The sff file released by Ion Torrent through their Dev Community site has these extra bases masked, which makes one wondering what if are trying to hide something...</p>
+<p><strong>Part 1: EdgeBio's data</strong><br />
+When EdgeBio released six runs with E coli DH10B Ion Torrent data (see http://www.edgebio.com/blog/?p=191), I decided to have a look inside the sff files they provided. I downloaded the data from data.edgebio.com, and used Roche's sffinfo command to 'peek inside'. The sffinfo command, accompanying the 454 Life Science software suite, will list the content of the binary sff file in text format (see the post <a href="http://contig.wordpress.com/2010/10/28/newbler-input-i-the-sff-file/">on my other blog</a>). Other, open source/access tools, such the ones my mention on my blog, might do this as well.<br />
+<!--more--> Here are the 'header' (manifest) part and the first read of DH10B-run01:</p>
+<blockquote><p><code>Common Header:<br />
+Magic Number: 0x2E736666<br />
+Version: 0001<br />
+Index Offset: 0<br />
+Index Length: 0<br />
+# of Reads: 320872<br />
+Header Length: 256<br />
+Key Length: 4<br />
+# of Flows: 220<br />
+Flowgram Code: 1<br />
+Flow Chars: TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACG<br />
+Key Sequence: TCAG<br />
+&gt;8UBVS:4:16<br />
+Read Header Len: 32<br />
+Name Length: 10<br />
+# of Bases: 141<br />
+Clip Qual Left: 5<br />
+Clip Qual Right: 83<br />
+Clip Adap Left: 0<br />
+Clip Adap Right: 116<br />
+Flowgram: 1.00 0.03 0.97 0.00 0.09 0.94 0.00 0.93 0.98 0.04 0.00 1.05 0.00 0.93 0.00 1.84 0.00 0.00 1.01<br />
+...<br />
+Flow Indexes: 1 3 6 8 9 12 14 16 16 19 20 20 22 22 22 23 25 26 29 29 32 33 35 36 39 41 43 46 48 48 50 50 50 51 51 54<br />
+...<br />
+Bases: tcagTGAGGCGGAAACTATTGTCGCTCAGGAAACCAGCGAATTTATGGCGTGGCTGCGAGCACAAAGC<br />
+CGCCAGCGAAACCAActtcgcggagtatacgccgagccagggaccagactggagactgaccaggacacagac<br />
+Quality Scores: 32 32 32 32 32 32 32 32 22 26 26 22 26 26 14 26 26 12 20 10 20 26 26 26 26 26 26 26 26 22 32 29 17 29 19 26<br />
+...</code></p></blockquote>
+<p>For sake of space, I cut short a few very long lines (indicated with '...'). A full explanation of the output is given in my <a href="http://contig.wordpress.com/2010/10/28/newbler-input-i-the-sff-file/">blogpost</a>.<br />
+Of note is the line that says</p>
+<blockquote><p><code># of Flows: 220</code></p></blockquote>
+<p>Each flow is one base, in the order TACG, so there are 55 cycles of 4 flows. Note that the first instrument from 454, GS20, ran 42 cycles (168 flows), the GS FLX ran 100 (400 flows) and the current GS FLS Titanium runs 200 cycles (800 flows). The coming upgrade (when, Roche?) is supposed to give 400 cycles, 1600 flows...</p>
+<p>I once looked into the number of bases one gets on average per cycle (of four flows), and this is remarkably close to 2.5. I basically chopped up E coli and human chromosomes into 'cycles' using flows in the order 'TACG' and counted how many T's, A,'s C's and G's were actually read each cycle (I might write about this in another blog post). For the 454 instrument, the read length distributions, slightly depending on GC content, actually peaks around the then expected number of bases:<br />
+- the GS20, at 42 cycles, peaked around 100 bases<br />
+- GS FLX, 100 cycles, had a ~250 bases read length<br />
+- GS FLX Titanium, 200 cycles, peaks nicely at 500 nt.<br />
+Note that the expected output of the upcoming upgrade, supposedly at 400 cycles, actually seems to peak at 850 nt. Why this is I might have to look into once data become available...</p>
+<p>Now, for the IonTorrent, at 220 flows and 55 cycles, one would expect a peak around 135.7. But the edgeBio data peaks at 107.5 bases!<br />
+If we look at the sff file data for the first read, it says</p>
+<blockquote><p><code> # of Bases: 141<br />
+Clip Qual Left: 5<br />
+Clip Qual Right: 83</code></p></blockquote>
+<p>So, the clipped read is 79 bases long (from position 5 to 83, including), but the raw read is indeed much longer. For this particular read, there is an adapter detected at the end, but for the majority of the reads in this file this is not the case.<br />
+Note that the reported sequence has the clipped part in lower case, and the remainder (trimmed part) in upper case.</p>
+<p>So, I plotted this 'raw read length' versus the Trimmed one for DH10B-RUN01, see the graph.</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/06/readlengthtiontorrent.jpg"><img class="size-full wp-image-60 alignnone" title="Readlengthtiontorrent" src="{{ site.baseurl }}/assets/readlengthtiontorrent.jpg" alt="" width="480" height="297" /></a></p>
+<p>The raw length peaks at 132 nt, close to, but below the expected 137.5 nt based on 55 cycles. The trimmed reads peak at 108. Also note the steep drop in read length beyond 108 bases. This drop is quite unusual, you never see it for 454 read, for example.</p>
+<p>So, Ion Torrent reads are actually much longer than what is being reported. The key question, though, is whether there is any useful information in these extra bases. For this, I extracted the fasta sequences and quality scores, and uploaded them to the excellent tool PrinSeq, http://edwards.sdsu.edu/prinseq_beta. I first uploaded the data as they were with the original trimpoints:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/06/original_trimpoints-1308147525_qd2.png"><img title="original_trimpoints 1308147525_qd2" src="{{ site.baseurl }}/assets/original_trimpoints-1308147525_qd2.png" alt="" width="480" height="263" /></a></p>
+<p>The figure shows the quality value distribution along the read length in bins of 2 bases, steadily declining towards the end of the reads.</p>
+<p>The same analysis for the retrimmed data:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/06/retrimmed-1308147266_qd2.jpg"><img class="alignnone size-full wp-image-62" title="retrimmed 1308147266_qd2" src="{{ site.baseurl }}/assets/retrimmed-1308147266_qd2.jpg" alt="" width="480" height="263" /></a></p>
+<p>Here the bins are 9 bases. It shows that the quality reaches its minimum at the 117 bp bin. This explains why the trimming is leading to the much shorter reads: beyond say 115 nt the quality of the bases is too low to be meaningful.</p>
+<p>I would say that the analysis of EdgeBio's file shows that the platform indeed has a potential to grow beyond the 100 base read length. 'All it takes' is increase the quality of the bases beyond cycle 27.</p>
+<p><strong>Part 2: Ion Torrent's own data</strong><br />
+Ion Torrent released their own run of E coli DH10B through their Torrent Dev community site http://lifetech-it.hosted.jivesoftware.com/index.jspa (check out the excellent analysis by Nick Loman on his blog http://pathogenomics.bham.ac.uk/blog/2011/05/first-look-at-ion-torrent-data-de-novo-assembly/<br />
+So, I naturally had a look at the information in this sff file. Here are the header and the first read, this time represented completely.</p>
+<blockquote><p><code>Common Header:<br />
+Magic Number: 0x2E736666<br />
+Version: 0001<br />
+Index Offset: 0<br />
+Index Length: 0<br />
+# of Reads: 522099<br />
+Header Length: 296<br />
+Key Length: 4<br />
+# of Flows: 260<br />
+Flowgram Code: 1<br />
+Flow Chars: TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACG<br />
+TACG<br />
+Key Sequence: TCAG<br />
+&gt;IB8EW:4:73<br />
+Read Header Len: 32<br />
+Name Length: 10<br />
+# of Bases: 190<br />
+Clip Qual Left: 5<br />
+Clip Qual Right: 94<br />
+Clip Adap Left: 0<br />
+Clip Adap Right: 0<br />
+Flowgram: 0.91 0.00 0.89 0.00 0.00 0.93 0.02 0.98 0.00 0.00 0.00 0.00 0.99 0.00 0.01 0.00 0.80 0.00 0.69 0.01 0.11 1.90 0.11 0.00 0.91 0.94 2.67 0.00 0.10 0.09 2.01 0.02 0.97 0.99 0.08 0.11 3.12 1.39 0.21 0.47 1.40 1.41 0.10 0.00 4.40 1.05 0.01 0.98 0.21 0.96 0.04 0.19 0.94 1.86 1.99 0.20 0.04 0.10 0.05 0.18 1.16 1.07 0.00 1.89 0.08 0.84 0.15 0.15 3.61 1.14 0.18 0.08 1.77 1.96 0.07 0.14 1.08 2.72 0.25 0.24 1.16 0.18 0.03 2.77 0.36 0.29 0.95 1.14 0.09 0.99 0.22 1.13 0.21 0.20 0.03 0.21 1.16 0.19 1.03 0.95 0.14 1.13 0.07 0.15 2.85 2.12 0.24 0.17 1.31 0.22 0.19 0.16 1.83 1.10 0.21 0.33 1.06 0.29 1.09 0.35 0.24 0.15 0.23 0.15 1.01 3.47 1.00 0.06 0.28 1.87 0.25 1.03 0.19 0.13 2.71 0.10 1.04 0.43 0.30 1.92 3.67 0.18 0.27 0.28 1.26 0.36 1.80 0.34 1.19 0.46 0.18 1.21 1.03 0.30 0.31 1.27 0.43 0.49 0.33 0.30 1.02 0.30 1.12 0.37 0.53 1.01 2.03 1.11 0.30 0.36 0.24 0.34 1.62 0.15 1.07 0.28 1.42 0.21 1.10 0.43 0.39 2.83 0.33 1.34 1.18 0.30 0.26 1.13 0.47 0.48 0.95 0.38 0.58 1.15 0.45 1.03 0.46 1.37 0.72 1.92 0.49 1.31 1.09 1.05 1.54 1.27 0.42 1.28 0.89 1.18 0.36 0.78 1.22 0.77 1.12 1.03 0.37 0.65 0.42 0.45 2.12 2.13 1.83 1.35 0.88 1.14 1.33 0.58 0.64 1.62 1.21 0.87 0.74 0.61 0.54 0.49 1.77 3.64 0.66 1.47 1.39 0.84 0.53 1.43 0.86 0.96 1.94 1.12 0.78 1.49 0.66 0.61 0.63 0.54 0.06 0.76 0.77 0.85 0.66 0.91<br />
+Flow Indexes: 1 3 6 8 13 17 19 22 22 25 26 27 27 27 31 31 33 34 37 37 37 38 41 42 45 45 45 45 46 48 50 53 54 54 55 55 61 62 64 64 66 69 69 69 69 70 73 73 74 74 77 78 78 78 81 84 84 84 87 88 90 92 97 99 100 102 105 105 105 106 106 109 113 113 114 117 119 125 126 126 126 127 130 130 132 135 135 135 137 140 140 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141 141<br />
+Bases: tcagATGCCTGTTTGGTATTTATCAAAAGACTCCGGCACCATTTTATTCCAGGGTAAAGAGATCGATT<br />
+TCCATTCTGCAAAGAAGCCCTGGAAAnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn<br />
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn<br />
+Quality Scores: 28 23 23 23 22 16 16 16 15 23 10 14 14 6 9 12 23 23 23 23 6 10 9 10 10 10 10 5 10 20 20 20 20 14 20 14 20 20 20 14 10 10 10 10 5 10 10 10 12 14 12 12 12 7 12 17 17 17 17 17 20 20 20 20 20 17 17 17 9 17 12 8 12 14 15 15 15 8 8 8 3 8 15 12 14 14 14 7 14 14 8 10 10 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</code></p></blockquote>
+<p>Note that the number of flows for this run is 260, equaling 65 cycles. But note the many lower case n's at the end of the reported sequence! And the zeros in the reported quality values!<br />
+How to explain the difference between the sff files? I can only imagine the 'masking' in the file from the Ion Torrent website to be done deliberately on the part of Life Technologies. If so, were they trying to hide the low quality bases beyond the trimpoints?</p>
+<p><strong>Code used:</strong><br />
+Read length distribution: I use a home-made perl script, called fasta_length.pl, which just plots the length of the fasta files it gets. The short version goes like this:</p>
+<blockquote><p><code>$/="&gt;"; # set the record separator to the '&gt;' symbol<br />
+; # remove the empty first 'sequence'<br />
+while (){<br />
+chomp; # remove the trailing '&gt;' symbol<br />
+my @lines = split(/\n/,$_); # split the entry into individual lines based on the newline character<br />
+my $header = shift @lines; # the header is the first line (now without the '&gt;' symbol)<br />
+my $seq = join "", @lines;<br />
+print length $seq; print "\n";<br />
+}</code></p></blockquote>
+<p>To get the distributions, I use the script in combination with sffinfo, awk and sort:</p>
+<blockquote><p><code>sffinfo -s DH10B-RUN01.sff |fasta_length | awk '{cnt[$0]++}END{for (x in cnt){print x"\t"cnt[x]}}' |sort -n -k 1,1</code></p></blockquote>
+<p>Plotting was done in excel (which I still use for these simple plots).<br />
+Getting the raw reads was done by making use of the trimpoint resetting function of the sfffile command. The first trimpoint is always 5, the first base beyond the four-base key sequence, for the second trimpoint I took the number reported as '# of bases' (I later saw that I could just have set it to '0', that would also have forced the max read length and would have made it much easier).</p>
+<blockquote><p><code>sffinfo DH10B-RUN01.sff|awk '{<br />
+if ($0 ~ /&gt;/){id=$0}<br />
+if ($0 ~/# of Bases/){l=$4}<br />
+if ($0 ~/Clip Qual Left/){print id" 5 "l}<br />
+}' |sed 's/&gt;//' &gt;DH10B-RUN01_trimpoints.txt</code></p></blockquote>
+<p>'id' becomes the read name, 'l' becomes the raw length.<br />
+To remake the sff file:</p>
+<blockquote><p><code>sfffile -o DH10B-RUN01_trimpoints_reset.sff -tr DH10B-RUN01_trimpoints.txt DH10B-RUN01.sff</code></p></blockquote>
+<p>To generate the fasta and qual files:</p>
+<blockquote><p><code>sffinfo -s DH10B-RUN01_trimpoints_reset.sff &gt;DH10B-RUN01_trimpoints_reset.fna</code></p>
+<p><code>sffinfo -sq DH10B-RUN01_trimpoints_reset.sff &gt;DH10B-RUN01_trimpoints_reset.qual</code></p></blockquote>
+<p>I then manually (using the 'nano' program) removed read 8UBVS:1145:967, which was exceptionally long (and consisted of long stretches of TTTTTTTAAAAAACCCCCCGGGGGG), to tidy up the prinseq graph. Both fna and qual files were uploaded to prinseq after gzipping them.</p>

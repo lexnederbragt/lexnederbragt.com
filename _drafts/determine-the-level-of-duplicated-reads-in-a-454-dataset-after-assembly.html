@@ -1,0 +1,19 @@
+---
+layout: post
+title: Determine the level of duplicated reads in a 454 dataset after assembly
+date: 
+type: post
+published: false
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '12058266'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>cat 454ReadStatus.txt |awk '/Assembled/{$1="";x[$0]++}END{for (i in x){print x[i]}}' |awk '{cnt[$0]++}END{for (x in cnt){print x"\t"cnt[x]}}'|sort -nr</p>

@@ -1,0 +1,46 @@
+---
+layout: post
+title: 'IonTorrent: many long reads, still longer homopolymers'
+date: 2011-09-30 16:07:15.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- Ion Torrent
+meta:
+  _edit_last: '12058266'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>Life technologies released reads from a new benchmark run for the Grand Challenge. For those with an account at the Ion community, here are the links to the<a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-1938"> announcement,</a> and the <a href="http://lifetech-it.hosted.jivesoftware.com/docs/DOC-1935">data</a> (sff, fastq and reports). It was a 316 chip that was used.</p>
+<p>Let me start by saying the data set is pretty impressive:<br />
+-  2.76 million reads<br />
+- peak length at 251 bases, longest 428<br />
+- 664 Mbp raw sequence</p>
+<p>Compare this to where we were when we obtained the GS FLX in October 2007: around 400 000 reads of 250 bases, totaling approximately 100 Mbp... Then again, how good are these data.</p>
+<p>With the release follows a report which shows mapping statistics, and they are pretty impressive. I won't go into the details, as I expect an application note (with the obligatory comparison with the MiSeq data) to appear soon, and/or other bloggers throwing themselves onto this data. i thought to use the same kind of analysis as I used for <a title="IonTorrent: longer reads, longer homopolymers?" href="http://flxlexblog.wordpress.com/2011/08/10/iontorrent-longer-reads-longer-homopolymers/">my previous post </a>on this data set.<!--more--></p>
+<p>First: the read length distribution. I first extracted the same amount of reads from the sff file as I used in my previous post to keep the scales similar:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/09/read_len_b15_410.jpg"><img class="alignnone size-full wp-image-150" title="read_len_B15_410" alt="" src="{{ site.baseurl }}/assets/read_len_b15_410.jpg" width="480" height="252" /></a></p>
+<p>The distribution of the B15_410 data shows a remarkably sharp peak around 250, with hardly any shorter and longer reads. Also, the weird peak around 400 seen in the B14 data is gone.</p>
+<p>Then, I again looked at the homopolymers. First, the frequencies of homopolymers of all lengths, comparing again to 454 data, and one of the other Ion runs:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/09/homopol_freq_b15_410.jpg"><img class="alignnone size-full wp-image-152" title="Homopol_freq_B15_410" alt="" src="{{ site.baseurl }}/assets/homopol_freq_b15_410.jpg" width="480" height="286" /></a></p>
+<p>At first sight, the B15_410 run seems to be following the E coli and 454 data more parallel, but there is still the deviation at the larger homopolymers, as was seen with other Ion runs.</p>
+<p>I then again counted the starting positions for all homopolymers of each read. For comparison, I repeat the graphs for 454 and the B14 long reads from my last post:</p>
+<p>454 data</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/08/454_homopol_pos.jpg"><img class="alignnone size-full wp-image-128" title="454_homopol_pos" alt="" src="{{ site.baseurl }}/assets/454_homopol_pos.jpg" width="480" height="295" /></a></p>
+<p>B14 long data:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/08/b14_387_homopol_pos.jpg"><img class="alignnone size-full wp-image-129" title="B14_387_homopol_pos" alt="" src="{{ site.baseurl }}/assets/b14_387_homopol_pos.jpg" width="480" height="282" /></a></p>
+<p>New, B15_410 data:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/09/homopol_pos_b15_4101.jpg"><img class="alignnone size-full wp-image-155" title="homopol_pos_B15_410" alt="" src="{{ site.baseurl }}/assets/homopol_pos_b15_4101.jpg" width="480" height="282" /></a></p>
+<p>It looks to me like the problem has gotten worse: from around 230, first the frequency of 1-mers goes slightly up, then it goes down dramatically until it comes below the 2-mer frequency, which goes up steeper than in the B14 data set.</p>
+<p>So what, is this data set than the same as the previous, long read data set? Well, there is one point of significant improvement to be had. For assemblies, the reads perform much better than the B14_387 data. I again selected the same amount of reads for all assemblies, except for the B15_410 full length assembly, where I picked the same number of bases (same coverage):</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/09/b15_410_assemblies1.jpg"><img class="alignnone size-full wp-image-159" title="B15_410_assemblies" alt="" src="{{ site.baseurl }}/assets/b15_410_assemblies1.jpg" width="480" height="164" /></a></p>
+<p>The B15_410 assemblies show half the amount of contigs compared to the B14_387 reads, with much better contig N50s. The trimming back to 230 bases did not improve the assembly , though, so the homopolymer extension does not explain the poorer performance to the 454 assemblies. Hey, do you notice a slightly longer 'longest' contig for the b15_410 full length assembly compared to the 454 one?</p>
+<p>Note that the assemblies based on the GS FLX reads still significantly outperform the Ion Torrent-based assemblies when it comes to contig numbers and N50. How much of this is due to the fact the DH10B genome (Ion Torrent reads) is much harder to assemble than the MG1655 strain (454 reads) remains to be seen. Only a more fair comparison, by generating MG1655 Ion Torrent reads of the same length, can answer that question. Also, a more thorough comparison, with mapping contigs back the reference genomes, will give much better information regarding the assembly qualities.</p>

@@ -1,0 +1,50 @@
+---
+layout: post
+title: My review of "MinION nanopore sequencing identifies the position and structure
+  of a bacterial antibiotic resistance island"
+date: 2014-12-10 09:55:41.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+- Reviews
+tags:
+- MinIon
+- oxford nanopore
+- reproducible science
+meta:
+  _wpcom_is_markdown: '1'
+  _edit_last: '12058266'
+  geo_public: '0'
+  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/LMETjv2TZFR
+  _wpas_done_6015510: '1'
+  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+  _wpas_skip_6015510: '1'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>Earlier this week, the first paper was published describing the use of Oxford Nanopore MinION data to solve a biological question. The paper, entitled "MinION nanopore sequencing identifies the position and structure of a bacterial antibiotic resistance island" came out in <a href="http://www.nature.com/nbt/journal/vaop/ncurrent/full/nbt.3103.html">Nature Biotechnology</a> (<a href="http://rdcu.be/bNks">ReadCube link</a>).</p>
+<p>I was a reviewer for this manuscript. I have posted my two (signed) review reports on <a href="https://publons.com/review/56247/">publons</a>. As data and code were made available by the authors (as it should be), I made a (mostly successful) effort to reproduce the computational part of the paper. After I was done with the review report of the second version I could not help myself to have a further look at some of the results. This led to me sending some plots to the authors, and one of these plots ended up becoming figure 1. This was a lot of fun to see in the final version.</p>
+<p>Below are some excerpts of the review reports.<br />
+<!--more--></p>
+<p><strong>First submission</strong></p>
+<p>With this manuscript, the authors intend to show how the data derived from their participation in the MinION Access Program MAP were used to solve an assembly problem caused by long repeats and a GC rich area of the genome. At the time of reviewing, this has to yet been done before. The manuscript is an interesting piece of work in that respect. The authors show the long Nanopore reads are able to scaffold contigs from an Illumina-only assembly, and resolve the structure of the island and its insertion site.</p>
+<p>However, there are numerous problems with the manuscript in its current form. The main issue I have is with the lack of availability of the raw data, and insufficient descriptions of the computational methods.</p>
+<p>[…]</p>
+<p>Conceptually, the paper is not novel. The concept of using long reads with high error rates to scaffold contigs derived from short read assemblies has been around for a few years. The main contribution of this manuscript is showing that data from the MAP can be used in a similar way. I cannot answer the question on the scientific accuracy, as neither the raw data, nor the final assembled sequences, were available to me. The paper is a somewhat significant advance, as it demonstrates for the first time the usefulness of MinION data for resolving complex genomic regions that are hard to assemble based on short reads alone. From reading the methods, it seems the authors have Illumina and MinIONdata for the whole genome of the strains. The manuscript would have been more interesting, with potentially more impact, if the scaffolding of the short-read assembled contigs was performed for the entire assembly. However, I do realise that the scaffolding method used is not suitable for this<br />
+exercise, and that developing these methods may be a significant endeavour.</p>
+<p><strong>Second submission</strong></p>
+<p>I thank the authors for addressing the points raised by me and the other reviewers in detail. The manuscript has improved quite a bit. The results are more interesting and also much more replicatable, see comments below.</p>
+<p>Here are my remaining comments, again grouped according to the same questions:</p>
+<p>The authors have added a hybrid assembly of MinION data and Illumina data using the SPAdes assembler. This approach has not been reported in a peer-reviewed paper at the time of writing, although the approach has been mentioned in an online presentation and elsewhere. This addition makes the paper more novel and increases the significance of its advance. The authors write "We are not specifically working on the genome assembly of microbes" and in that sense it is interesting to see how the MinION data has enabled them to advance their research without a heavy investment in technologies and tool development. I now feel that this paper is a novelty in that sense. I also appreciate the analysis of the error-rates (the z-score part) as such an analysis has not been reported before and is of great interest to the community. I have nothing negative to say regarding the scientific accuracy.</p>
+<p>I am very happy with the availability of the code, raw and processed data. I managed to repeat some of the bioinformatic analyses described in the manuscript. See below for more details.</p>
+<p>[…]</p>
+<p>I downloaded the relevant data files from the figshare repository, and the code from github. I then performed a hybrid assembly using SPAdes 3.1.1 as described in the paper. […] Surprisingly, based on metrics alone, the assembly I was able to produce was slightly better than the one described in the paper, with an N50 contig size of 346 kb instead of 319 kb. I do not really have an explanation for this. Perhaps the SPAdes outcome is dependent on the particular software environment, or even the number of CPUs used.</p>
+<p>I also tested the code from the MinION_analysis repo on the files from figshare. Initially, there were some issues with the github code that prevented me from running it successfully on the example data.These were quickly fixed by the lead author (communication via twitter direct messages) and I thank him for that. The code became more robust through this process when used by other researchers.</p>
+<p>Full review reports can be found <a href="https://publons.com/review/56247/">here</a>.</p>

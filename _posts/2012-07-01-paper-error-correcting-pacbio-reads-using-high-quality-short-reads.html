@@ -1,0 +1,59 @@
+---
+layout: post
+title: 'Paper: error-correcting PacBio reads using high-quality short reads'
+date: 2012-07-01 20:34:46.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Bioinformatics
+- Next Generation Sequencing
+tags:
+- assembly
+- pacbio
+meta:
+  _edit_last: '12058266'
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>Today, a paper entitled 'Hybrid error correction and <em>de novo</em> assembly of single-molecule sequencing reads' came out <a href="http://www.nature.com/nbt/journal/vaop/ncurrent/full/nbt.2280.html">in Nature Biotechnology</a> by Sergey Koren, Michael Schatz and others. In it, the authors describe a method to error-correct PacBio reads and use them in<em> de novo</em> genome assembly. I was gracefully given an advance copy by Mike Schatz which I used to prepare the following post.</p>
+<p>The PacBio RS instrument from <a href="http://pacificbiosciences.com/">Pacific Biosciences</a> gives extremely long reads (several 1000 bases), but with high single-pass error rates (85% accuracy - 15% error). Alternatively, one can use the short-insert mode, where each fragment is sequenced mutliple times (Circular Consensus Sequencing - CCS), resulting in high quality, but much shorter (up to 1 kb - 1000 bases) reads.</p>
+<p>[caption id="attachment_288" align="alignright" width="337"]<a href="http://flxlexblog.files.wordpress.com/2012/07/error-message.png"><img class="size-full wp-image-288" title="Error Message" src="{{ site.baseurl }}/assets/error-message.png" alt="" width="337" height="130" /></a> Source: http://atom.smasher.org/ (http://bit.ly/ORrljX)[/caption]</p>
+<p>Even though in principle, longer reads are ideal for<em> de novo</em> genome assmebly, using the high-error PacBio reads natively is hard: for alignment, the between-read error rate doubles to 30%. So, the long PacBio reads would be most advantageous if the error can be overcome. This is what the authors of the Koren <em>et al.</em> paper try to achieve. In the following, I'll summarise their main findings.</p>
+<p>First, the authors tested where along the reads the error occurs, and, as claimed by the company, there was no bias detected: the average error rate was tightly distributed around the mean along the entire read length. Also, coverage of PacBio reads over the genome they were derived from (in this case, yeast) was very even.</p>
+<p><!--more-->Unless one uses a de Bruijn Graph approach (most approriate for short read datasets), assembly starts by finding overlaps between reads in the so-called Overlap Layout Consensus approach, or OLC assembly. So, the authors next looked at the theoretical detection of overlaps versus error rates. From the paper:</p>
+<blockquote><p>"For both 454 and Illumina, over 80% of the overlaps are detected by 3% error. By contrast, on PacBio, only 10% are detected at 15% error"</p></blockquote>
+<p>In other words, finding overlaps between short, high quality reads and the long PacBio reads is much easier than between PacBio reads themselves.<br />
+Long reads are expected to help most in OLC, and that is what they focussed on.</p>
+<p>The authors have developed a method to use the high-quality short reads, be it Illumina, 454 or CCS PacBio reads, to correct the errors in the long, low quality PacBio reads. They built a pipeline for achieving this on top of the Celera assembler. <a href="http://sourceforge.net/apps/mediawiki/wgs-assembler/index.php?title=Main_Page">Celera</a> was developed for Sanger type of reads, and is the only assembly program from that era that has been adjusted to be able to tackle the newest technologies as well (first 454, then Illumina, and now PacBio).<br />
+The pipeline, called PacBioToCA, is available with the latest Celera release, see <a href="http://sourceforge.net/apps/mediawiki/wgs-assembler/index.php?title=PacBioToCA">this link</a>.</p>
+<p>How does this approach work?<br />
+- first, create long, single-pass PacBio reads and short, high quality Illumina or 454 reads, or PacBio circular consensus reads<br />
+- map the short reads to the long reads, start by finding perfect 14 nucleotide overlaps<br />
+- for PacBio reads containing repeats, choose the mapping which maximizes the identity between the short read and the PacBio read<br />
+- build consensus (using AMOS) for the long read based on the aligned short reads, breaking the long reads when there is no coverage with short reads</p>
+<p>Special care is needed when dealing with repeats, and the pipeline tackles this by trying to divide the short reads among the different copies in such a way as to maximise the chance that the correct repeat copy is reconstructed in the end. In an email, Mike Schatz told me he expects repeats that are up to 99% identical to be corrected to the right sequence. This is, however, dependent on the eveneness of both the read coverage and the errors in the PacBio reads.</p>
+<p>Error correction yields slightly shorter reads, due to some regions not having (enough) short-reads coverage. Also, some reads are too short to be included for correction. In total, about 50%-60% of the raw PacBio reads end up in the corrected set. But still, after correction, one has a long-read dataset, with many reads of several Kbp and with &gt;99% accuracy!</p>
+<p>The pipeline was tested on lambda, <em>E. coli</em>, yeast and parrot (from <a href="http://assemblathon.org/pages/download-data">assemblathon2</a>) datasets, with 50X of Illumina reads for the correction. 50X was determined the sweet spot for short-read coverage. From the paper:</p>
+<blockquote><p>"The accuracy of the long reads improved from ≈ 85% to over 99.9%, and chimeric and improperly trimmed reads measured &lt; 2.5% and &lt; 1% respectively"</p></blockquote>
+<p>Next, these corrected reads were used in hybrid<em> de novo</em> assembly using Celera. For this, the maximum input read size in Celera had to be increased to deal with long- error-corrected reads. Except for parrot, reference genomes could be used to check the resulting assemblies.</p>
+<p>The effect of adding corrected PacBio reads were very promising. Up to tripling of contig sizes (as measured by contig N50's) were found, without introducing more errors (The N50 size is the size such that half tot total length is in contigs minimally of this length). For bacteria, contig N50s of several hundred Kbps were obtained; one assembly even had a contig N50 of more than 0.5 Mbp.<br />
+These gains were mainly due to resolving long repeats. As repeats are the biggest problem for reconstructing genomes from reads, this is a significant finding. The authors simulations showed that with increases in read length, single contig (!) assembly for <em>E. coli</em> type bacterial genomes are possible using this approach.</p>
+<p>For the large heterozygous parrot genome assembly, the best assembly was obtained using 454 + PacBio reads corrected using Illumina data, with a contig N50 of almost 100kbp. This large contig N50 is usually very hard to obtain! The parrot Illumina only (using <a href="http://www.broadinstitute.org/software/allpaths-lg/blog/">ALLPATHS_LG</a>) and 454 only (using Celera) assemblies with optimal read datasets had contig N50's of 47Kbp and 75 Kbp, respectively. Mapping known transcripts to the contigs and scaffolds showed good quality gene reconstructions in the assemblies with error-corrected PacBio reads. Interestingly, ALLPATHS_LG managed to assemble and scaffold more exons then Celera. Notable was also that the &gt;70% GC promotor region in the ERG1 genes was only assembled without a gap using PacBio reads.</p>
+<p>So, assemblies done using lower coverage PacBio corrected reads can outperform higher coverage short read only assemblies, even without the use of mate pairs. Hybrid assemblies reached maximum N50's at around 10X cov of corrected PacBio reads.</p>
+<p>Finally, the authors show how error-corrected PacBio reads also aid in transcriptome assembly, and can help in splice variant discovery.</p>
+<p><strong>Conclusions</strong><br />
+The high error-rate of the single-pass PacBio reads results in a good deal of skepsis in the community on how useful this technology is. With this paper, a first step is made to show that in combination with other technologies (or CCS reads), long PacBio can be very useful for <em>de novo</em> genome assembly, also of large complex genomes. Significantly longer contigs can be obtained, and single-contig bacterial genome assemblies may become possible in the near future with modest increases in PacBio raw read lengths.<br />
+For <em>de novo</em> assembly, long PB reads can be an attractive alternative to mate pairs.</p>
+<p>There are a few drawbacks of using this approach. The error-correction is computationally intensive, requiring a good dose of CPUs. The correction of the parrot data took a week. If one were ever to generate a suitable long-read PacBio dataset for the human genome, the authors estimated error-correcting these to take 10 days on 250 cpus. So, adding PacBio reads and error-correcting them effectively doubles assembly times. Also, not all labs may have access to the required compute resources. Another problem is the low throughput (50-60% of the reads survive the error correction). Here, methods to overcome the low short-read coverage (which breaks up some long reads) are needed.</p>
+<p><strong>My take</strong><br />
+I am very excited by this paper. It shows how the main problem people have with PacBio, the high error-rate, can be overcome. Using the PacBio, combined with cheap, short reads, can result in reads up to several Kbp of very high quality. This is a dream for everyone doing<em> de novo</em> genome assembly. I also have hopes that these long reads, with appropriate tools, can help assembling heterozygous genomes, and aid in in haplotype separation. As raw PacBio read lengths overlap the lengths of whole transcripts, <em>de novo</em> transcriptome assembly using this approach may give much more full-length transcripts assembled then is currently possible.</p>
+<p>I think we have now seen the first of hopefully more approaches to correct PacBio reads. I would think other smart bioinformaticians are now inspired to search for less computationally-intensive methods (and faster) for correction.</p>
+<p>Many people talk about how nanopore-based extremely long read technologies will make PacBio obsolete in the near future. I keep saying, seeing is believing (who outside the companies has real data in their hands?). And, if you want long reads <em>today</em>, PacBio is your only option.</p>
+<p>Pacific Biosciences needs papers like this to show that their technology actually is going to deliver. Now it is up to the research community to use these long high-quality reads for<em> de novo</em> assembly of complex genomes. This is something we in our group have recently started with.</p>
+<p><strong>Links</strong><br />
+Datasets, recipies etc can be found <a href="http://www.cbcb.umd.edu/software/PBcR/index.html">here</a>.</p>

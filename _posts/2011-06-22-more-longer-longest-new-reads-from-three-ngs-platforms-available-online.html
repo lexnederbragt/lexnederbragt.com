@@ -1,0 +1,38 @@
+---
+layout: post
+title: 'More, longer, longest: new reads from three NGS platforms available online'
+date: 2011-06-22 13:18:34.000000000 +02:00
+type: post
+published: true
+status: publish
+categories:
+- Next Generation Sequencing
+tags:
+- '454'
+- GS FLX+
+- Illumina
+- Ion Torrent
+- MiSeq
+meta:
+  _edit_last: '12058266'
+  _oembed_4dba95b71ed4049ba8b0ff1c62d38b6d: '{{unknown}}'
+  _oembed_0d78a9c318a3635eb5a6e950e184a105: '{{unknown}}'
+  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1393958443;}
+author:
+  login: lexnederbragt
+  email: lex.nederbragt@bio.uio.no
+  display_name: lexnederbragt
+  first_name: ''
+  last_name: ''
+---
+<p>For three platforms, reads longer than the commercially available, and/or from not-yet released instruments, have become accessible online. With online, I mean that we all can download these data to have a look at:</p>
+<p><span style="text-decoration:underline;">1) MiSeq 2x 150 bases runs</span><br />
+As part of the German E. Coli (EHEC) 'Crowdsourcing Project', Illumina sequenced fie strains for the UK Health Protection Agency, the fastq files can be downloaded from <a href="http://www.hpa-bioinformatics.org.uk/lgp/genomes">http://www.hpa-bioinformatics.org.uk/lgp/genomes</a>. These are the first data in the public domain from a MiSeq!<br />
+See also this <a href="http://www.genomeweb.com/sequencing/e-coli-sequencing-prompts-crowdsourcing-project-annotate-genomes-enabling-platfo">post</a> on GenomeWeb.</p>
+<p><span style="text-decoration:underline;">2) IonTorrent 316 chip</span><br />
+Keith Robison shares a bit of info on data from an Ion 316 chip ion his <a href="http://omicsomics.blogspot.com/2011/06/first-peek-at-data-from-ion-316-chip.html">'Omics! Omic!' blog</a>: "1.69M reads, with 1.53M of those &gt;=50 bp long and 1.07M 100bp or longer":<br />
+I <a href="https://iontorrent.box.net/shared/dgjscpc8o9ic1u8uky4f">downloaded the run files</a>, and quickly looked at the read length distribution of the trimmed reads in the sff file (which listed 260 flows, 40 more than the file I analyzed in <a href="/2011/06/16/there-is-more-length-to-ion-torrent-reads-than-meets-the-eye-and-is-ion-torrent-hiding-it-2/">my previous post</a>), showing a peak exactly one base longer at 109 bases. So, many more reads but not much gain in length (yet). Note the strange shape of the peak:</p>
+<p><a href="http://flxlexblog.files.wordpress.com/2011/06/b13_328_readlen.jpg"><img class="alignnone size-full wp-image-73" title="Read length distribution of the B13_328 run" src="{{ site.baseurl }}/assets/b13_328_readlen.jpg" alt="" width="480" height="285" /></a></p>
+<p><span style="text-decoration:underline;">3) 454 GS FLX+</span><br />
+As part of the assemblathon2 (a de novo assembly <a href="http://assemblathon.org/pages/rules">competition</a>), there have been released the first GS FLX+ reads (from a parrot), peak read length around 736 bases: <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/">http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/</a>. Those are at Sanger read length, now!</p>
+<p>Now I need to find the time to have a look at these data!</p>
