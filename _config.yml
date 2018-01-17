@@ -31,10 +31,12 @@ navbar-links:
    - Contact: "contact"
   Links:
     - University of Oslo: "http://folk.uio.no/alexajo"
+    - ORCID: "http://orcid.org/0000-0001-5539-0999"
+    - Google Scholar: "https://scholar.google.no/citations?user=lSNc07gAAAAJ&hl=en"
     - Github: "https://github.com/lexnederbragt"
+    - FigShare: "https://figshare.com/authors/Lex_Nederbragt/100720"
     - LinkedIn: "https://linkedin.com/in/lexnederbragt"
     - Peer review: "https://publons.com/author/18712/alexander-j-nederbragt"
-    - FigShare: "https://figshare.com/authors/Lex_Nederbragt/100720"
     - Slides: "https://figshare.com/collections/Slides_of_my_talks_presentations/3488832"
     - Older slides: "https://www.slideshare.net/flxlex"
 
@@ -101,7 +103,7 @@ url-pretty: "https://lexnederbragt.github.io/"  # eg. "deanattali.com/beautiful-
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-112632107-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -216,6 +218,6 @@ prose:
 
 gems:
   - jekyll-paginate
-
+  - jekyll-feed
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

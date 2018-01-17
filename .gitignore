@@ -7,3 +7,6 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# added by Lex
+_oldposts/
