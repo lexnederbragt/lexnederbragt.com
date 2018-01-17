@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2015/08/31/active-learning-strategies-for-bioinformatics-teaching-2.html
 title: Active learning strategies for bioinformatics teaching
 date: 2015-08-31 15:47:20.000000000 +02:00
 type: post
@@ -12,56 +14,18 @@ tags:
 - Software Carpentry
 - Teaching
 meta:
-  _wpcom_is_markdown: '1'
-  _edit_last: '12058266'
-  geo_public: '0'
-  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/5hcbijVAf6x
-  _publicize_job_id: '14282081765'
-  _publicize_done_6048082: '1'
-  _wpas_done_6015510: '1'
-  _wpas_skip_6015510: '1'
+_wpcom_is_markdown: '1'
+_edit_last: '12058266'
+geo_public: '0'
+publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/5hcbijVAf6x
+_publicize_job_id: '14282081765'
+_publicize_done_6048082: '1'
+_wpas_done_6015510: '1'
+_wpas_skip_6015510: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>The more I read about how active learning techniques improve student learning, the more I am inclined to try out such techniques in my own teaching and training.</p>
-<p>I attended the third week of Titus Brown's <a href="http://angus.readthedocs.org/en/2015/week3.html">"NGS Analysis Workshop"</a>. This third week entailed, as one of the participants put it, 'the bleeding edge of bioinformatics analysis taught by Software Carpentry instructors' and was a unique opportunity to both learn different analysis techniques, try out new instruction material, as well as experience different instructors and their way of teaching. On top of that the group was just fantastic to hang out with, and we played a lot of volleyball.</p>
-<p>I demonstrated some of my teaching and was asked by one of the students for references for the different active learning approaches I used. Rather then just emailing her, I decided to put these in this blog post.</p>
-<p>The motivation of turning to active learning techniques is nicely summarised in a post on the 'communications of the ACM' blog entitled <a href="http://cacm.acm.org/blogs/blog-cacm/190767-be-it-resolved-teaching-statements-must-embrace-active-learning-and-eschew-lecture/fulltext">"Be It Resolved: Teaching Statements Must Embrace Active Learning and Eschew Lecture"</a>. I highly recommended reading it and checking out the references mentioned. I am by no means an expert in the area, and simply am learning by doing. I have no ways to measure whether the techniques I use are beneficial, but student responses strongly encourage me to keep applying them. My teaching is also very much influenced by my being a <a href="software-carpentry.org">Software Carpentry</a> instructor.</p>
-<p>The following describes what I do in the <em>de novo</em> genome assembly module of the 'High Throughput Sequencing technologies and bioinformatics analysis' course I organise (<a href="//github.com/lexnederbragt/INF-BIOx121_fall2014_de_novo_assembly/tree/master/practicals)">link to materials</a>). I used part of that module for the NGS Analysis Workshop (<a href="http://angus.readthedocs.org/en/2015/week3/LN_assembly.html">link</a>).</p>
-<p><!--more--></p>
-<h4>Live coding rather than recipes or copy-paste</h4>
-<p>The course is mostly hands-on, with students executing command-line based unix programs and scripts, and using GUI-based programs to inspect the results. Until last year, I would provide the students with written instructions (<a href="https://github.com/lexnederbragt/INF-BIOx121_fall2014_de_novo_assembly/tree/master/practicals">examples here</a>) which they would follow at their own pace, with occasional discussions with the whole class. I always made sure there were places in the material where the students had to figure out some details of the commands themselves, rather than providing cookbook instructions. One alternative I experienced during the NGS Analysis Workshop was cookbook, copy-paste instructions (with explanations) that the instructor would execute live <em>together</em> with the students. The Instructor then explained the details of the command while executing it. A third alternative, as done during Software Carpentry workshops, is to not give instructions at all, but do <em>everything</em> live coding (and provide the written instructions afterwards). This was the strategy I tried during my module.</p>
-<p>[caption id="" align="aligncenter" width="600"]<img class="" src="{{ site.baseurl }}/assets/CNRbKSCWsAI_3Ba.jpg" alt="" width="600" height="450" /> A class of active learners. Source: https://twitter.com/steeljawpanda/status/636233683444350976[/caption]</p>
-<p>I thought live coding everything worked quite well. I explained each part of the command while typing it, which gives a nice level of detail, with the added benefit of slowing the pace of instruction. The obvious drawback is students missing some detail and lagging behind once the instructor hits 'enter' and the code executes. Solutions are having one helper add the commands to an online document (such as <a href="http://etherpad.org/">Etherpad</a>) that refreshes automatically for the students, scrolling back in the terminal window to show the command, or regularly running the unix <code>history</code> command for the students.</p>
-<h4>Pen and paper exercises</h4>
-<p>Titus Brown developed a really useful off-computer <a href="http://ivory.idyll.org/blog/the-assembly-exercise.html">'assembly exercise'</a> that I use each time in my teaching. Students receive printed sheets with short 14 character snippets ('reads') randomly drawn from a real English text, optionally with small single-character mistakes ('sequencing errors') that in total make up 5x coverage. In groups of 4 to 5 students, students try to reconstruct the source text. I provide scissors and some students do indeed cut out all reads and align them up in the desk. I described the exercise in more detail (with photo's) in <a href="https://flxlexblog.wordpress.com/2014/11/04/on-the-benefits-of-open-for-teaching/">a previous blog post</a>. Again, students are very active and really make a collaborative effort, and seem to be enjoying it. It also enables a discussion of many important aspects of the challenges of genome assembly.</p>
-<h4>Exploration using the Jupyter notebook</h4>
-<p>I have put together <a href="https://github.com/lexnederbragt/INF-BIOx121_fall2014_de_novo_assembly/blob/master/practicals/DeBruijnGraph.ipynb">a Jupyter notebook</a> with python code (developed by <a href="https://twitter.com/BenLangmead">Ben Langmead</a>) which allows the students to explore small De Bruin graphs, visualising the nodes and the effect of choosing different kmer sizes on the graph's structure. Details again in the above-linked blog post. The keyword here is playing around with code and exploring. <a href="https://en.wikipedia.org/wiki/Pair_programming">'Pair programming'</a>, where only one student is allowed to use the keyboard, and the other observing and commenting, can optionally be used here. An example of the notebook with some graphs can be found <a href="http://nbviewer.ipython.org/urls/gist.githubusercontent.com/lexnederbragt/c4dac59798a962573fba/raw/4e8b238e5da4aff81b160f02600005139980ad6a/DeBruijnGraph.ipynb">here</a>.</p>
-<h4>Collaborative exploration</h4>
-<p>I use the velvet assembly program for teaching because it is a simple to use program and runs very fast on bacterial genomes. One goal is to teach the effect of choosing different kmer sizes for De Bruin Graph assembly. Here, the students collaboratively explore this parameter space by each picking a kmer size, 'reserving' that size on a editable google spreadsheet, and logging the resulting assembly metrics. The spreadsheet has a graph showing the contig N50 for the different kmers, the graph updates in real time and is shown on the presenter screen in the classroom (here is a screenshot from one of the student's <a href="https://monsterbashseq.wordpress.com/2015/08/25/genome-assembly-week-3-ngs-2015/">blogs</a>). See the final plot <a href="http://www.bit.ly/ngs2015Velvet">here</a>.</p>
-<p>[caption id="" align="aligncenter" width="1500"]<img class="" src="{{ site.baseurl }}/assets/n50_k_graph.png" alt="" width="1500" height="746" /> Adding assembly metrics to the google spreadsheet. Source: https://monsterbashseq.wordpress.com/2015/08/25/genome-assembly-week-3-ngs-2015/[/caption]</p>
-<p>I get very positive responses from the students, they really appreciate seeing the graph grow. We then discuss the results and pick the 'optimal' kmer size for the remainder of the assemblies.</p>
-<p>I have to credit <a href="https://twitter.com/pathogenomenick">Nick Loman</a> for the idea of using a google spreadsheet for this part.</p>
-<h4>Peer instruction through quizzes</h4>
-<p>Eric Mazur is credited for the technique of <a href="http://mazur.harvard.edu/research/detailspage.php?rowid=8">'ConcepTests'</a>. The basic premise is that "Nothing clarifies ideas better than explaining them to others." The variation of this that I use goes like this:</p>
-<ul>
-<li>I pose a multiple choice question</li>
-<li>students discuss the question in pairs</li>
-<li>each pair gets to vote through an online system, I use a simple google form for this</li>
-<li>I show the tally of the votes, using the 'summary' function of the google form (which shows a pie chart)</li>
-<li>student pairs discuss the tally and consider whether they want to change their opinion</li>
-<li>students vote again and the tally is shown again</li>
-<li>the answers are discussed by me</li>
-</ul>
-<p>[caption id="attachment_689" align="alignnone" width="720"]<a href="https://flxlexblog.files.wordpress.com/2015/08/active_learning.jpg"><img class="size-full wp-image-689" src="{{ site.baseurl }}/assets/active_learning.jpg" alt="The question, google form and responses" width="720" height="540" /></a> The question, google form and responses[/caption]</p>
-<p>At the NGS analysis workshop I learned that I should make a few modifications: before discussing the question, each student first forms <em>their own</em> opinion and their explanation of it, and each student votes for themselves, not as a pair (pairs can disagree).</p>
-<p>I have used this technique three times now, twice in a Software Carpentry workshop, and the last time at the NGS workshop. Each time there is a great buzzing among the student, actively discussing the questions. They really appreciate the showing of the votes summary and change to vote twice.</p>
-<p>To keep things simple, I use a single google spreadsheet that has unnamed questions (see picture) and delete all responses in-between votes. This allows me to pick from a set of multiple choice questions without having to make a form for each of them. I simply make slides for all questions and decide on the spot which one to use.</p>
-<p>The main challenge with multiple choice questions is that developing good ones takes time: there have to be plausible wrong answers.</p>
-<h4>Concluding thoughts</h4>
-<p>To me, it feels like my teaching has become more interesting, more active, more interactive, and thus hopefully better. I am going to make an effort to turn more of the teaching I do (e.g., the occasional lecture for someones else's course) into active learning experiences. This takes time, most likely more time than the traditional way (e.g, lecturing). But it is definitely worth it. And, to quote a quote from this <a href="http://www.nature.com/news/why-we-are-teaching-science-wrong-and-how-to-make-it-right-1.17963">Nature News piece</a>: "At this point it is unethical to teach any other way".</p>
-<p>With thanks to the students of the NGS Analysis Workshop for feedback and discussions, and Lisa Cohen for the screenshot of the google spreadsheet.</p>

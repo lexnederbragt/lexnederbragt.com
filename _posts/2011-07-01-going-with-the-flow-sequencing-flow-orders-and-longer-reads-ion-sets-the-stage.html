@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2011/07/01/going-with-the-flow-sequencing-flow-orders-and-longer-reads-ion-sets-the-stage.html
 title: 'Going with the flow: sequencing flow orders and longer reads - Ion sets the
-  stage'
+stage'
 date: 2011-07-01 10:30:13.000000000 +02:00
 type: post
 published: true
@@ -11,19 +13,12 @@ categories:
 tags:
 - Ion Torrent
 meta:
-  _edit_last: '12058266'
-  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1393958443;}
+_edit_last: '12058266'
+reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1393958443;}
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>Looking at the discussions on the Ion Community website, I came across an entry that mentions something interesting about the flow order. For both 454 and Ion torrent, sequencing happens by flowing one dNTP (base) at a time over the template. For each read, one or more of these bases gets incorporated, or none at all (see also an <a href="http://contig.wordpress.com/2010/10/28/newbler-input-i-the-sff-file/">entry</a> on this at my other blog).</p>
-<p>454 has been using the same flow order since the beginning: TACG. This can be seen from the 'header' part of the sff file, which lists the flow order under 'Flow Chars' (see <a href="http://contig.wordpress.com/2010/10/28/newbler-input-i-the-sff-file/">here</a> and <a href="2011/06/16/there-is-more-length-to-ion-torrent-reads-than-meets-the-eye-and-is-ion-torrent-hiding-it-2/">here</a> for examples).</p>
-<p>The first Ion Torrent runs on the 314 chip used the exact same flow order as 454. The Ion Community entry I mentioned explains how for the 316 chip, for which the first data were released not too long ago on the Ion Community website, an entirely  different flow order was used. Instead of a four-base repeated cycle, the following 32 base (!) sequence was used repeatedly:</p>
-<blockquote><p><code>TACGTACGTCTGAGCATCGATCGATGTACAGC</code></p></blockquote>
-<p>Why would this 'weird' flow order be used? The different flow order apparently helps to remove incomplete extension, yielding longer read lengths. Incomplete extension happens when a subset of the template molecules on a single bead wrongly does not incorporate a base, making them out of sync with the rest of the molecules, and causing noise during later flows. The new flow order allows for these molecules to 'catch-up', so the different template molecules are better synchronized. A drawback of the 32-base flow order is the (on average) lower number of incorporations per flow, meaning more flows are needed for the same read length.</p>
-<p>It looks like Ion is experimenting with other flow orders to get even better results. Now there is something 454 might give a try (although Life probably has or will take a patent out on this)...</p>
-<p>For those of you who have access, the post is located <a href="http://lifetech-it.hosted.jivesoftware.com/thread/1276">here</a>, and another one <a href="http://lifetech-it.hosted.jivesoftware.com/message/1522">here</a>.</p>

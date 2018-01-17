@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2015/10/01/how-to-sequence-and-assemble-a-large-eukaryote-genome-with-long-reads-in-2015.html
 title: How to sequence and assemble a large eukaryote genome with long reads in 2015
 date: 2015-10-01 16:33:01.000000000 +02:00
 type: post
@@ -11,72 +13,25 @@ tags:
 - assembly
 - pacbio
 meta:
-  _wpcom_is_markdown: '1'
-  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/YZfauM73rnG
-  _rest_api_published: '1'
-  _publicize_job_id: '15363192662'
-  _rest_api_client_id: '11'
-  _publicize_done_6048082: '1'
-  _wpas_done_6015510: '1'
-  _oembed_fea9c106e301377f4539a008911ee74a: '{{unknown}}'
-  _oembed_e756a2bce9cd19c92de2c5579b26fd9b: '{{unknown}}'
-  _oembed_6a576c0a545206b2a683078d2f56c4f3: '{{unknown}}'
-  _oembed_8e8876ac6d6e5edb848327495a5af580: '{{unknown}}'
-  _oembed_2a15297f0d4775c8cfcf6607cf2747a0: '{{unknown}}'
-  _edit_last: '12058266'
-  geo_public: '0'
-  _wpas_skip_6015510: '1'
+_wpcom_is_markdown: '1'
+publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/YZfauM73rnG
+_rest_api_published: '1'
+_publicize_job_id: '15363192662'
+_rest_api_client_id: '11'
+_publicize_done_6048082: '1'
+_wpas_done_6015510: '1'
+_oembed_fea9c106e301377f4539a008911ee74a: '{{unknown}}'
+_oembed_e756a2bce9cd19c92de2c5579b26fd9b: '{{unknown}}'
+_oembed_6a576c0a545206b2a683078d2f56c4f3: '{{unknown}}'
+_oembed_8e8876ac6d6e5edb848327495a5af580: '{{unknown}}'
+_oembed_2a15297f0d4775c8cfcf6607cf2747a0: '{{unknown}}'
+_edit_last: '12058266'
+geo_public: '0'
+_wpas_skip_6015510: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>I get asked about this a lot, so I thought to put together a quick blog post on it.</p>
-<p>Disclaimer: this is the advice I usually give people and is given without warranty. As they say, Your Mileage May Vary.</p>
-<p>Main advice: bite the bullet and get the budget to get 100x coverage in long PacBio reads. 50-60x is really the minimum. Detailed advice:</p>
-<p><b>Sequencing and assembly</b></p>
-<ul>
-<li>get 100x PacBio latest chemistry aiming for longest reads (make sure provider has SAGE Blupippin or something similar)</li>
-<li>get 100x HiSeq paired end regular insert</li>
-<li>run PBcR on the PacBio reads, this is part of Celera. It corrects the longest raw reads, assembles them using Celera (long run time). Make sure to install the latest Celera release which uses the much faster MHAP approach for the correction.</li>
-<li>alternative is FALCON https://github.com/PacificBiosciences/FALCON</li>
-<li>run quiver for polishing the assembly using ALL raw PacBio reads, see tips <a href="https://github.com/PacificBiosciences/pbalign/wiki/Tutorial:-How-to-divide-and-conquer-large-datasets-using-pbalign">here</a></li>
-<li>you could repeat the polishing if that changes a lot of bases and does not negatively impact validation</li>
-<li>polish using the HiSeq reads with <a href="http://www.broadinstitute.org/software/pilon/">Pilon</a></li>
-</ul>
-<p>Optional:</p>
-<ul>
-<li>increase contiguity using BioNanoGenomics data</li>
-<li>create pseudo chromosomes using a linkage map (software?)</li>
-</ul>
-<p>&nbsp;</p>
-<p><!--more--></p>
-<p>&nbsp;</p>
-<p><b>Assembly validation</b></p>
-<ul>
-<li><a href="http://korflab.ucdavis.edu/datasets/cegma/">CEGMA</a> (formally discontinued but still useful)</li>
-<li><a href="http://busco.ezlab.org">BUSCO</a> (we have issues with fish, seems not to be tailored to that group of organisms, developers tell us they are fixing it)</li>
-<li>linkage map? or other map (RAD-tag based). (software?)</li>
-<li>BioNanoGenomics can be used for QC also</li>
-<li>Use a genome browser to get a feeling for your results, e.g. IGV; add assembly, BAM files, annotation, transcripts mapped and browse</li>
-</ul>
-<p><b>Annotation</b></p>
-<ul>
-<li>We use MAKER2 for automated annotation</li>
-<li>better with RNA-seq (assembled) data</li>
-<li>best with PacBio IsoSeq data</li>
-<li>filter filter filter</li>
-<li>getting a repeat database is a science in itself, we are still learning</li>
-</ul>
-<p><b>What about Oxford Nanopore data?</b></p>
-<p>Absolutely for bacterial genomes, see the Loman/Quick/Simpson paper in Nature Merhods, or use Spades. For large eukaryote genomes, the potential is there. However, I would wait a bit for higher throughput and tailored software.<br />
-Edit: on Twitter, @ZaminIqbal <a href="https://twitter.com/ZaminIqbal/status/649594048735498242">asked</a></p>
-<blockquote><p>@lexnederbragt What changes to that would you make for smaller genomes Lex?</p></blockquote>
-<p>To which I replied:</p>
-<ul>
-<li>HGAP from smrtanalysis as it does it al in one go</li>
-<li>Pilon</li>
-<li>Circularisation with - need to ask what we use. I now think we follow this <a href="https://github.com/PacificBiosciences/Bioinformatics-Training/wiki/Circularizing-and-trimming">wiki from PacBio </a></li>
-</ul>

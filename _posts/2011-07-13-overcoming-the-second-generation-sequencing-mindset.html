@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2011/07/13/overcoming-the-second-generation-sequencing-mindset.html
 title: Overcoming the second generation sequencing mindset
 date: 2011-07-13 20:57:20.000000000 +02:00
 type: post
@@ -10,23 +12,12 @@ categories:
 tags:
 - pacbio
 meta:
-  _edit_last: '12058266'
-  reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1423199169;}
+_edit_last: '12058266'
+reddit: a:2:{s:5:"count";i:0;s:4:"time";i:1423199169;}
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>[caption id="attachment_120" align="alignright" width="300" caption="(Picture found on rockstar-pickup.com, of all places)"]<a href="http://flxlexblog.files.wordpress.com/2011/07/mindset.jpg"><img class="size-full wp-image-120 " title="Mindset" src="{{ site.baseurl }}/assets/mindset.jpg" alt="" width="300" height="300" /></a>[/caption]</p>
-<p>I recieved an email today via the assemblathon mailing list. Erich Jarvis, from the Howard Hughes Medical Institute, wrote that he had asked somebody at Pacific Biosciences for some feedback on <a href="%20/2011/07/04/the-longest-reads-yet-a-look-at-pacbios-contribution-to-the-assemblathon/">my previous post</a> regarding the PacBio parrot reads.</p>
-<p>There are a few things in the response worth repeating here.</p>
-<p><!--more-->First, it was pointed out that, with an per-read accuracy of 85%, phred quality values of 8-11 are to be expected. I had already realised this when I considered that a phred score of 10 means a 1:10 chance of a base being wrong, i.e. a 90% accuracy. For a phred score of 8, these numbers are 1 in 10 to the power of 0.8 error possibility, this is 1:6.3, or 16%, or 84% accuracy.</p>
-<p>Second, the errors are spread randomly over a read, meaning that a little extra coverage (5x and more) should get rid of them.</p>
-<p>Third, the PacBio person wrote:</p>
-<blockquote><p>It is a bit unfortunate that existing 2nd generation tools do not work well with this error profile and the short-read/high-accuracy mindset takes a while to adjust to the characteristic of our reads.</p></blockquote>
-<p>I could not agree more with that second part. In a way, I deliberately took a naive look at the PacBio reads, with the mindset of second-generation reads (I love the 'short-read/high accuracy' description...). The PacBio data is in a different league, a totally different error model, but potentially very long reads. There also is a very nice option to obtain high-quality reads using circular consensus sequencing, as shown for <a href="http://blog.pacificbiosciences.com/2011/06/smrt-technology.html">the E coli data just released by PacBio</a>.</p>
-<p>So, new tools are needed to work with these data, and I am eagerly looking forward to get the PacBio software installed (which will have to wait till after my holidays).</p>
-<p>Finally, putting my 'sequencing core facility hat' on, we already are getting questions from our users along the lines of "when this machine finally arrives, can I then use it for this and this project?". Often, the expectations are unrealistically high. It will be my and my colleagues' task to guide these people into a direction that will get them the best results for their money.</p>
-<p>As with second-generation sequencing, getting the data will be relatively easy (and cheap), making sense out of it will be something different alltogether...</p>

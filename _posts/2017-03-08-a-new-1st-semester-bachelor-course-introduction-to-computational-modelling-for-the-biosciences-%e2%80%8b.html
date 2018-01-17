@@ -1,7 +1,8 @@
 ---
-layout: post
-title: A new 1st semester bachelor course "Introduction to Computational Modelling
-  for the Biosciences" ​
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2017/03/08/a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences-%e2%80%8b.html
+title: A new 1st semester bachelor course "Introduction to Computational Modelling for the Biosciences" ​
 date: 2017-03-08 09:26:43.000000000 +01:00
 type: post
 published: true
@@ -10,53 +11,18 @@ categories:
 - Teaching
 tags: []
 meta:
-  _wpcom_is_markdown: '1'
-  _rest_api_published: '1'
-  _rest_api_client_id: '-1'
-  _publicize_job_id: '2629301577'
-  _publicize_failed_6048082: O:13:"Keyring_Error":2:{s:6:"errors";a:1:{s:21:"keyring-request-error";a:1:{i:0;a:6:{s:7:"headers";O:42:"Requests_Utility_CaseInsensitiveDictionary":1:{s:7:"
-  _edit_last: '12058266'
-  geo_public: '0'
-  _wpas_skip_6015510: '1'
+_wpcom_is_markdown: '1'
+_rest_api_published: '1'
+_rest_api_client_id: '-1'
+_publicize_job_id: '2629301577'
+_publicize_failed_6048082: O:13:"Keyring_Error":2:{s:6:"errors";a:1:{s:21:"keyring-request-error";a:1:{i:0;a:6:{s:7:"headers";O:42:"Requests_Utility_CaseInsensitiveDictionary":1:{s:7:"
+_edit_last: '12058266'
+geo_public: '0'
+_wpas_skip_6015510: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>As part of the bachelor-studies reform here at the University of Oslo, the <a href="http://www.mn.uio.no/ibv/english/">Institute of Biosciences</a>, where I work, is reorganising its bachelor curriculum. One exciting part is the implementation of the <a href="http://www.mn.uio.no/english/about/collaboration/cse/">Computing in Science Education (CSE) project</a>, into the different subjects. The goal of the CSE project is to make calculations/computing an integral part of the bachelor curriculum from the very first semester, interweaving the subject-specific material with mathematics and programming. CSE has been working successfully with the curriculum of the Physics, Mathematics, Informatics, Chemistry and Geology. Starting from the fall of 2017, Biology is next.</p>
-<p>[caption id="attachment_836" align="alignright" width="455"]<img class=" wp-image-836 alignright" src="{{ site.baseurl }}/assets/sirsys-p9.png" alt="sirsys-p9" width="455" height="341" /> The SIR model for infectious diseases. number of Susceptible (blue=, Infected (green), and Recovered (red), over units of time. From Wikiemedia Commons[/caption]</p>
-<p>The Institute of Biosciences, with the CSE project, set itself an ambitious goal: in the first semester for Biosciences students, one of the three parallel 10-credit courses should be focussing on the CSE aspect. We named the course 'Introduction to Computational Modelling for the Biosciences". Four smart PhD students, with backgrounds in physics. informatics and biology, were tasked with writing a book for the course, in which they mix biology with programming in python and modeling of biological phenomena.</p>
-<p>The CSE project and the institute have given me the opportunity (and honour) of developing this book, with the authors and the CSE project team, into a full first semester course for Biosciences students. This course (<a href="http://www.uio.no/studier/emner/matnat/ibv/BIOS1100/">BIOS1100</a>) is starting this fall (August 2017).</p>
-<p>Wow. No small task. How to make sure 150 students (perhaps more) become, and then stay, motivated to learn programming in python and developing mathematical models, while what they really signed up for was studying biology! How to make sure the material appears relevant, and is seen as necessary for becoming a biologist? In preparing for teaching the course I have landed on a number of principles I want to adhere to, and ideas that I want to try, to ensure the course will be a success. Some of these are based on experiences obtained from previous courses developed within the CSE framework, as well as on my previous teaching experience. A significant part is based on my experience as a Software Carpentry instructor and instructor-trainer.</p>
-<h3>Ground the material in biology</h3>
-<p>Examples and exercises should be using data and questions that the students can relate to, given that they are studying biology/biosciences. As an example, another 'CSE' course uses a formula to calculate the time it takes for the centre of the yolk of an egg to reach a certain temperature. The students are asked to implement this formula in python, and calculate the time for the yolk to reach, say 70 C, when the egg is taken from a refrigerator into boiling water. I can still use the same formula, but would place the exercise in the setting of a chicken farmer, that would like to know how long a hen can be away from a fertilised egg before the temperature of the embryo becomes too low.</p>
-<h3>Build bridges with other courses</h3>
-<p>The two courses the students are taking in the same semester are Cell- and Molecular Biology, and Introduction to Chemistry. I have a very fruitful dialogue with one of the main responsible teachers for the Cell- and Molecular Biology course about ways to integrate what the students learn there, into the Modelling course. We are looking for opportunities to use small python programs to visualise or further analyse data they generate in the lab or are exposed to during the lectures. One of our plans that I am most looking forward to is what we put together for the subject of restriction digestion of DNA. Certain enzymes are able to recognise short DNA sequences and then make a break into the DNA at those sequences. Here is the plan:</p>
-<ol>
-<li>have students find the recognition sequence in DNA printed on a piece of paper and cut it with a pair of scissors (active learning, pen-and-paper exercise)</li>
-<li>have students make a small script that cuts a DNA sequencing <em>in silico</em> given a recognition site</li>
-<li>have students cut three real DNA (plasmid) sequences using their program and predict the sizes of the resulting fragments (ideally, they would simulate the visualisation of the results of electrophoretically separating the fragments on a so-called agarose gel)</li>
-<li>in the laboratory, have students cut the DNA of the three actual plasmids with the restriction enzyme, without telling them which plasmid is which</li>
-<li>have students determine which restriction digest corresponds to which input plasmid DNA sequence</li>
-</ol>
-<p>My hope is that by exposing students to the subject in multiple ways, on multiple occasions, learning about restriction digestion becomes more effective (and perhaps also more fun). I also am looking into the labwork the students will do in the parallel courses to see whether they generate any datasets that can be further analysed using python or modelling. I suspect that working with data students generate themselves (i.e., have ownership over) enhances motivation and increases learning outcome.</p>
-<h3>Use methods and create an environment that enhance learning</h3>
-<p>One cannot learn programming from slide-based lectures. Much of the learning will have to be done 'by doing', in group work. I will use the Jupyter Notebook, the “killer app” in education according to professor <a href="http://lorenabarba.com/gallery/prof-barba-gave-keynote-at-scipy-2014/">Lorena Barba</a>, in a flipped classroom approach where students study notebooks beforehand (each chapter of the course book can be turned into a notebook), formative assessment is used to gauge understanding, and students work with exercises during 'class'. We have the fortunate situation that we could design a new classroom to be used for this and others courses. Inspired by a teaching room at the <a href="http://www.classroom.umn.edu/projects/alc.html">University of Minnesota</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2931672/">this publication</a> we will fill it with hexagonal tables that each have their own large screen for students to share. We will be using a 'bring-your-own-device' approach (students working on their own laptops) rather than through Data Labs with stationary, university PCs. This ensures learning can continue on the students own equipment, wherever they are, whenever they want to.</p>
-<h3>Build a community of learning assistants</h3>
-<p>I need to recruit quite number of learning assistants, PhD students and others that work with the students during group work. The aim is one assistant per two hexagonal tables (12 students). How they interact with the students will influence the learning and student experience significantly. I aim to have a couple of small workshops with them before the course starts (using some of the Software and Data Carpentry <a href="https://swcarpentry.github.io/instructor-training/">Instructor Training material</a> for inspiration). During the course we will need to meet weekly to discuss what went well and where we can improve. We will also need to document all this for the next editions of the course.</p>
-<h2>Trial course</h2>
-<p>These weeks, we are trying out some of the material on a small group of current first year bachelor students. This turns out to be very useful, it makes us think about many aspects that otherwise first would have become apparent during the real course. For example, I had first thought to do quite a bit of learning through live-coding, Software Carpentry style. However, I have come to realise that live-coding does not scale: classes will be 50-60 students rather than the typical 20-30 for a Software or Data Carpentry workshop. The chances for delays due to a student getting into a technical problem are much higher, and the number of people affected by the delay much larger. This will cause problems to keep the group's attention and may become demotivating.</p>
-<h2>Challenges</h2>
-<p>A major challenge will be the motivational aspect, and we should get feedback from the students on this and other aspects frequently. I have lot's of ideas on what to try to improve the students' learning and experience but will need to limit myself <em>this year</em> to getting through the course. Finally, the overall aim is not to have this work stop with this one single course. The goal is that all other Biosciences courses incorporate modelling with python, and also R, in group and project-based work. This requires the collaboration of all teachers in the department. At a departmental teaching seminar last year everyone was very enthusiastic. Soon is the time to turn that enthusiasm into concrete projects.</p>
-<h2>Some more reading</h2>
-<p>In English:</p>
-<ul>
-<li>The CSE crew was recently awarded a Center for Excellence in Education, see the website of the <a href="http://www.mn.uio.no/ccse/english/">Centre for Computing in Science Education (CCSE)</a></li>
-</ul>
-<p>In Norwegian:</p>
-<ul>
-<li>the dean of the Faculty, Morten Dæhlen, wrote a short piece about the new bachelor program on his <a href="https://titan.uio.no/node/2196">blog</a></li>
-<li>the full bachelor study program is <a href="http://www.uio.no/studier/program/biovitenskap/oppbygging/">here</a></li>
-</ul>

@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2013/06/19/longing-for-the-longest-reads-pacbio-and-bluepippin.html
 title: 'Longing for the longest reads: PacBio and BluePippin'
 date: 2013-06-19 15:13:26.000000000 +02:00
 type: post
@@ -9,63 +11,12 @@ categories:
 - Bioinformatics
 tags: []
 meta:
-  _edit_last: '12058266'
-  _publicize_pending: '1'
+_edit_last: '12058266'
+_publicize_pending: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>PacBio sequencing is all about looong reads, especially in relation to <em>de novo</em> sequencing. A few things are needed to get the longest reads possible:</p>
-<ul>
-<li>the longer the enzyme is active on the template, the longer the raw read will be - PacBio calls these 'Polymerase reads'</li>
-<li>a library for pacBio sequencing consist of circular molecules, with the target insert between two hairpin adaptors, allowing the enzyme to 'go around' and sequence the opposite strand once it reaches the end of the insert. See my previous post on this <a href="2013/02/11/applications-for-pacbio-circular-consensus-sequencing/">here</a>. It then follows that the longer the template used for library preparation, the smaller the chance the polymerase goes around the hairpin, leading to longer uniquely sequenced template - PacBio calles these 'reads of insert' - and these represent the most useful reads for <em>de novo</em> sequencing applications</li>
-<li>finally, the distribution of sizes of the library has an influence: any high-throughput sequencing technology, as well as PCR, has problems with 'preferential treatment' of smaller fragments. With PacBio sequencing, shorter molecules tend to load preferentially into the wells of the SMRTCell ('chip'). It then makes sense to try to reduce the shoulder of shorter fragments for the final library preparation.</li>
-</ul>
-<p>Recently, PacBio and Sage Science <a href="http://www.sagescience.com/news/press-release/pacific-biosciences-and-sage-science-announce-co-marketing-partnership/">announced</a> a co-marketing partnership for the BluePippin. This instrument allows for tight size selection of DNA samples, effectively making the peak of the size distribution much more narrow. With regard to PacBio sequencing, a narrow peak lessens the problem of preferential loading of short fragments, leading to much longer 'reads of insert'. A demonstration can be seen on this <a href="http://www.sagescience.com/wp-content/uploads/2013/03/PacBio-AGBT-Suite-2013-Library-Prep-Poster.pdf">poster</a> (I think I know which fish they used for that one plot...).</p>
-<p><!--more--></p>
-<p>It's nice when a company demonstrates a new improvement to their technology. But, the proof is always in the pudding, in this case, can the sequencing centres out there actually show the same results? Based on recent tweets from the PacBio USA User group meeting, one would believe so:</p>
-<p>[tweet https://twitter.com/aphillippy/status/347054379284705280]</p>
-<p>The <a href="http://sequencing.uio.no/">Norwegian Sequencing Centre</a>, with which I am affiliated, recently bought a BluePippin instrument for the reasons outlined above. Our first test was on a good, 10 kb insert PacBio (SMRTBell) library that we already had used for sequencing. The (excellent!) lab team ran a (large) sample of the library on the BluePippin instrument and showed a significant reduction of the small fragments:</p>
-<p>[caption id="attachment_392" align="aligncenter" width="614"]<a href="http://flxlexblog.files.wordpress.com/2013/06/bluepippin_ba_trace.jpg"><img class=" wp-image-392 " alt="SMRTBell library BioAnalyzer trace before and after BluePippin size-selection" src="{{ site.baseurl }}/assets/bluepippin_ba_trace.jpg?w=1024" width="614" height="448" /></a> SMRTBell library BioAnalyzer trace before (blue) and after (red) BluePippin size-selection[/caption]</p>
-<p>Note that we didn't try to remove the larger fragments (which you would probably do for mate pair libraries) because in the case of PacBio library preparation, length is more important than a tight distribution per se. The next question was what the effect is of such a cleanup has on sequencing. We ran both libraries on our PacBio instrument with C2XL chemistry and 120 minute movies. First some numbers. Please note that the regular library data was obtained from our PacBio RS before maintenance and upgrade to RSII (doubling of the laser capacity), and this may have had a lsight negative effect on the read lengths. There were also more reads included for the 'before' data, and these were analysed with version 1.4 of the PacBio software versus 2.0 for the BluePippin library.</p>
-<table width="”390″" border="”1″" cellspacing="”0″" cellpadding="”0″">
-<tbody>
-<tr>
-<td>Library</td>
-<td># of reads</td>
-<td>Ave. length</td>
-<td>Longest subread N50*</td>
-<td>Longest</td>
-</tr>
-<tr>
-<td><strong>Regular library</strong></td>
-<td>693,275</td>
-<td>3,009 bp</td>
-<td>4,041 bp</td>
-<td>22,298 bp</td>
-</tr>
-<tr>
-<td><strong>BluePippin library</strong></td>
-<td>325,407</td>
-<td>6,045 bp</td>
-<td>8,820 bp</td>
-<td>25,931 bp</td>
-</tr>
-</tbody>
-</table>
-<p>*N50 is a metric often used for genome assemblies, and here translates to 'the length at which half the <em>bases</em> of the entire dataset is in <em>reads</em> of at least length N50'.</p>
-<p>The following graph shows the distribution of the longest subreads (or, reads of insert) for each raw read produced, for the library before, and after BluePippin cleanup.</p>
-<p>[caption id="attachment_407" align="aligncenter" width="540"]<a href="http://flxlexblog.files.wordpress.com/2013/06/sally_sc16_bluepippin_length_dist1.jpg"><img class=" wp-image-407 " alt="Length distribution of longest subreads from the sequenced libraires before and after BluePippin cleanup" src="{{ site.baseurl }}/assets/sally_sc16_bluepippin_length_dist1.jpg" width="540" height="360" /></a> Length distribution of longest subreads from the sequenced libraires before and after BluePippin cleanup[/caption]</p>
-<p>The plot shows how the length distribution shifts significantly to longer reads after BluePippin cleanup. The peak at very short readlengths for the regular library is I think an effect of a missing 'minimum subread length' filter for splitting of these reads.</p>
-<p>A better way to visualise this is with a plot that shows the <em>fraction</em> of bases at different length cutoffs:</p>
-<p>[caption id="attachment_406" align="aligncenter" width="540"]<a href="http://flxlexblog.files.wordpress.com/2013/06/sally_sc16_bluepippin_cumul_length_dist1.jpg"><img class=" wp-image-406 " alt="Fraction of bases at different length cutoffs of longest subreads from the sequenced libraries before and after BluePippin cleanup" src="{{ site.baseurl }}/assets/sally_sc16_bluepippin_cumul_length_dist1.jpg" width="540" height="360" /></a> Fraction of bases at different length cutoffs of longest subreads from the sequenced libraries before and after BluePippin cleanup[/caption]</p>
-<p>The stippled lines show the N50 length. The plot shows that the BluePippin prep indeed had the desired effect: the reads are much longer.</p>
-<p>These very long reads are ideal for <em>de novo</em> assembly, provided that they can be error-corrected. PacBio, as well as a number of research group, have demonstrated that error-correction, using high-quality short reads, or high-coverage PacBio single-pass reads, results in long, high-quality reads that can yield (close to) finished bacterial genomes and improved larger genomes.</p>
-<p>A drawback of involving the BluePippin is that more DNA may be needed for library preparation. Due to the fact that PacBio sequencing is single molecule, without amplification of the library before sequencing, there usually is a limited number of SMRTCells one can obtain from a library. A lot of DNA is lost during library prep, and also with the BluePippin.</p>
-<p>A final note: to be able to obtain average subread lengths ('reads of insert') that high (over 6kb), the raw read ('polymerase read') length average also needs to be at least that high. And indeed, for some reason we don't know yet, the BluePippin library showed much larger average raw readlengths than a regular library. The BluePippin library showed an <em>average readlength between 5.5 and 6.5 kbp</em>, while <a href="http://files.pacb.com/pdf/PacBio_RS_II_Brochure.pdf">the current specifications</a> mention 4.6 kbp. We have already seen an effect of organism sequenced on the raw read length. All of this is probably due to the fact that PacBio sequencing is single-molecule sequencing, allowing for species (or sample)-specific properties to affect polymerase speed. We have now started sequencing bacterial genomes with BluePippin treated libraries, and those show even longer average raw readlengths (more on that perhaps in a later post).</p>
-<p>Thanks to the Norwegian Sequencing Centre lab team who made this post possible.</p>
-<p><span style="text-decoration:underline;">Code used</span></p>
-<p>The code is available as an iPython notebook viewable <a href="http://nbviewer.ipython.org/5814241">here</a>, and downloadable <a href="https://gist.github.com/lexnederbragt/5814241">here</a>.</p>

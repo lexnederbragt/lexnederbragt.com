@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2014/02/14/the-one-and-only-oxford-nanopore-talk-at-agbt-2014-with-real-data.html
 title: The one and only Oxford Nanopore talk at AGBT 2014 - with real data
 date: 2014-02-14 21:09:18.000000000 +01:00
 type: post
@@ -13,35 +15,16 @@ tags:
 - MinIon
 - oxford nanopore
 meta:
-  _wpcom_is_markdown: '1'
-  _edit_last: '12058266'
-  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/cqkTeh5F6xg
-  _wpas_done_6015510: '1'
-  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
-  _wpas_skip_6015510: '1'
+_wpcom_is_markdown: '1'
+_edit_last: '12058266'
+publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/cqkTeh5F6xg
+_wpas_done_6015510: '1'
+_publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+_wpas_skip_6015510: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>The one and only Oxford Nanopore talk at AGBT 2014 - with real data</p>
-<p>Twitter started buzzing this morning at <a href="http://agbt.org/">AGBT</a> because researchers started getting confirmation emails from Oxford Nanopore regarding their application for the MinION Access Program (MAP). This timed well with the first talk discussing some serious data from the platform, by David Jaffe from the Broad Institute, entitled <em>"Assembly of Bacterial Genomes Using Long Nanopore Reads"</em>. Probably no coincidence...</p>
-<p>[caption id="attachment_520" align="alignright" width="340"]<a href="http://flxlexblog.files.wordpress.com/2014/02/4130_mini_ion_lab-copy.png"><img class="size-full wp-image-520" alt="The MinION from Oxford Nanopore. Source https://www.nanoporetech.com. Unshure about copyright..." src="{{ site.baseurl }}/assets/4130_mini_ion_lab-copy.png" width="340" height="227" /></a> The MinION from Oxford Nanopore. Source https://www.nanoporetech.com. Unsure about copyright...[/caption]</p>
-<p>David Jaffe's highly anticipated talk showed data generated <em>by Oxford Nanopore</em> on their MinION from two bacterial genomes. One was a methylation negative E coli (the fact that it was methylation negative may have been significant, but he didn't say). The second species was a Scardovia. 5 micrograms of DNA were sent to the company. Library prep consisted of fragmentation and adaptor ligation, basically the classical workflow. Nothing was said about the type of adaptors.</p>
-<p><!--more-->Jaffe showed how the platform worked, but stressed he just told it as it was told to him by the company. Double stranded DNA is ratcheted through the nanopore, becoming single stranded in the process. Multiple bases are present in the pore at one time. At AGBT in 2012, the company said they were reading bases in groups of three. Jaffe showed a squiggly electrical nanopore signal with peaks representing overlapping 6-mers (!). For example, 6-mers read were TCGACC followed by CGACCC followed by GACCCT. So, the last five bases overlap with the first five bases of the next read. This means the software has to be able to distinguish 4096 different signals! Not much was said about this base-calling process.</p>
-<p>Read lengths were a distribution with a mean of 5.4 kbp for E coli and 4.9 kbp for Scardovia. Longest reads were around 9kbp. Jaffe commented that the company said the lengths were restricted to the length of the input (he showed a bioanalyzer trace of the fragmented DNA matching the length distribution of the reads). There is clearly room for improvement here, likely longer input will generate longer reads.</p>
-<p>Jaffe discussed and showed an example of the types of errors they were seeing, given that they have a reference genome for both strains. The reads showed long stretches of perfect matches, interrupted by clusters of errors ('error-blocks'), which were mostly most deletions. He mentioned that 84% of reads have at least a perfect 50-mer, and that 100% have at least one perfect 25-mer. He also showed what looked very much like a systematic error, where for a certain stretch of reference, five out of six reads were missing a T. Jaffe mentioned solutions the company is suggesting here, in particular a better base-caller, as well as using different pore types in the same MinION, hoping these will each have a different error-profile, allowing for building a consensus.</p>
-<p>Jaffe's title was "Assembly of Bacterial Genomes Using Long Nanopore Reads". It turns out he needed to combine the MinION reads with short-read data to be able to do that. So they generated PCR-free libraries for the same strains for the Illumina platform (probably the MiSeq) and their program DISCOVAR for the assembly. The MinION reads were then used to resolve the assembly graph from DISCOVAR, basically overcoming the repeats larger than the illumina reads. The same approach, by the way, was used for their ALLPATHS program and PacBio reads a couple of years ago.</p>
-<p>Concluding, Jaffe said that Oxford Nanopore data is not yet useful for de novo assembly on its own, so he is envisioning applications where getting every base right is not an issue.</p>
-<p>Here are a few of my thoughts about this presentation. On its own, this is a fantastic breakthrough for nanopore based DNA sequencing. Not earlier has a nanopore platform been able to show this kind of data. So, congratulations are in place for Oxford Nanopore.</p>
-<p>The lengths of reads presented may seem disappointing given the presentation at AGBT two years ago, where 100 kbp reads were mentioned. However, the limit may have been the size distributions after fragmentation. As users of the PacBio platform know, fragmentation is an art for obtaining long reads, so there is a clear potential for improvement here.</p>
-<p>The error-model, which seems to be biased and systematic, is worrying from an assembly and variant calling point of view. It will probably improve over time. On the other hand, there are, as Jaffe eluded to, lot's of applications where having (near)-perfect reads are not crucial. Think scaffolding, structural variation detection, isoforms for RNA (cDNA) sequencing, etc.</p>
-<p>There remain a few open questions, though. Nothing was mentioned on coverage of the genomes sequenced (a clear miss by Jaffe). Hopefully, there will be no GC bias, for example. A careful look at the errors is needed, for example, are there chimeric reads, adaptors present, long-range errors in the reads?</p>
-<p>What about the comparison with other long-read platforms? The data presented is somewhat similar to moleculo data in terms of length, with a lower quality and a yet-to-be determined GC bias. PacBio reads are significantly longer, and of a better quality after self error-correction. The big difference is of course price. A PacBio instrument, and a HiSeq, are very much more expensive than the MinION. A small USB stick also takes up much less space, and can be carried around to the field, especially if library prep can be made small enough.</p>
-<p>We are all comparing this presentation to what Oxford Nanopore described two years ago. The length of the reads, as mentioned, leaves much room for improvement. Direct sequencing of for example blood samples does not yet seem to be possible. It is quite easy to accuse the company of over promising, but they merely joined the club…</p>
-<p>Nothing was said about data release, and I really, really hope the company will give the community access to the data.</p>
-<p>So here is my summary: MinION nanopore reads are error-prone, likely with a systematic error (not random). They already show potential for assembly improvement, but are not yet ready for de novo assembly on their own. Other applications will certainly appear. If the data quality doesn't turn out to be a major headache, there is a clear niche for the platform, where they will compete with the other available long-read technologies. If it is a game-changer (and a PacBio killer) remains to be seen.</p>
-<p>P.S. see NextGenSeek's post on the presentation <a href="http://nextgenseek.com/2014/02/oxford-nanopore-data-and-minion-valentines-days-gift-to-genome-enthusiasts/">here</a></p>
-<p>P.S.2 our application to the MinIOn Access Program was not granted, so it will be a while until I get my hands on real data myself...</p>

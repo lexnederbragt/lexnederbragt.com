@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Our review of "Nonhybrid, finished microbial genome assemblies from long-read
-  SMRT sequencing data", aka the HGAP paper
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2014/06/19/our-review-of-nonhybrid-finished-microbial-genome-assemblies-from-long-read-smrt-sequencing-data-aka-the-hgap-paper.html
+title: 'Our review of "Nonhybrid, finished microbial genome assemblies from long-read
+SMRT sequencing data", aka the HGAP paper'
 date: 2014-06-19 10:48:39.000000000 +02:00
 type: post
 published: true
@@ -14,29 +16,17 @@ tags:
 - hgap
 - pacbio
 meta:
-  _wpcom_is_markdown: '1'
-  _edit_last: '12058266'
-  geo_public: '0'
-  publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/2BcaD5AzLhZ
-  _wpas_done_6015510: '1'
-  _publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
-  _wpas_skip_6015510: '1'
+_wpcom_is_markdown: '1'
+_edit_last: '12058266'
+geo_public: '0'
+publicize_google_plus_url: https://plus.google.com/113347535998207715225/posts/2BcaD5AzLhZ
+_wpas_done_6015510: '1'
+_publicize_done_external: a:1:{s:11:"google_plus";a:1:{s:21:"113347535998207715225";b:1;}}
+_wpas_skip_6015510: '1'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>As it is <a href="https://twitter.com/lexnederbragt/status/479261047560630272">out in the open</a> that I was one of the reviewers of the <a href="http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2474.html">'HGAP' paper</a>, I though I could as well make my review publicly available.</p>
-<p>I have posted the review report (from February 2013) online at <a href="https://publons.com/review/3881/">Publons</a>. The review was actually done together with a PhD student in the group, Ole Kristian Tørresen (I like to do reviews together with others, it leads to better reviews and is a great learning experience for students!).</p>
-<p>Here are the first few paragraphs. Enjoy!</p>
-<p><!--more-->---</p>
-<p>&nbsp;</p>
-<p>In this manuscript, the authors show how, by using just a single sequencing technology, one can get new-finished bacterial genomes assembled. The strategy one chooses for assembling a bacterial genome depends - as for any genome - on the goal of the project. For the remainder, we will assume the goal is a complete as possible reconstruction of the sequence of the genome: as close as possible to a single, gapless, error-free contig per chromosome (or plasmid).</p>
-<p>Before the method described in this manuscript became available, the best available strategy was to use the ALLPATHS_LG method described in Ribeiro et al <a href="http://genome.cshlp.org/content/early/2012/07/24/gr.141515.112.abstract">(doi:10.1101/gr.141515.112)</a>. However, this approach requires three different libraries and two different sequencing technologies: paired-end and mate-pairs from Illumina, and long PacBio reads. The next best thing would be using PacBioToCA and Celera (or a comparable program), see Koren et al <a href="http://www.nature.com/nbt/journal/v30/n7/full/nbt.2280.html">(doi:10.1038/nbt.2280)</a>. Here, two different libraries and two different sequencing technologies are needed: paired-end from Illumina, and long PacBio reads. The ALLPATHS_LG strategy so far outperforms the PacBioToCA results as reported in these two publications.</p>
-<p>The novelty in the approach demonstrated with this manuscript is that one can use a single library, with a single sequencing technology. In the sense of making sequencing bacterial genomes practical this is a clear novelty and significant advantage over the alternatives. This will interest groups both routinely, or occasionally, doing de novo genome assembly of bacterial genomes and genomes (or contracts such as BACs) of smaller size, provided they have access to PacBio sequencing or can order from a service facility.<br />
-The next question is then how good the method works. The authors have demonstrated this by using the method on three bacterial genomes for which a high-quality reference genome is available. The results are indeed impressive. The remaining problems are centred around repeats for which probably not enough long, spanning reads were available.</p>
-<p>The authors do not compare their results with those presented by Ribeiro et al, understandable as - with the exception of E coli - different genomes were tested for each approach. It would be too much to askj the authors to apply their method on the two other genomes with a reference used in Ribeiro et al. However, a more in depth comparison with the E coli K12 MG1655 data would be a goo addition to the manuscript (e.g. by running the final ALLPATHS_LG assembly through the same analyses pipeline) A quick glance at comparable tables shows that the ALLPATHS_LG strategy results in somewhat better assemblies (final quality scores are higher and fewer errors are present), but a thorough comparison was not performed for this report. Suffice it to say that the significant simplicity of the method presented in this manuscript will for many weigh up to the (very) slightly lower final quality.</p>
-<p>An important aspect of a new method is reproducibility and ease of implementation for the intended users. Time did not permit a full attempt at redoing the analyses described. However, due to the fact that we have access to the latest version of the PacBio smrtpipe software (version 1.4), we were able to reproduce one of the results: using the 8 SMRTCells of the E coli dataset described in the manuscript, and the PreAssembly module of smrtpipe, we generated an set of preassembled reads whose statistics perfecty match those described in Supplementary table 1, second row (15252 reads, average length 5466 bp, N50 length 6291 bp). We have not tried assembling these reads. Regarding reproducibility, it would be good of the authors to provide recipes describing step-for-step how to go from the downloaded data to final assemblies. regarding ease of implementation, could the authors provide information on running times and memory use of the different steps (preassembly, assembly and Quiver)? What are the hardware requirements for running the software? this will help the reader to judge what it would take to implement the method compared to other such methods.</p>
-<p>In conclusion, the manuscript as presented here is a significant advance in the field, scientifically sound, clearly written, and of interest to the intended audience. It could be improved on the reproducibility aspect (with the addition of recipes).</p>

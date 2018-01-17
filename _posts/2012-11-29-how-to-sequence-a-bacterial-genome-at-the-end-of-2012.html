@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: https://flxlexblog.wordpress.com/2012/11/29/how-to-sequence-a-bacterial-genome-at-the-end-of-2012.html
 title: How to sequence a bacterial genome at the end of 2012
 date: 2012-11-29 16:08:27.000000000 +01:00
 type: post
@@ -18,108 +20,20 @@ tags:
 - MiSeq
 - pacbio
 meta:
-  _edit_last: '12058266'
-  _publicize_pending: '1'
-  _oembed_72801d11ce9f40af2e90df72d7c32271: '{{unknown}}'
-  _oembed_5068b352e8308a71973ec3ff24cf3261: '{{unknown}}'
-  _oembed_0120545b1820e6301e6b6f137dd42d71: '{{unknown}}'
-  _oembed_9b629d3ace1053ef60112893e9300568: '{{unknown}}'
-  _oembed_cb48f4330d87dd4b1614a75c5cb0d852: '{{unknown}}'
-  _oembed_bde6f880df2377095c26f1dc1659583e: '{{unknown}}'
-  _oembed_c1624c5223aa61e9cdaccc411dd867b4: '{{unknown}}'
-  _oembed_cffe7a7ffd1b99e1da2ebcd8836c8bf2: '{{unknown}}'
+_edit_last: '12058266'
+_publicize_pending: '1'
+_oembed_72801d11ce9f40af2e90df72d7c32271: '{{unknown}}'
+_oembed_5068b352e8308a71973ec3ff24cf3261: '{{unknown}}'
+_oembed_0120545b1820e6301e6b6f137dd42d71: '{{unknown}}'
+_oembed_9b629d3ace1053ef60112893e9300568: '{{unknown}}'
+_oembed_cb48f4330d87dd4b1614a75c5cb0d852: '{{unknown}}'
+_oembed_bde6f880df2377095c26f1dc1659583e: '{{unknown}}'
+_oembed_c1624c5223aa61e9cdaccc411dd867b4: '{{unknown}}'
+_oembed_cffe7a7ffd1b99e1da2ebcd8836c8bf2: '{{unknown}}'
 author:
-  login: lexnederbragt
-  email: lex.nederbragt@bio.uio.no
-  display_name: lexnederbragt
-  first_name: ''
-  last_name: ''
+login: lexnederbragt
+email: lex.nederbragt@bio.uio.no
+display_name: lexnederbragt
+first_name: ''
+last_name: ''
 ---
-<p>A potential user ('customer') of our <a href="http://www.sequencing.uio.no/">sequencing platform</a> asked how to generate reference genomes for his 4 bacterial strains. His question inspired me to write this post. The suggestions below are not absolute, just my thoughts on how one these days could go about sequencing a bacterial genome using one or more of the sequencing platforms. I would appreciate any feedback/suggestions in the comments section!</p>
-<p><strong>Option 1: bits and pieces</strong></p>
-<ul>
-<li>Libraries: paired end or single end sequencing</li>
-<li>Platform: one or more of Illumina MiSeq or HiSeq, Ion Torrent PGM, 454 GS FLX or GS Junior</li>
-<li>Bioinformatics: assembly: Velvet, SOAPdenovo, Newbler, MIRA, Celera</li>
-<li>Outcome: up to hundreds of short contigs (with only single-end reads) or contigs + scaffolds (with paired end reads)</li>
-<li>Pros: fast and cheap, OK for presence/absence of e.g. genes</li>
-<li>Cons: doesn't give much insight into the genome</li>
-<li>Remarks: due to per-run throughput, multiplexing is recommended; data can also be used for mapping against a reference genome instead</li>
-</ul>
-<p><strong><!--more-->Option 2: a few gaps remaining</strong></p>
-<ul>
-<li>Libraries: paired end or single end sequencing combined with at least one mate pair library of 8kb distance, optionally a 3-5 kb mate pair library</li>
-<li>Platform: paired end: one or more of Illumina MiSeq or HiSeq, Ion Torrent PGM, 454 GS FLX or GS Junior; mate pairs: preferably on the 454, otherwise Illumina, demonstrated protocol for Ion PGM</li>
-<li>Bioinformatics: assembly: Illumina data: Velvet, SOAPdenovo; 454 data: Newbler MIRA, Celera; hybrid: Newbler, Celera</li>
-<li>Outcome: down to one or a few scaffolds per chromosome/plasmid with a few to numerous gaps remaining</li>
-<li>Pros: gives a lot of long-range information</li>
-<li>Cons: mate pair libraries more cumbersome to make; more expensive, remaining gaps often due to repeats, which may be exactly the regions of interest (e.g. transposons, rDNA operons)</li>
-<li>Remarks: hybrid assembly is largely uncharted territory; gap closing programs may help (IMAGE2, Soap gap closer, GapFiller, ...)</li>
-</ul>
-<p><strong>Option 3: closing the gaps</strong></p>
-<ul>
-<li>Libraries: as for option 2, but in addition a long-insert (10kb) PacBio library</li>
-<li>Platform: one of Illumina MiSeq or HiSeq, Ion Torrent PGM, 454 GS FLX or GS Junior; plus PacBio RS</li>
-<li>Bioinformatics: assembly: same as option 2; gap closing/finishing: PBJelly; AHA from PacBio can also be used</li>
-<li>Outcome: down to one or a few scaffolds per chromosome/plasmid potentially without gaps remaining</li>
-<li>Pros: no mate pairs needed, potentially very complete genome</li>
-<li>Cons: requires multiple libraries, expensive</li>
-<li>Remarks: Quiver can be used to improve the per-base quality given enough PacBio coverage</li>
-</ul>
-<p><strong>Option 4: The ALLPATHS_LG way</strong></p>
-<ul>
-<li>Libraries: Illumina paired end + Illumina Mate Pair + a long-insert (10kb) PacBio library</li>
-<li>Platform: Illumina HiSeq or MiSeq; PacBio RS</li>
-<li>Bioinformatics: assembly: ALLPATHS_LG</li>
-<li>Outcome: down to one or a few contigs per chromosome/plasmid</li>
-<li>Pros: can yield finished genome</li>
-<li>Cons: complex mixture of libraries, can become expensive</li>
-<li>Remarks: special recipe: the paired end library should have a short insert, such that the forward and reverse read overlap</li>
-</ul>
-<p><strong>Option 5: PacBio hybrid</strong></p>
-<ul>
-<li>Libraries: paired end or single end sequencing + a long-insert (10kb) PacBio library</li>
-<li>Platform: as for option 2, but PacBio RS in addition</li>
-<li>Bioinformatics: error correction of the PacBio reads: PacBioToCA, LSC, P_ErrorCorrection from PacBio; assembly: Celera, MIRA</li>
-<li>Outcome: down to one or a few scaffolds per chromosome/plasmid potentially without gaps remaining</li>
-<li>Pros: can yield finished genome; only needs two libraries that are simple to produce</li>
-<li>Cons: error-correction can be computationally demanding</li>
-<li>Remarks: Quiver can be used to improve the per-base quality given enough PacBio coverage</li>
-</ul>
-<p><strong>Option 6: PacBio only</strong></p>
-<ul>
-<li>Libraries: a single, long-insert (10kb) PacBio library</li>
-<li>Platform: PacBio RS</li>
-<li>Bioinformatics: error-correction; HGAp; assembly: Celera or Allora</li>
-<li>Outcome: down to one or a very few contigs per chromosome/plasmid</li>
-<li>Pros: uses a single library, cheap, finished genome of very high quality</li>
-<li>Cons: somewhat experimental, limited examples available, therefore currently a bit more risky</li>
-<li>Remarks: use Quiver for polishing</li>
-</ul>
-<p><strong>EDIT: additional tools</strong></p>
-<ul>
-<li><span style="line-height:13px;">Reader BenK suggested adding <a href="http://en.wikipedia.org/wiki/Optical_mapping">optical mapping </a>as a way to improve bacterial genome assemblies. Not a sequencing technology per se, but, as he writes, "Many genomes have undiscovered repetitive regions that mapping unveils."</span></li>
-<li>Reader Roy suggested mentioning stand-alone scaffolders: <a href="http://www.baseclear.com/landingpages/basetools-a-wide-range-of-bioinformatics-solutions/sspacev12/">SSPACE</a>, <a href="http://www.physics.rutgers.edu/~anirvans/SOPRA/">SOPRA</a>, and the reference-based scaffolder <a href="http://abacas.sourceforge.net/">ABACUS</a> . See also <a href="http://seqanswers.com/wiki/How-to/scaffolding">this SeqWiki howto</a>.</li>
-<li>Sébastien Boisvert, author of <a href="http://denovoassembler.sourceforge.net/">Ray</a>, suggested I add his program. Done hereby. The reason that it is not listed above has to do with my inexperience with it with regards to <em>de novo</em> bacterial genome assemblies</li>
-<li>In the same spirit, reads may want to look at the <a href="http://gage.cbcb.umd.edu/assemblers/index.html">GAGE results</a> for more programs.</li>
-</ul>
-<p><span style="text-decoration:underline;">Relevant previous blog posts:</span></p>
-<p><a title="Combining short and long reads: choosing between PacBioToCA and the new ALLPATHS_LG" href="http://flxlexblog.wordpress.com/2012/08/06/combining-short-and-long-reads-choosing-between-pacbiotoca-and-the-new-allpaths_lg/">Combining short and long reads: choosing between PacBioToCA and the new ALLPATHS_LG</a></p>
-<p><a href="/2012/03/02/ion-torrent-mate-pairs-and-a-single-scaffold-for-e-coli-k12-substr-mg1655">Ion Torrent Mate Pairs and a single scaffold for E coli K12 substr. MG1655</a></p>
-<p><span style="text-decoration:underline;">Links to programs mentioned:</span></p>
-<p><a href="http://www.broadinstitute.org/software/allpaths-lg/blog/">ALLPATHS_LG<br />
-</a><a href="http://wgs-assembler.sourceforge.net/">Celera</a><br />
-<a href="http://www.baseclear.com/landingpages/basetools-a-wide-range-of-bioinformatics-solutions/gapfiller/">GapFiller</a><br />
-<a href="http://www.smrtcommunity.com/Share/Code?id=a1q70000000H2qRAAS&amp;strRecordTypeName=Code">HGAp</a><br />
-<a href="http://sourceforge.net/apps/mediawiki/image2/index.php?title=Main_PageLSC">IMAGE2</a><br />
-<a href="http://www.stanford.edu/~kinfai/LSC/LSC.html">LSC</a><br />
-<a href="http://sourceforge.net/apps/mediawiki/mira-assembler/index.php?title=Main_Page">MIRA</a><br />
-Newbler: request <a href="http://454.com/contact-us/software-request.asp">here</a><br />
-P_ErrorCorrection, Allora and AHA see <a href="http://www.pacificbiosciences.com/products/software/algorithms/">here</a>, these need <a href="http://www.smrtcommunity.com/SMRT-Analysis/Software/SMRT-Pipe">smrtpipe</a><br />
-<a href="http://sourceforge.net/apps/mediawiki/wgs-assembler/index.php?title=PacBioToCA">PacBioToCA</a> (also part of Celera 7.0 and smrtpipe)<br />
-<a href="http://sourceforge.net/projects/pb-jelly/">PBJelly</a><br />
-Quiver see <a href="http://www.smrtcommunity.com/Share/Code?id=a1q70000000GyqwAAC&amp;strRecordTypeName=Code Soap gapcloser http://soap.genomics.org.cn/soapdenovo.html">here</a><br />
-<a href="http://soap.genomics.org.cn/soapdenovo.html or http://sourceforge.net/projects/soapdenovo2/">SOAPdenovo </a><br />
-<a href="http://www.ebi.ac.uk/~zerbino/velvet/">Velvet</a></p>
-<p>Reader Roy suggested adding <a href="http://bioinf.spbau.ru/spades">Spades</a>.</p>
-<p>(If you feel I missed a program here, let me know in the comments below!)</p>
