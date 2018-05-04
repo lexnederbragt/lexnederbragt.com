@@ -5,4 +5,5 @@ Oxford. We are working to foster a culture of research reproducibility
 at Oxford.
 
 # preview
-sudo bundle exec jekyll serve
+
+bundle exec jekyll serve

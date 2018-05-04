@@ -156,6 +156,7 @@ defaults:
 link-tags: true
 
 # Exclude these files from production site
+# 'vendor'  as per https://github.com/jekyll/jekyll/issues/5267#issuecomment-241379902
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -163,6 +164,8 @@ exclude:
   - README.md
   - CNAME
   - Vagrantfile
+  - vendor
+
 
 # prose.io config
 prose:
