@@ -4,89 +4,94 @@ permalink: /cv
 title: CV
 ---
 
-Date: January 2018
+Date: June 2018
 
 Summary
 ---------
 
-I am a self-taught bioinformatician with a firm background in biology. In my work, I analyse data from high-throughput sequencing instruments, specialising in *de novo* assembly of small and large genomes. I had a central role in the sequencing and assembly of the first version of the Atlantic cod genome.
+I am a Senior Lecturer ('Førstelektor') at the Department of Biosciences, University of Oslo. I am also head of education and training for the Centre for Bioinformatics, Dept. of Informatics, Univ. of Oslo.
 
-I work at the Centre for Ecological and Evolutionary Synthesis (CEES) Dept. of Biosciences, Univ. of Oslo, on the genomics of Atlantic cod and other species, as well as on new methods to represent (reference) genomic information. For my 20% associate professor position at the department of Informatics (Univ. of Oslo), I teach analysis of sequencing data and (co-)supervise PhD and master students.
+At the Dept. of Biosciences, I lead the implementation of Computing in Science Education in the bachelor degree. As part of that I organise the first-semester course "Introduction to Computational Modelling for the Biosciences" (BIOS1100), teaching new Bioscience students mathematical modeling of biological problems using Python.
 
-I am a lead bioinformatician at the Norwegian Sequencing Centre and the most senior bioinformatician at CEES. As lead instructor for the bioinformatics course I teach, I manage the volunteer teachers and helpers.
+For the Centre for Bioinformatics, I develop and coordinate a portfolio of credited courses as well as workshops for master and PhD students and other staff.
+
+I am a self-taught bioinformatician with a firm background in biology. My research at the Centre for Ecological and Evolutionary Synthesis ([CEES](https://www.mn.uio.no/cees/english/)) at the Dept. of Biosciences is on new methods to represent (reference) genomic information. I previously had a central role in the sequencing and assembly of the Atlantic cod genome. I lead the Advisory Council for eInfrastructure ([fagrådet for eInfrastruktur](www.uio.no/for-ansatte/nettverk-moter/los-enhetene/forskningsinfrastruktur/einfrastruktur/)) at UiO.
+
+I am a Software Carpentry instructor, teaching computational lab skills to scientists in the Nordic countries. I am an advocate of open source software, and reproducible computational biology. I share my work not only through publications, but also on my science blog at lexnederbragt.com. My presentations can be found on [figshare](figshare.com/collections/Slides_of_my_talks_presentations/3488832) and [slideshare](http://slideshare.com/flxlex), and I am active on twitter ([@lexnederbragt](https://twitter.com/lexnederbragt)).
 
 I have an analytical mind that loves problem solving. I value honesty and professionalism, and dislike hype. I believe that sharing and openness will further science more than competition. I choose impact over impact factor.
 
-I am a Software Carpentry instructor, teaching computational lab skills to scientists in the Nordic countries. I am an advocate of open source software, and reproducible computational biology. I share my work not only through publications, but also on my science blog at flxlexblog.wordpress.com. My presentations can be found on slideshare (<http://slideshare.com/flxlex>), and I am active on twitter (@lexnederbragt).
 
 Research and Professional Experience
 ------------------------------------
-
-* 2013- Associate Professor (20%), Dept of Informatics, University of Oslo, Norway
-* 2005- Postdoct. Res. Fellow, Researcher, Senior Engineer, Dept. of Biosciences, Univ. of Oslo, Norway
-* 2003-2005  Senior Scientist, Lingvitae AS, Oslo, Norway
-* 2002-2003 Postdoctoral research project University of Hawaii, USA
+* 2018- Senior lecturer, Dept. of Biosciences and Dept of Informatics, University of Oslo, Norway  
+* 2018- Head of education and training, Centre for Bioinformatics, Dept of Informatics, University of Oslo, Norway  
+* 2013-2018 Associate Professor (20%), Dept of Informatics, University of Oslo, Norway  
+* 2005-2018  Postdoct. Res. Fellow, Researcher, Senior Engineer, Dept. of Biosciences, Univ. of Oslo, Norway  
+* 2003-2005 Senior Scientist, Lingvitae AS, Oslo, Norway  
+* 2002-2003 Postdoctoral research project University of Hawaii, USA  
 
 Education
 ---------
+* 2014-2015 Foundation programme Teaching and Learning in Higher Education ('Pedagogisk basiskompetanse'): Common part ('fellesdelen', 50 hours) + 37.5 hours in small modules  
+* 1997-2001 PhD Biology, Utrecht Grad. School of Developmental Biology, Utrecht University, Netherlands  
+* 1990-1996 BSc & MSc Biology, Utrecht University, Netherlands  
 
-* 2014-2015 Foundation programme Teaching and Learning in Higher Education ('Pedagogisk basiskompetanse'): Common part ('fellesdelen', 50 hours) + 37.5 hours in small modules
-* 1997-2001 PhD Biology, Utrecht Grad. School of Developmental Biology, Utrecht University, Netherlands
-* 1990-1996 BSc & MSc Biology, Utrecht University, Netherlands
-
-Grants that I am listed on as collaborator
---------------------
-
-### European Research council
-
-* ERC Consolidator Grant: **CICHLIDX**, an integrative approach towards the understanding of an adaptive radiation of East African cichlid fishes (PI: Walter Salzburger, Univ. of Basel)
-
-### Research Council of Norway
-
-* **REPEAT: Evolutionary and functional importance of simple repeats in the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)
-* **Aqua Genome Project** (PI: Kjetill Jakobsen)
-* **Norwegian Sequencing Centre** Research Infrastructure, phase II (PI: Kjetill Jakobsen, Univ. of Oslo)
-* **CodReseq**: Translating the cod genome for aquaculture (PI: Kjetill Jakobsen)
-* **Haddoc**, assessment of long-term effects of oil exposure on early life stages of Atlantic haddock (PI: Sonic Meier, Inst. of Marine Research)
-* **Genome dynamics in early eukaryotic evolution**: importance of enigmatic lineages (PI: Russel Orr, Univ. of Oslo)
-* **The genomic and physiological basis of invasiveness in a harmful house-invader** (InHouse) (PI: Inger Skrede, Univ. of Oslo)
 
 Teaching and teaching material
 --------
 
 **Courses organised**
 
-* BIOS1100 - Introduction to Computational Modelling in the Biosciences: <http://www.uio.no/studier/emner/matnat/ibv/BIOS1100>; new first-year bachelor course that I am coordinator and main teacher for; the course is the first implementation of the 'Computing in Science Education' project for the Biosciences study program, teaching python programming and modelling of real biological phenomena, 2017-
-* INF-BIO5121/9121 - High Throughput Sequencing technologies and bioinformatics analysis Univ. of Oslo: <http://inf-biox121.readthedocs.org/en/2015/>; I organise the course, coordinating with the five other teachers, and teach the assembly module: <http://inf-biox121.readthedocs.org/en/2016/Assembly/>, 2012-2016
+BIOS1100 - Introduction to Computational Modelling in the Biosciences: <http://www.uio.no/studier/emner/matnat/ibv/BIOS1100>; new first-year bachelor course that I am coordinator and main teacher for; the course is the first implementation of the 'Computing in Science Education' project for the Biosciences study program, teaching python programming and modelling of real biological phenomena, 2017-
+
+INF-BIO5121/9121 - High Throughput Sequencing technologies and bioinformatics analysis Univ. of Oslo: <http://inf-biox121.readthedocs.org/en/2015/>; I organise the course, coordinating with the five other teachers, and teach the assembly module: <http://inf-biox121.readthedocs.org/en/2016/Assembly/>, 2012-2016
 
 **Contributions to university courses**
 
-* MBV-INF4410/9410 Bioinformatics for Molecular Biology (Univ. of Oslo): lecture on "The bioinformatics of sequencing and assembling genomes", and "What does it mean to do bioinformatics?", 2013-2016
-* BIO9905MERG1 - Bioinformatics for Metagenomic Analyses and Environmental Sequencing (Univ. of Oslo): lectures on "Next Generation Sequencing techniques and data relevant for metagenomics analyses" and "Assembly of metagenomes", 2011
-* BIO2120 Evolusjonsbiologi (Univ. of Oslo): lectures on "Evolution and Development" and "Evolution of Genes and Genomes"; group work, 2006 - 2007
-* Erasmus ICP course Marine Cell Biology (Observatoire Oceanologique, Banyuls-sur-mer, France): lectures on "Fundamental aspects of development" and "Cell cycle changes during development", 2000
+MBV-INF4410/9410 Bioinformatics for Molecular Biology (Univ. of Oslo): lecture on "The bioinformatics of sequencing and assembling genomes", and "What does it mean to do bioinformatics?", 2013-2016
+
+BIO9905MERG1 - Bioinformatics for Metagenomic Analyses and Environmental Sequencing (Univ. of Oslo): lectures on "Next Generation Sequencing techniques and data relevant for metagenomics analyses" and "Assembly of metagenomes", 2011
+
+BIO2120 Evolusjonsbiologi (Univ. of Oslo): lectures on "Evolution and Development" and "Evolution of Genes and Genomes"; group work, 2006 - 2007
+
+Erasmus ICP course Marine Cell Biology (Observatoire Oceanologique, Banyuls-sur-mer, France): lectures on "Fundamental aspects of development" and "Cell cycle changes during development", 2000
 
 **Contributions to workshops**
 
-* Next-Gen Sequence Analysis Workshop 'week 3' (intermediate and advanced skills) (invited) 2015, Michigan State University <http://angus.readthedocs.org/en/2015/week3.html>
-* Univ. California Davis Assembly Masterclass (invited) 2013 <http://davis-assembly-masterclass-2013.readthedocs.org/en/latest/>
-* *De novo* genome assembly, Univ. of Oslo, 2011
-* *De novo* genome assembly (invited), Univ. of Gothenburg, 2011
+Next-Gen Sequence Analysis Workshop 'week 3' (intermediate and advanced skills) (invited) 2015, Michigan State University <http://angus.readthedocs.org/en/2015/week3.html>
+Univ. California Davis Assembly Masterclass (invited) 2013
+<http://davis-assembly-masterclass-2013.readthedocs.org/en/latest/>
+*De novo* genome assembly, Univ. of Oslo, 2011
+*De novo* genome assembly (invited), Univ. of Gothenburg, 2011
 
 ### Software and Data Carpentry
-
 [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/) are teaching researchers in science, engineering, medicine, and related disciplines worldwide computing and data analysis skills through short workshops using volunteer instructors.  I am a certified instructor of and organize and lead workshops in Norway and Sweden. Together with Karin Lagesen and with support from the Science Library (UiO), we have established Software and Data Carpentry at the University of Oslo, see [uio.no/carpentry](http://uio.no/carpentry), organising workshops more and more frequently, and increasing the number of certified instructors. I am also a certified *instructor trainer*, which enables me to give workshops for researchers that want to become instructors for Software or Data Carpentry.
 
 **Software Carpentry workshops taught**
-
-* University of Oslo: 2012, 2013, 2015, 2016, 2017
-* Netherlands eScience Centre: 2017
-* University of Bergen: 2014
-* Science for Life Laboratory, Stockholm, Sweden 2014
+University of Oslo: 2012, 2013, 2015, 2016, 2017
+Netherlands eScience Centre: 2017
+University of Bergen: 2014
+Science for Life Laboratory, Stockholm, Sweden 2014
 
 **Software/Data Carpentry instructor retreat**
-
 I gave a session on Interactive learning techniques, recording: <https://www.youtube.com/watch?v=QptHJgzooU0>.
+
+Grants that I am listed on as collaborator
+--------------------
+
+### European Research council
+ERC Consolidator Grant: **CICHLIDX**, an integrative approach towards the understanding of an adaptive radiation of East African cichlid fishes (PI: Walter Salzburger, Univ. of Basel)
+
+### Research Council of Norway
+**REPEAT: Evolutionary and functional importance of simple repeats in
+the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)
+**Aqua Genome Project** (PI: Kjetill Jakobsen)
+**Norwegian Sequencing Centre** Research Infrastructure, phase II (PI: Kjetill Jakobsen, Univ. of Oslo)
+**CodReseq**: Translating the cod genome for aquaculture (PI: Kjetill Jakobsen)
+**Haddoc**, assessment of long-term effects of oil exposure on early life stages of Atlantic haddock (PI: Sonic Meier, Inst. of Marine Research)
+**Genome dynamics in early eukaryotic evolution**: importance of enigmatic lineages (PI: Russel Orr, Univ. of Oslo)
+**The genomic and physiological basis of invasiveness in a harmful house-invader** (InHouse) (PI: Inger Skrede, Univ. of Oslo)
 
 Selected blog posts
 -------------------
@@ -109,9 +114,8 @@ Software
 Github: <https://github.com/lexnederbragt>
 
 *Selected repositories:*
-
-* RepSeq (Nederbragt et al 2010) <https://github.com/lexnederbragt/RepSeq>
-* SequenceTools (scripts to work with DNA sequence and related files) <https://github.com/lexnederbragt/sequencetools>
+RepSeq (Nederbragt et al 2010) <https://github.com/lexnederbragt/RepSeq>
+SequenceTools (scripts to work with DNA sequence and related files) <https://github.com/lexnederbragt/sequencetools>
 
 Invited Seminars
 ----------------
@@ -133,45 +137,39 @@ Selected presentations:
 Professional and Community Service
 ----------------------------------
 **Grant Panels and Reviewing**
-
-* The Resource Allocation Committee for CPU and storage access at National HPC facilities (UNINETT Sigma2 AS), Norway (2014-)
+The Resource Allocation Committee for CPU and storage access at National HPC facilities (UNINETT Sigma2 AS), Norway (2014-)
 
 **Advisory boards**
-
-* Secretary, Executive Council 'The Carpentries' (Software and Data Carpentry) (2018-)
-* Leader, Advisory Council ('fagråd') eInfrastructure, University of Oslo (2016-)
-* Leader of the board, Digital Life Norway Research School (2016-)
-* MicrobesNG Microbial Genome Sequencing service and Open Strain Archive, Univ. of Birmingham, External Advisory Board (2014-)
+Secretary, Executive Council 'The Carpentries' (Software and Data Carpentry), 2018-
+Leader, Advisory Council ('fagråd') eInfrastructure, University of Oslo (2016-)
+Leader of the board, Digital Life Norway Research School (2016-)
+MicrobesNG Microbial Genome Sequencing service and Open Strain Archive, Univ. of Birmingham, External Advisory Board (2014-)
 
 **Manuscript Reviewing**
-
 Open reviews: Publons <https://publons.com/author/18712/alexander-j-nederbragt>
 
 Reviewer for Nature Methods, Nature Scientific Data, Bioinformatics, BMC Bioinformatics, BMC Genomics, Animal Genetics, Gigascience
 
 **Volunteer activies**
-
-* Leader, 'kodeklubben Bærum' (code club), offering coding classes to children from 8 to 14 (2016-)
-* Board member of the residential condominium 'Hiltonåsen', Slependen, Norway (2009-2015)
+Leader, 'kodeklubben Bærum' (code club), offering coding classes to children from 8 to 14 (2016-)
+Board member of the residential condominium 'Hiltonåsen', Slependen, Norway 2009-2015
 
 Research Mentoring
 ------------------
 **Graduate Students**
-
-* Co-supervisor PhD students, Univ. of Oslo since 2008, 2 finished, 3 ongoing
+Co-supervisor PhD students, Univ. of Oslo since 2008, 2 finished, 4 ongoing
 
 **Undergraduate Researchers**
-
-* Main supervisor MSc students, Univ. of Oslo since 2014, 3 finished, 1 ongoing
-* Co-supervisor MSc students, Univ. of Oslo since 2013, 3 finished
+Main supervisor MSc students, Univ. of Oslo since 2014, 4 finished, 1 ongoing
+Co-supervisor MSc students, Univ. of Oslo since 2013, 2 finished, 1 ongoing
 
 Languages
 ---------
 
-* Dutch: first language, excellent oral/written
-* English: excellent oral/written
-* Norwegian: good oral/written
-* German: conversational
+Dutch: first language, excellent oral/written  
+English: excellent oral/written  
+Norwegian: good oral/written  
+German: conversational
 
 List of publications
 --------------------
