@@ -4,6 +4,8 @@ permalink: /about
 title: About
 ---
 
+## About Lex Nederbragt
+
 I am a Senior Lecturer ('Førstelektor') at the Department of Biosciences, University of Oslo. I am also head of education and training for the Centre for Bioinformatics, Dept. of Informatics, Univ. of Oslo.
 
 At the Dept. of Biosciences, I lead the implementation of Computing in Science Education in the bachelor degree. As part of that I organise the first-semester course "Introduction to Computational Modelling for the Biosciences" (BIOS1100), teaching new Bioscience students mathematical modeling of biological problems using Python.
