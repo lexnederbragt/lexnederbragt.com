@@ -174,6 +174,8 @@ German: conversational
 List of publications
 --------------------
 
+See also my [Google Scholar profile](https://scholar.google.no/citations?user=lSNc07gAAAAJ&hl=en) or [ORCID page](http://orcid.org/0000-0001-5539-0999).
+
 ## Preprints
 
 Tørresen, O. K., Brieuc, M. S. O., Solbakken, M. H., Sørhus, E., **Nederbragt, A. J.**, Jakobsen, K. S., Meier, S., Edvardsen, R. B., & Jentoft, S. (2017). Genomic architecture of codfishes featured by expansions of innate immune genes and short tandem repeats. <em>BioRxiv</em>, 163949. <a href="https://doi.org/10.1101/163949" class="uri">https://doi.org/10.1101/163949</a>
