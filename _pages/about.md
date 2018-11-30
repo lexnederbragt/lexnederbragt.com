@@ -50,3 +50,8 @@ I am also proud to have contributed to [several Carpentries lessons](https://zen
 LICENSE NOTICE. Unless prevented by existing licenses or otherwise, I
 release the material on this blog under a [CC0 license](http://creativecommons.org/publicdomain/zero/1.0/). Feel free
 to use the material for the greater good. The license does not require a reference to the source, but I would appreciate it.
+
+
+## About this website
+
+Based on [Reproducible Research Oxford's website](https://github.com/RROxford/rroxford.github.io), which based it on [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll). Source can be found at this [GitHub repository](https://github.com/lexnederbragt/lexnederbragt.com).
