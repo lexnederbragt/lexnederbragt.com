@@ -1,9 +1,10 @@
-# rroxford.github.io
+# My personal website
 
-Reproducible Research Oxford is a project based at the University of
-Oxford. We are working to foster a culture of research reproducibility
-at Oxford.
+Repository for my personal website [lexnederbragt.com](https://lexnederbragt.com).
 
-# preview
+Based on the rroxford.github.io website
+
+
+### preview
 
 bundle exec jekyll serve
