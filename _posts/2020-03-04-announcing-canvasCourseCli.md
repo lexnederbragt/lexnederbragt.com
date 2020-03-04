@@ -76,7 +76,7 @@ The [Canvas Data CLI Tool](https://community.canvaslms.com/docs/DOC-6600-how-to-
 ## How to install it
 
 For now, `canvasCourseCli` is available through a GitHub repo
-at https://github.com/lexnederbragt/canvasCourseCli.
+at [https://github.com/lexnederbragt/canvasCourseCli](https://github.com/lexnederbragt/canvasCourseCli).
 Clone that repo, or
 [download the code](https://github.com/lexnederbragt/canvasCourseCli/releases),
 and make it available on your system.
