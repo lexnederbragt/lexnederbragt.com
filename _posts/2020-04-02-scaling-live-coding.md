@@ -22,9 +22,8 @@ so students can used it to implement simple mathematical models
 to address relevant biological questions.
 
 In two earlier blog posts, I explained the
-
-[rationale behind the course]({% link _posts/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences.md %})
-and [how the first edition went]({% link _posts/2017-12-17-experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences.md %}).
+[rationale behind the course](https://lexnederbragt.com/blog/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences/)
+and [how the first edition went](https://lexnederbragt.com/blog/2017-12-17-experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences).
 In that latter post, I concluded that I needed to use Participatory Live Coding
 to teach students the basics of Python programming.
 
@@ -41,7 +40,7 @@ shows them how to diagnose and correct mistakes.
 
 Participatory live coding is the main teaching method in workshops
 organised by the global non-profit called
-The Carpentries (<https://carpentries.org>), the umbrella organisation
+[The Carpentries](https://carpentries.org), the umbrella organisation
 for Software Carpentry, Data Carpentry and Library Carpentry.
 As an active Carpentries instructor, I use this technique when teaching,
 for example, programming, the Unix shell
