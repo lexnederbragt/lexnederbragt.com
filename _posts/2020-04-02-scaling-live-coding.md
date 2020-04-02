@@ -23,8 +23,8 @@ to address relevant biological questions.
 
 In two earlier blog posts, I explained the
 
-[rationale behind the course]({% link _posts/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences.md %})
-and [how the first edition went]({% link _posts/2017-12-17-experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences.md %}).
+[rationale behind the course]({% link _posts/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences.html %})
+and [how the first edition went]({% link _posts/2017-12-17-experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences.html %}).
 In that latter post, I concluded that I needed to use Participatory Live Coding
 to teach students the basics of Python programming.
 
