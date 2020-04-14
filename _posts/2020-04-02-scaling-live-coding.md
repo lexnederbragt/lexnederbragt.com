@@ -115,7 +115,7 @@ with deliberately little time for exercises.
 In group sessions, live coding was still used for worked examples,
 to demonstrate things and to explain material that the students
 struggled with. This left enough time, usually at least 2 hours,
-for working-on-your-own.
+for working-on-your-own on exercises in the classroom (discussing with each other and/or the teaching assistants).
 The experience from the 2019 model was that a number of students
 that should have gone to the participatory live coding sessions
 didn't attend them, as these were voluntary.
