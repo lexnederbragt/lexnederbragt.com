@@ -4,7 +4,7 @@ permalink: /cv
 title: CV
 ---
 
-Date: June 2018
+Date: March 2021
 
 Summary
 ---------
@@ -17,7 +17,7 @@ For the Centre for Bioinformatics, I develop and coordinate a portfolio of credi
 
 I am a self-taught bioinformatician with a firm background in biology. My research at the Centre for Ecological and Evolutionary Synthesis ([CEES](https://www.mn.uio.no/cees/english/)) at the Dept. of Biosciences is on new methods to represent (reference) genomic information. I previously had a central role in the sequencing and assembly of the Atlantic cod genome. I lead the Advisory Council for eInfrastructure ([fagrådet for eInfrastruktur](www.uio.no/for-ansatte/nettverk-moter/los-enhetene/forskningsinfrastruktur/einfrastruktur/)) at UiO.
 
-I am a Software Carpentry instructor, teaching computational lab skills to scientists in the Nordic countries. I am an advocate of open source software, and reproducible computational biology. I share my work not only through publications, but also on my science blog at lexnederbragt.com. My presentations can be found on [figshare](figshare.com/collections/Slides_of_my_talks_presentations/3488832) and [slideshare](http://slideshare.com/flxlex), and I am active on twitter ([@lexnederbragt](https://twitter.com/lexnederbragt)).
+I am a Software Carpentry instructor, teaching computational lab skills to scientists in the Nordic countries. I am an advocate of open source software, and reproducible computational biology. I share my work not only through publications, but also on my science blog at [lexnederbragt.com](https://lexnederbragt.com). My presentations can be found on [figshare](figshare.com/collections/Slides_of_my_talks_presentations/3488832) and [slideshare](http://slideshare.com/flxlex), and I am active on twitter ([@lexnederbragt](https://twitter.com/lexnederbragt)).
 
 I have an analytical mind that loves problem solving. I value honesty and professionalism, and dislike hype. I believe that sharing and openness will further science more than competition. I choose impact over impact factor.
 
@@ -33,10 +33,14 @@ Research and Professional Experience
 
 Education
 ---------
-* 2014-2015 Foundation programme Teaching and Learning in Higher Education ('Pedagogisk basiskompetanse'): Common part ('fellesdelen', 50 hours) + 37.5 hours in small modules  
+* 2019-2020 Foundation programme Teaching and Learning in Higher Education ('Pedagogisk basiskompetanse')
 * 1997-2001 PhD Biology, Utrecht Grad. School of Developmental Biology, Utrecht University, Netherlands  
 * 1990-1996 BSc & MSc Biology, Utrecht University, Netherlands  
 
+Leadership training
+-------------------
+Research Leadership ('Forskerledelse') for temporarily employed researchers at the Biological Institute, 8 half days. Organiser: Storyboard/Stride.no (2009)  
+Research management for Phd students, NIBI (Netherlands Institute for Biology), (2000)
 
 Teaching and teaching material
 --------
@@ -57,41 +61,56 @@ BIO2120 Evolusjonsbiologi (Univ. of Oslo): lectures on "Evolution and Developmen
 
 Erasmus ICP course Marine Cell Biology (Observatoire Oceanologique, Banyuls-sur-mer, France): lectures on "Fundamental aspects of development" and "Cell cycle changes during development", 2000
 
-**Contributions to workshops**
+**Workshops**  
+Workshop on Genome Assembly (https://github.com/lexnederbragt/denovo-assembly-tutorial) for the Norwegian Sequencing Centre course: High Through-put Sequencing: technology basics, applications and bioinformatic analysis https://www.sequencing.uio.no/events/2011/nsc_course_2011.html, 2011
 
-Next-Gen Sequence Analysis Workshop 'week 3' (intermediate and advanced skills) (invited) 2015, Michigan State University <http://angus.readthedocs.org/en/2015/week3.html>
-Univ. California Davis Assembly Masterclass (invited) 2013
-<http://davis-assembly-masterclass-2013.readthedocs.org/en/latest/>
-*De novo* genome assembly, Univ. of Oslo, 2011
+**Contributions to workshops**  
+Next-Gen Sequence Analysis Workshop 'week 3' (intermediate and advanced skills) (invited), http://angus.readthedocs.org/en/2015/week3.html, Michigan State University, 2015  
+Univ. California Davis Assembly Masterclass (invited) http://davis-assembly-masterclass-2013.readthedocs.org/en/latest, 2013  
 *De novo* genome assembly (invited), Univ. of Gothenburg, 2011
+
 
 ### Software and Data Carpentry
 [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/) are teaching researchers in science, engineering, medicine, and related disciplines worldwide computing and data analysis skills through short workshops using volunteer instructors.  I am a certified instructor of and organize and lead workshops in Norway and Sweden. Together with Karin Lagesen and with support from the Science Library (UiO), we have established Software and Data Carpentry at the University of Oslo, see [uio.no/carpentry](http://uio.no/carpentry), organising workshops more and more frequently, and increasing the number of certified instructors. I am also a certified *instructor trainer*, which enables me to give workshops for researchers that want to become instructors for Software or Data Carpentry.
 
-**Software Carpentry workshops taught**
-University of Oslo: 2012, 2013, 2015, 2016, 2017
-Netherlands eScience Centre: 2017
-University of Bergen: 2014
-Science for Life Laboratory, Stockholm, Sweden 2014
+**Software Carpentry workshops taught**  
+University of Oslo - online: 2020, 2021  
+University of Oslo: 2012, 2013, 2015 - 2019  
+Netherlands eScience Centre: 2017  
+University of Bergen: 2014  
+Science for Life Laboratory, Stockholm, Sweden 2014  
 
-**Software/Data Carpentry instructor retreat**
+**Carpentries Instructor Training workshops taught**  
+University of Oslo: 2016, 2018  
+The Carpentries - online: 2016-2019
+
+**Software/Data Carpentry instructor retreat**  
 I gave a session on Interactive learning techniques, recording: <https://www.youtube.com/watch?v=QptHJgzooU0>.
 
-Grants that I am listed on as collaborator
---------------------
+Grants
+------
+
+* Project "Integration of Jupyter and Canvas for digital assessment", financed by Link - Centre for Learning, Innovation & Academic Development, UiO, 2019
+* Ratatosk Course Mobility Grant "Bringing Software Carpentry basic computing skills training to more Nordic countries" Nordic eInfrastructure Collaboration (NeIC), 2018
+
+<!--
+Listed in https://wiki.neic.no/w/ext/img_auth.php/c/c3/191220-Ratatosk-Final_report.pdf
+-->
+
+## Grants that I am listed on as collaborator
 
 ### European Research council
 ERC Consolidator Grant: **CICHLIDX**, an integrative approach towards the understanding of an adaptive radiation of East African cichlid fishes (PI: Walter Salzburger, Univ. of Basel)
 
 ### Research Council of Norway
 **REPEAT: Evolutionary and functional importance of simple repeats in
-the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)
-**Aqua Genome Project** (PI: Kjetill Jakobsen)
-**Norwegian Sequencing Centre** Research Infrastructure, phase II (PI: Kjetill Jakobsen, Univ. of Oslo)
-**CodReseq**: Translating the cod genome for aquaculture (PI: Kjetill Jakobsen)
-**Haddoc**, assessment of long-term effects of oil exposure on early life stages of Atlantic haddock (PI: Sonic Meier, Inst. of Marine Research)
-**Genome dynamics in early eukaryotic evolution**: importance of enigmatic lineages (PI: Russel Orr, Univ. of Oslo)
-**The genomic and physiological basis of invasiveness in a harmful house-invader** (InHouse) (PI: Inger Skrede, Univ. of Oslo)
+the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)  
+**Aqua Genome Project** (PI: Kjetill Jakobsen)  
+**Norwegian Sequencing Centre** Research Infrastructure, phase II (PI: Kjetill Jakobsen, Univ. of Oslo)  
+**CodReseq**: Translating the cod genome for aquaculture (PI: Kjetill Jakobsen)  
+**Haddoc**, assessment of long-term effects of oil exposure on early life stages of Atlantic haddock (PI: Sonic Meier, Inst. of Marine Research)  
+**Genome dynamics in early eukaryotic evolution**: importance of enigmatic lineages (PI: Russel Orr, Univ. of Oslo)  
+**The genomic and physiological basis of invasiveness in a harmful house-invader** (InHouse) (PI: Inger Skrede, Univ. of Oslo)  
 
 Selected blog posts
 -------------------
@@ -113,9 +132,10 @@ Software
 
 Github: <https://github.com/lexnederbragt>
 
-*Selected repositories:*
-RepSeq (Nederbragt et al 2010) <https://github.com/lexnederbragt/RepSeq>
-SequenceTools (scripts to work with DNA sequence and related files) <https://github.com/lexnederbragt/sequencetools>
+*Selected repositories:*  
+[canvasCourseCli](https://github.com/lexnederbragt/canvasCourseCli): command line tool for retrieving, adding and updating content, pages and files exposed to students and teachers, for a Canvas course.  
+[SequenceTools](https://github.com/lexnederbragt/sequencetools): scripts to work with DNA sequence and related files.  
+[RepSeq](https://github.com/lexnederbragt/RepSeq): estimating copy numbers of assembled DNA pieces (contigs), Nederbragt et al 2010.  
 
 Invited Seminars
 ----------------
@@ -136,32 +156,39 @@ Selected presentations:
 
 Professional and Community Service
 ----------------------------------
-**Grant Panels and Reviewing**
-The Resource Allocation Committee for CPU and storage access at National HPC facilities (UNINETT Sigma2 AS), Norway (2014-)
+**Grant Panels and Reviewing**  
+Leader, The Resource Allocation Committee for CPU and storage access at National HPC facilities (UNINETT Sigma2 AS), Norway (member 2014-2018, leader 2019-)
 
-**Advisory boards**
-Secretary, Executive Council 'The Carpentries' (Software and Data Carpentry), 2018-
-Leader, Advisory Council ('fagråd') eInfrastructure, University of Oslo (2016-)
-Leader of the board, Digital Life Norway Research School (2016-)
-MicrobesNG Microbial Genome Sequencing service and Open Strain Archive, Univ. of Birmingham, External Advisory Board (2014-)
+**Advisory boards**  
+Lederteam Center for Computing in Science Education (CCSE), UiO, 2017-  
+Executive Council 'The Carpentries' (https://carpentries.org), Secretary (2018), Chair (2021), 2018-2021
+Leader, Advisory Council ('fagråd') eInfrastructure, University of Oslo (2016-)  
+Leader of the board, Digital Life Norway Research School (2016-2020)  
+MicrobesNG Microbial Genome Sequencing service and Open Strain Archive, Univ. of Birmingham, External Advisory Board (2014-2019)  
 
-**Manuscript Reviewing**
+<!-- Member, Council for Research ('fagutvalg for forskning'), Unit – The Norwegian Directorate for ICT (2018-)  -->
+<!-- Member, task force 'Action plan Open Science Norway', Universities Norway ('Universitets- og høgskolerådet', UHR) (2019-)  -->
+
+**Manuscript Reviewing**  
 Open reviews: Publons <https://publons.com/author/18712/alexander-j-nederbragt>
 
 Reviewer for Nature Methods, Nature Scientific Data, Bioinformatics, BMC Bioinformatics, BMC Genomics, Animal Genetics, Gigascience
 
-**Volunteer activies**
-Leader, 'kodeklubben Bærum' (code club), offering coding classes to children from 8 to 14 (2016-)
-Board member of the residential condominium 'Hiltonåsen', Slependen, Norway 2009-2015
-
 Research Mentoring
 ------------------
-**Graduate Students**
-Co-supervisor PhD students, Univ. of Oslo since 2008, 2 finished, 4 ongoing
+**Graduate Students**  
+Co-supervisor PhD students, Univ. of Oslo since 2008, 7 finished
 
-**Undergraduate Researchers**
-Main supervisor MSc students, Univ. of Oslo since 2014, 4 finished, 1 ongoing
-Co-supervisor MSc students, Univ. of Oslo since 2013, 2 finished, 1 ongoing
+**Undergraduate Researchers**  
+Main supervisor MSc students, Univ. of Oslo since 2014, 5 finished
+Co-supervisor MSc students, Univ. of Oslo since 2013, 6 finished
+
+Volunteer activities
+-------------------
+Leader, 'kodeklubben Bærum' (code club), offering coding classes to children from 8 to 14 (2016-)  
+Board member of the residential condominium 'Hiltonåsen', Slependen, Norway 2009-2015  
+Board member of choir 'Saudade' Utrecht, The Netherlands, 2000-2001  
+Board member of student rowing club 'A.U.S.R. Orca', Utrecht, The Netherlands, 1994 - 1999  
 
 Languages
 ---------
@@ -170,6 +197,7 @@ Dutch: first language, excellent oral/written
 English: excellent oral/written  
 Norwegian: good oral/written  
 German: conversational
+
 
 List of publications
 --------------------
