@@ -62,11 +62,11 @@ BIO2120 Evolusjonsbiologi (Univ. of Oslo): lectures on "Evolution and Developmen
 Erasmus ICP course Marine Cell Biology (Observatoire Oceanologique, Banyuls-sur-mer, France): lectures on "Fundamental aspects of development" and "Cell cycle changes during development", 2000
 
 **Workshops**  
-Workshop on Genome Assembly (https://github.com/lexnederbragt/denovo-assembly-tutorial) for the Norwegian Sequencing Centre course: High Through-put Sequencing: technology basics, applications and bioinformatic analysis https://www.sequencing.uio.no/events/2011/nsc_course_2011.html, 2011
+[Workshop on Genome Assembly](https://github.com/lexnederbragt/denovo-assembly-tutorial) for the Norwegian Sequencing Centre course: [High Through-put Sequencing: technology basics, applications and bioinformatic analysis](https://www.sequencing.uio.no/events/2011/nsc_course_2011.html), 2011
 
 **Contributions to workshops**  
-Next-Gen Sequence Analysis Workshop 'week 3' (intermediate and advanced skills) (invited), http://angus.readthedocs.org/en/2015/week3.html, Michigan State University, 2015  
-Univ. California Davis Assembly Masterclass (invited) http://davis-assembly-masterclass-2013.readthedocs.org/en/latest, 2013  
+[Next-Gen Sequence Analysis Workshop](http://angus.readthedocs.org/en/2015/week3.html) 'week 3' (intermediate and advanced skills) (invited), Michigan State University, 2015  
+[Univ. California Davis Assembly Masterclass](http://davis-assembly-masterclass-2013.readthedocs.org/en/latest) (invited), 2013  
 *De novo* genome assembly (invited), Univ. of Gothenburg, 2011
 
 
@@ -114,17 +114,17 @@ the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)
 
 Selected blog posts
 -------------------
-"A new 1st semester bachelor course 'Introduction to Computational Modelling for the Biosciences'" <https://flxlexblog.wordpress.com/2017/03/08/a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences>
+"A new 1st semester bachelor course 'Introduction to Computational Modelling for the Biosciences'" <https://lexnederbragt.com/blog/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences>
 
-"Developments in high throughput sequencing – July 2016 edition" <https://flxlexblog.wordpress.com/2016/07/08/developments-in-high-throughput-sequencing-july-2016-edition/>
+"Developments in high throughput sequencing – July 2016 edition" <https://lexnederbragt.com/blog/2016-07-08-developments-in-high-throughput-sequencing-july-2016-edition/>
 
 "Active learning strategies for bioinformatics teaching" (2015)
-<https://flxlexblog.wordpress.com/2015/08/31/active-learning-strategies-for-bioinformatics-teaching-2/>
+<https://lexnederbragt.com/blog/2015-08-31-active-learning-strategies-for-bioinformatics-teaching-2/>
 
-"On graph-based representations of a (set of) genomes" (2015) <https://flxlexblog.wordpress.com/2015/04/09/on-graph-based-representations-of-a-set-of-genomes/>
+"On graph-based representations of a (set of) genomes" (2015) <https://lexnederbragt.com/blog/2015-04-09-on-graph-based-representations-of-a-set-of-genomes/>
 
 "On the benefits of ‘open’ for teaching" (2014)
-<https://flxlexblog.wordpress.com/2014/11/04/on-the-benefits-of-open-for-teaching/>
+<https://lexnederbragt.com/blog/2014-11-04-on-the-benefits-of-open-for-teaching/>
 
 
 Software
