@@ -503,8 +503,7 @@ Løvoll, M., Wiik-Nielsen, J., Grove, S., Wiik-Nielsen, C. R.,
 Kristoffersen, A. B., Faller, R., Poppe, T., Jung, J., Pedamallu, C. S.,
 **Nederbragt, A. J.**, Meyerson, M., Rimstad, E., & Tengs, T. (2010). A
 novel totivirus and piscine reovirus (PRV) in Atlantic salmon (Salmo
-salar) with cardiomyopathy syndrome (CMS). *Virology Journal*, *7*(1),
-309. <https://doi.org/10.1186/1743-422X-7-309>
+salar) with cardiomyopathy syndrome (CMS). *Virology Journal*, *7*(1), 309. <https://doi.org/10.1186/1743-422X-7-309>
 
 
 
