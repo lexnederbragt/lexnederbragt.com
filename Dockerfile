@@ -13,7 +13,7 @@ RUN gem install jekyll-seo-tag
 RUN gem install jekyll-gist
 RUN gem install json -v 1.8.3
 
-RUN gem install minitest -v 5.9.0
+RUN gem install minitest -v 5.14.4
 RUN gem install colorator -v 0.1
 RUN gem install ffi -v 1.9.10
 RUN gem install kramdown -v 1.10.0
