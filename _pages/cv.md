@@ -4,18 +4,18 @@ permalink: /cv
 title: CV
 ---
 
-Date: January 2024
+Januar 2024
 
 ## Sammendrag
 
 Jeg er førstelektor ved Universitetet i Oslo (UiO), og har undervist i realfag i mange år.
 Jeg er en erfaren utdanner som har studentenes læring som hovedfokus.
 Jeg er opptatt av hvordan vi kan øke den pedagogiske kompetansen
-hos de som involvert i min egen og andres kurs.
+hos de som er involvert i min egen og andres kurs.
 
-Baklengs design og samstemt undervisning er to pedagogiske prinsipper
-som er sentrale i mitt arbeid.
-Studentaktiv læring er utganspunktet når jeg planlegger undervisningen.
+Baklengsdesign og meningsfult samsvar (også kalt samstemt undervisning)
+er to pedagogiske prinsipper som er sentrale i mitt arbeid.
+Studentaktiv læring er utgangspunktet når jeg planlegger undervisningen.
 Å integrere digitale verktøy på en pedagogisk måte for å fremme studentenes læring
 er noe som står sentralt i alt jeg gjør.
 
@@ -24,13 +24,13 @@ integrasjon av beregninger og programmering, i bachelorprogrammet
 Biovitenskap.
 Som en del av dette har jeg utviklet førstesemesterkurset
 "Innføring i beregningsmodeller for biovitenskap" (BIOS1100),
-der jeg underviser nye biovitenskapsstudenter matematisk modellering
-av biologiske problemer ved bruk av programmereing i Python.
+der jeg underviser nye biovitenskapsstudenter i matematisk modellering
+av biologiske problemer ved bruk av programmering i Python.
 
 For Senter for Bioinformatikk utvikler jeg og koordinerer
 en portefølje av studiepoenggivende kurs og workshops.
 
-Mitt arbeid ved UiO resulterte i at jeg i 2023 ble utvent som Merittert Utdanner
+Mitt arbeid ved UiO resulterte i at jeg i 2023 ble utnevnt som Merittert Utdanner
 ved universitetet.
 
 ## Arbeidserfaring
@@ -175,9 +175,9 @@ Fullstendig publikasjonsliste finnes [på min hjemmeside](https://lexnederbragt.
 ved hjelp av frivillige instruktører.
 Jeg er en *sertifisert instruktør* for organisasjonen og organiserer og leder slike workshops i Norge og Sverige.
 
-Med støtte fra Realfagblioteket (UiO) har vi i 2013 etablert Carpentry@UiO,
-[uio.no/carpentry](http://uio.no/carpentry) som jevlig arrangerer workshops 
-og kurs for forskere ved UiO.
+Jeg tok initiativ i 2013, med støtte fra Realfagblioteket (UiO), 
+å etablere Carpentry@UiO, [uio.no/carpentry](http://uio.no/carpentry)
+som jevnlig arrangerer workshops og kurs for forskere ved UiO.
 
 Jeg har tidligere også vært en sertifisert *Carpentries instruktørtrener*, 
 der jeg organiserte workshops for forskere som ønsker å bli instruktør
@@ -248,7 +248,7 @@ sider og filer for kursrom i læringsplattformen Canvas.
 
 ## Frivillighetsarbeid
 
-* Leder, 'kodeklubben Bærum' (del av Lær Kidsa Koding), tilbyr kodingskurs til barn fra 8 til 14 (2016-2018)  
+* Leder, 'kodeklubben Bærum' (del av Lær Kidsa Koding), tilbyr kodingskurs til barn fra 8 til 14 (2016-2018)
 * Styremedlem Hiltonåsen boligsameiet, Slependen (2009-2015, varamedlem f.o.m 2021)
 <!-- * Styremedlem sangkoret 'Saudade', Utrecht, Nederland (2000-2001)
 * Styremedlem studenters rokblubb 'A.U.S.R. Orca', Utrecht, Nederland (1994-1999) -->

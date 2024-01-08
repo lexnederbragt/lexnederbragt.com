@@ -6,21 +6,51 @@ title: About
 
 ## About Lex Nederbragt
 
-I am a Senior Lecturer ('Førstelektor') at the Department of Biosciences, University of Oslo. I am also head of education and training for the Centre for Bioinformatics, Dept. of Informatics, Univ. of Oslo.
+I am an Associate Teaching Professor ('Førstelektor') at the University of Oslo (UiO),
+and have taught at the Faculty of Mathematics and Natural Sciences for many years.
+I am an experienced educator whose main focus is students' learning.
+I am interested in how we can increase educational competence
+with those involved in my own and others' courses and teaching.
 
-At the Dept. of Biosciences, I lead the implementation of Computing in Science Education in the bachelor degree. As part of that I organise the first-semester course "Introduction to Computational Modelling for the Biosciences" (BIOS1100), teaching new Bioscience students mathematical modeling of biological problems using Python.
+Reverse instructional design and constructive alignment
+are two educational principles that are central to my work.
+Student active learning is the starting point when I plan my teaching.
+Integrating digital tools in a pedagogical way to promote student learning
+is something that is central to everything I do.
 
-For the Centre for Bioinformatics, I develop and coordinate a portfolio of credited courses as well as workshops for master and PhD students and other staff.
+I lead the implementation of "Computing in Science Education",
+integration of computing and programming, in the Bioscience bachelor's programme.
+As part of this, I have developed the first semester course
+"Introduction to computational models for Biosciences" (BIOS1100),
+where I teach new bioscience students mathematical modelling
+of biological problems using programming in Python.
 
-I am a self-taught bioinformatician with a firm background in biology. My research at the Centre for Ecological and Evolutionary Synthesis ([CEES](https://www.mn.uio.no/cees/english/)) at the Dept. of Biosciences is on new methods to represent (reference) genomic information. I previously had a central role in the sequencing and assembly of the Atlantic cod genome. I lead the Advisory Council for eInfrastructure ([fagrådet for eInfrastruktur](www.uio.no/for-ansatte/nettverk-moter/los-enhetene/forskningsinfrastruktur/einfrastruktur/)) at UiO.
+For the Center for Bioinformatics I develop and coordinate
+a portfolio of credited courses and other workshops.
 
-I am a Software Carpentry instructor, teaching computational lab skills to scientists in the Nordic countries. I am an advocate of open source software, and reproducible computational biology. I share my work not only through publications, but also on my science blog at lexnederbragt.com. My presentations can be found on [figshare](figshare.com/collections/Slides_of_my_talks_presentations/3488832) and [slideshare](http://slideshare.com/flxlex), and I am active on twitter ([@lexnederbragt](https://twitter.com/lexnederbragt)).
+My work at UiO resulted in me being appointed as 'Merittert Utdanner'
+('distinguished educator') at the university in 2023. 
+Read my application (in Norwegian) <a href="https://lexnederbragt.github.io/soeknad_merittering/" class="uri">here</a>.
 
-I have an analytical mind that loves problem solving. I value honesty and professionalism, and dislike hype. I believe that sharing and openness will further science more than competition. I choose impact over impact factor.
 
 ## Manuscripts I am most proud of
 
+
+### Good enough practices
+
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. <em>PLOS Computational Biology</em>, <em>13</em>(6), e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a>
+
+A true team effort, written by members of my favorite community, [the Carpentries](http://carpentries.org). A companion text to the ['Best practices'](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745) paper, meant to present strategies that researchers can (and we feel, should) adopt, but also will keep using once they have adopted them.
+
+### Live coding
+
+Nederbragt, A., Harris, R. M., Hill, A. P., & Wilson, G. (2020). Ten quick tips for teaching with participatory live coding. <em>PLOS Computational Biology</em>, *16*(9), e1008090. <a href="https://doi.org/10.1371/journal.pcbi.1008090" class="uri">https://doi.org/10.1371/journal.pcbi.1008090</a>
+
+I am a big fan of participatry live coding as a technique for teaching programming. This paper describes the technique and gives teaching tips for using it. It is another collaboration between members of the [Carpentries](http://carpentries.org) community, and I am proud to have initiated it.
+
+
 ### Patella engrailed and dpp
+
 Nederbragt, A. J., Loon, A. E. van, & Dictus, W. J. A. G. (2002). Expression of Patella vulgata Orthologs of engrailed and dpp-BMP2/4 in Adjacent Domains during Molluscan Shell Development Suggests a Conserved Compartment Boundary Mechanism. <em>Developmental Biology</em>, <em>246</em>(2), 341–355. <a href="https://doi.org/10.1006/dbio.2002.0653" class="uri">https://doi.org/10.1006/dbio.2002.0653</a>
 
 In my mind, the highlight paper from my PhD, which was in 'evo-devo', evolutionary developmental biology. We showed expression of Engrailed and Dpp orthologs in early limpet development. The cells expressing these genes were on opposite sides of the border of the developing shell. We coupled that observation to the expression in cells at other borders in developing embryos.
@@ -37,11 +67,6 @@ Tørresen, O. K., Rise, M. L., Jin, X., Star, B., MacKenzie, S., Jakobsen, K. S.
 
 My first last-author publication. A lot of work, with all available seuqencing technologies (at the time), many bioinformatics analyses led to a very complete Atlantic cod genome. I am proud to have contributed to making the Atlantic Cod genome continue to be a valuable resource to the community.
 
-### Good enough practices
-
-Wilson, G., Bryan, J., Cranston, K., Kitzes, J., **Nederbragt, L.**, & Teal, T. K. (2017). Good enough practices in scientific computing. <em>PLOS Computational Biology</em>, <em>13</em>(6), e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a>
-
-A true team effort, written by members of my favorite community, [the Carpentries](http://carpentries.org). A companion text to the ['Best practices'](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745) paper, meant to present strategies that researchers can (and we feel, should) adopt, but also will keep using once they have adopted them.
 
 ### Lessons
 
