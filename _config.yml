@@ -29,8 +29,8 @@ navbar-links:
    - About me: "about"
    - CV: "cv"
    - Contact: "contact"
-   - Teaching Portfolio: "https://lexnederbragt.github.io/teaching-portfolio"
-   - Teaching Statement: "https://lexnederbragt.github.io/teaching-portfolio/03_mappe.html"
+   - Latest Teaching Portfolio: "https://lexnederbragt.github.io/soeknad_merittering/"
+   - Old Teaching Portfolio: "https://lexnederbragt.github.io/teaching-portfolio"
   Links:
     - University of Oslo: "http://folk.uio.no/alexajo"
     - ORCID: "http://orcid.org/0000-0001-5539-0999"
