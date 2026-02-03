@@ -4,49 +4,95 @@ permalink: /cv
 title: CV
 ---
 
-Januar 2024
+Februar 2026
+
+## English summary
+
+I am a (Teaching) Professor at the University of Oslo (UiO),
+and have taught at the Faculty of Mathematics and Natural Sciences for many years.
+I am an experienced educator whose main focus is students' learning.
+I am interested in how we can increase educational competence
+with those involved in my own and others' courses and teaching.
+
+Reverse instructional design and constructive alignment
+are two educational principles that are central to my work.
+Student active learning is the starting point when I plan my teaching.
+Integrating digital tools in a pedagogical way to promote student learning
+is something that is central to everything I do.
+
+I lead the implementation of "Computing in Science Education",
+integration of computing and programming, in the Bioscience bachelor's programme.
+As part of this, I have developed the first semester course
+"Introduction to computational models for Biosciences" (BIOS1100/BIOS1101),
+where I teach new bioscience students mathematical modelling
+of biological problems using programming in Python.
+
+My work at UiO resulted in me being appointed as 'Merittert Utdanner'
+('distinguished educator') at the university in 2023.
+In 2025 I was awarded the Olav Thon Foundation
+'National award for outstanding teaching in the mathematical/natural sciences and medical fields'.
+
 
 ## Sammendrag
 
-Jeg er førstelektor ved Universitetet i Oslo (UiO), og har undervist i realfag i mange år.
+Jeg er dosent ved Universitetet i Oslo (UiO), og har undervist i realfag i mange år.
 Jeg er en erfaren utdanner som har studentenes læring som hovedfokus.
 Jeg er opptatt av hvordan vi kan øke den pedagogiske kompetansen
 hos de som er involvert i min egen og andres kurs.
 
-Baklengsdesign og meningsfult samsvar (også kalt samstemt undervisning)
+Baklengsdesign og meningsfylt samsvar (også kalt samstemt undervisning)
 er to pedagogiske prinsipper som er sentrale i mitt arbeid.
 Studentaktiv læring er utgangspunktet når jeg planlegger undervisningen.
-Å integrere digitale verktøy på en pedagogisk måte for å fremme studentenes læring
+Å integrere digitale verktøy, og spesielt kunstig intelligens,
+på en pedagogisk måte for å fremme studentenes læring
 er noe som står sentralt i alt jeg gjør.
 
 Jeg leder implementeringen av "Computing in Science Education",
 integrasjon av beregninger og programmering, i bachelorprogrammet
 Biovitenskap.
 Som en del av dette har jeg utviklet førstesemesterkurset
-"Innføring i beregningsmodeller for biovitenskap" (BIOS1100),
-der jeg underviser nye biovitenskapsstudenter i matematisk modellering
+"Innføring i beregningsmodeller for biovitenskap" (BIOS1100/BIOS1101),
+der jeg underviser nye biovitenskapsstudenter i analyse og modellering
 av biologiske problemer ved bruk av programmering i Python.
-
-For Senter for Bioinformatikk utvikler jeg og koordinerer
-en portefølje av studiepoenggivende kurs og workshops.
 
 Mitt arbeid ved UiO resulterte i at jeg i 2023 ble utnevnt som Merittert Utdanner
 ved universitetet.
+In 2025 ble jeg tildelt Olav Thon Stiftelsens
+'Nasjonale pris for fremragende undervisning innen de matematiske/naturvitenskapelige og medisinske fagfelt'.
+
 
 ## Arbeidserfaring
 
-* 2018- Førstelektor, Inst. for Biovitenskap og Inst. for Informatikk, UiO
-* 2018- Nestleder med hovedansvar for koordinering av utdanningsaktiviteter, Senter for Bioinformatikk, Inst. for Informatikk, UiO
+* 2025- Dosent, Inst. for Biovitenskap, UiO
+* 2018- 2025 Førstelektor, Inst. for Biovitenskap og Inst. for Informatikk, UiO
+* 2018-2024 Nestleder med hovedansvar for koordinering av utdanningsaktiviteter, Senter for Bioinformatikk, Inst. for Informatikk, UiO
 * 2013-2018 Førsteamanuensis II (20%), Inst. for Informatikk, UiO
 * 2015-2018 Senior ingeniør (fast stilling), Inst. for Biovitenskap, UiO
 * 2005-2018 Postdoktor, forsker, Senior ingeniør, Inst. for Biovitenskap, UiO
 * 2003-2005 Senior Scientist, Lingvitae AS, Oslo
 * 2002-2003 Postdoktor, University of Hawaii, USA
 
-## Merittering
+## Lederroler
 
-Jeg ble utnevnt merittert utdanner ved Universitetet i Oslo i 2023.
-Søknaden jeg skrev kan leses [på denne siden](https://lexnederbragt.github.io/soeknad_merittering/).
+* Udanningsleder, Institutt for Biovitenskap, UiO (2026-)
+* Leder, [Prosjekt Digitalt Læringsmiljø](https://www.uio.no/for-ansatte/arbeidsstotte/prosjekter/nestegenerasjons-digitalt-laringsmiljo/index.html) 2030, UiO (2023)
+* Styreleder, [Carpentry@UiO](https://uio-carpentry.github.io/about) (2019-2023)
+* Nestleder med ansvar for utdanning i Bioinformatikk,
+  [Senter for Bioinformatikk](https://www.mn.uio.no/sbi/english/about) (2018-2024)
+* Medlem av ledergruppe [Centre for Computing in Science Education](https://www.mn.uio.no/ccse/english/about) (CCSE, et SFU ved UiO) (2017-) 
+* Leder, Fagråd for eInfrastruktur, UiO (2016-2021)
+* Leder for ​​Styret [Forskerskole Digitalt Liv Norge](https://www.digitallifenorway.org/research-school/about/index.html) (2016-2020)
+* Medlem, så leder, Executive Council (styret) for [The Carpentries](https://carpentries.org/about/) (2018-2021)
+* Medlem, så leder, Ressursfordelingskomite Uninett Sigma2 (2014-2022)
+
+
+## Merittering og priser
+
+* Olav Thon Stiftelsens 'Nasjonale pris for fremragende undervisning
+  innen de matematiske/naturvitenskapelige og medisinske fagfelt' - 2025
+* Merittert utdanner ved Universitetet i Oslo - 2023
+  * Søknaden jeg skrev kan leses [på denne siden](https://lexnederbragt.github.io/soeknad_merittering/)
+
 
 ## Universitetspedagogisk kompetanse
 
@@ -76,14 +122,14 @@ Søknaden jeg skrev kan leses [på denne siden](https://lexnederbragt.github.io/
 
 ## Universitetsundervisning
 
-* [MNPED9000](https://www.uio.no/studier/emner/matnat/mn/MNPED9000/index.html) **Teaching in STEM** (2022-)
-  * Tema: Formative assessment
-  * Tema: Cognitive load and learning environment
-
-* [BIOS1100](https://www.uio.no/studier/emner/matnat/ibv/BIOS1100)
+* [BIOS1100/BIOS1101](https://www.uio.no/studier/emner/matnat/ibv/BIOS1101)
 **Innføring i beregningsmodeller for biovitenskap** (emneansvarlig) (2017-)
   * Innføring i å lage og eksperimentere med enkle modeller av biologiske systemer
     med hjelp av programmeringsspråket Python
+
+* [MNPED9000](https://www.uio.no/studier/emner/matnat/mn/MNPED9000/index.html) **Teaching in STEM** (2022-2023)
+  * Tema: Formative assessment
+  * Tema: Cognitive load and learning environment
     
 * [BIOS-IN5410/9410](https://www.uio.no/studier/emner/matnat/ibv/BIOS-IN5410/) **Bioinformatics for Molecular Biology** (2021-)
   * Tema: Reproducible Bioinformatic Analyses
@@ -114,14 +160,47 @@ Søknaden jeg skrev kan leses [på denne siden](https://lexnederbragt.github.io/
 
 ## Annen relevant erfaring
 
-* Bidragsyter til [Læringsassistentprogrammet](https://www.mn.uio.no/kurt/utdanningsutvikling/gruppeundervisning-/Læringsassistenter%20/) ved UiO (2021-)
-* Instruktør trener [The Carpentries](https://carpentries.org), undervisning i pedagogikk og undervisingmetodikk for nye Carpentries instruktørene (2012 - 2019). Undervisningsmaterialterialene: <https://carpentries.github.io/instructor-training/>
+* Fasilitator for programseminar for nye førsteårsstudenter ved MatNat fakultetet (2024-). 
+  Programmet på seminaret består av faglig og sosialt innhold hvor formålet er
+  at alle skal bli bedre kjent med sine medstudenter og skape grunnlaget for et godt studiemiljø.
+* Bidragsyter til [Læringsassistentprogrammet](https://www.mn.uio.no/kurt/utdanningsutvikling/gruppeundervisning-/Læringsassistenter%20/) ved UiO (2021-2022)
+* Instruktør trener [The Carpentries](https://carpentries.org), undervisning i pedagogikk og undervisningmetodikk for nye Carpentries instruktørene (2012 - 2019). Undervisningsmaterialterialene: <https://carpentries.github.io/instructor-training/>
 
 
-<!-- Carpentry@UiO? -->
-
-<!-- 
 ## Workshops
+
+* LLM-powered Programming and Data Analysis (2025)
+  * [Webside](https://www.ub.uio.no/english/courses-events/events/dsc/dsdays/2026/12-llm-powered-programming-and-data-analysis-20260106)
+  * [Undervisningsmaterialet](https://lexnederbragt.github.io/dsc26-llm-code/)
+  * Bidrag til Digital Scholarship Days 2026
+
+* Brainstorming workshop: Practical use of GenAI at UiO (2025)
+  * Organisert sammen med Matthew Good fra Digital Scholarship Centre
+
+* Praktisk begynnerkurs i bruk av KI - kom i gang med gpt.uio.no (2025)
+  * Organisert sammen med Bjørn Gulheim
+  * [Workshop på norsk](https://www.ub.uio.no/kurs-arrangement/kurs/gpt-uio/praktisk-begynnerkurs-i-bruk-av-ki.html)
+  * [Workshop på engelsk](https://www.ub.uio.no/english/courses-events/courses/gpt-uio/practical-beginner-course-in-ai.html)
+  * Basert på disse organiserte vi også en variant for administrativt ansatte ved UV fakultetet i mai.
+
+
+* Using Open Interpreter as a personal coding and data analysis assistant (2025)
+  * [Webside](https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/17-usin-open-interpreter-as-a-personal-coding-and-data-analysis-assistant)
+  * Bidrag til Digital Scholarship Days 2025
+
+* Oslo Bioinformatics Workshop Week (2022-)
+  * En uke med workshops samt et nettverksarrangement for forskere
+    som driver med bioinformatikk i Oslo-regionen
+  * Organisert av studentkommiteen av Senter for Bioinformatikk ved UiO (2022-2023),
+    nå Trainee Committee for Bioinformatics in LifeScience (BiLS) initiativet (2024-)
+    under min veiledning
+  * Jeg tok initiativ til arrangementet i 2022
+  * [Websidene](https://www.mn.uio.no/bils/english/events/oslo-bioinfomatics-week)
+
+* An introduction to Snakemake and Snakemake workflows (2022-2023)
+  * Bidrag til Oslo Bioinformatics Workshop Week 2022 and 2023
+  * [Webside 2022](https://www.mn.uio.no/sbi/english/events/oslo-bioinformatics-week-2022/index.html#02)
+  * [Webside 2023](https://www.mn.uio.no/sbi/english/events/oslo-bioinformatics-workshop-week-2023/index.html)
 
 * Forskerskole i Bioinformatikk NORBIS Summer School "Robust and reproducible practices in bioinformatics programming" (2018)
   * [Websidene](https://norbis.w.uib.no/norbis-summer-school-2018/)
@@ -137,7 +216,6 @@ Søknaden jeg skrev kan leses [på denne siden](https://lexnederbragt.github.io/
   * Jeg gjennomførte en Workshop om [Genome Assembly](https://github.com/lexnederbragt/denovo-assembly-tutorial)
 
 * *De novo* genome assembly (invitert), Univ. of Gothenburg, (2011)
--->
 
 
 ## Forskning på egen undervisning
@@ -148,25 +226,35 @@ de studerte studenter som tok mitt kurs BIOS1100:
 * June Edvarda Eliassen (2020): [Biologistudenters motivasjon for beregningsorientert biologi etter innføring av krav om full fordypning i realfaglig matematikk](http://urn.nb.no/URN:NBN:no-82918)
 * Sofie Rudberg (2020): [Relevansen av kompetansen fra matematikk R2 i beregningsorientert biologi](http://urn.nb.no/URN:NBN:no-82936)
 * Marthe Mjøen Berg (2019): [Studentar si interesse og meistringsforventning for programmering og modellering i biologi](http://urn.nb.no/URN:NBN:no-73633)
-* Lars Erik Håland (2019): [Studenters arbeid med programmering i biovitenskapelige problemstillinger. En kvalitativ studie av biologistudenters arbeid med Python](http://urn.nb.no/URN:NBN:no-73632)
+* Lars Erik Håland (2019): [Studenters arbeid med programmering i biovitenskapelige problemstillinger. En kvalitativ studie av biologistudenters arbeid med Python](http://urn.nb.no/URN:NBN:no-73632)
 
 June Edvardsen skrev en artikkel basert på dette arbeidet,
 som ble publisert i Nordic Journal of STEM Education: <https://doi.org/10.5324/njsteme.v5i1.3917>.
 
-
+<!-- 
 ## Relevante vitenskapelige publikasjoner
 
 * Eliassen, J. E., Bøe, M. V., **Nederbragt, L**., & Gregers, T. F. (2021). Motivasjon for Beregnings- orientert Biologi Og Sammenhengen Med Matematikk R2 Fra Videregående Opplæring. Nordic Journal of STEM Education, 5(1). https://doi.org/10.5324/njsteme.v5i1.3917
 * **Nederbragt, A.**, Harris, R. M., Hill, A. P., & Wilson, G. (2020). Ten Quick Tips for Teaching with Participatory Live Coding. PLOS Computational Biology, 16(9), e1008090. https: //doi.org/10.1371/journal.pcbi.1008090
 * Word, K., Sane, M., ..., **Nederbragt, L.**, ..., & Mohanan, A. V. (2021, november). Carpentries/Instructor-Training: The Carpentries Instructor Training November 2021. Zenodo. https://doi.org/10.5281/zenodo.5709383
 
-Fullstendig publikasjonsliste finnes [på min hjemmeside](https://lexnederbragt.com/cv#list-of-publications).
+Fullstendig publikasjonsliste finnes [på min hjemmeside](https://lexnederbragt.com/cv#publikasjonsliste).
+ -->
 
+## Innvilgede utdanningsfaglige utviklingsprosjekter (2019-)
 
-## Utdanningsfaglige utviklingsprosjekter
+* Prosjekt "Skreddersydde chatboter i utdanningen" (2025-, 500 000 NOK)
+  * [Utlysing av midler til IT i utdanning 2025](https://www-int.usit.uio.no/om/it-dir/strategi/masterplan/sk/sk-itu/portefolje/2025/om-utlysingen)
+  * Samarbeid med personer fra 
+    Institutt for lærerutdanning og skoleforskning (ILS, UV fakultetet),
+    Kjemisk Institutt, Institutt for Informatikk og Institutt for Biovitenskap (MN fakultetet)
+    og IT-avdelingen
 
-* Prosjekt "Integrasjon av Jupyter og Canvas for digital vurdering" (2020-2022)
+* Prosjekt "Integrasjon av Jupyter og Canvas for digital vurdering" (2020-2022, 800 000 NOK)
   * [Utlysning av prosjektmidler for digital vurdering](https://www.uio.no/link/arrangementer/2019/digitalvurdering/prosjektmidlerdigitalvurdering.pdf)
+  * Samarbeid med personer fra 
+    Kjemisk Institutt, og Institutt for Biovitenskap (MN fakultetet),
+    Senter for læring og utdanning LINK og IT-avdelingen
   * [Prosjektsiden](https://www.usit.uio.no/om/organisasjon/itf/aktiviteter/prosjekter/jupyter-canvas) (krever login med UiO brukernavn og passord)
 
 ## The Carpentries
@@ -175,7 +263,7 @@ Fullstendig publikasjonsliste finnes [på min hjemmeside](https://lexnederbragt.
 ved hjelp av frivillige instruktører.
 Jeg er en *sertifisert instruktør* for organisasjonen og organiserer og leder slike workshops i Norge og Sverige.
 
-Jeg tok initiativ i 2013, med støtte fra Realfagblioteket (UiO), 
+Jeg tok initiativ i 2013, med støtte fra Realfagsbiblioteket (UiO), 
 å etablere Carpentry@UiO, [uio.no/carpentry](http://uio.no/carpentry)
 som jevnlig arrangerer workshops og kurs for forskere ved UiO.
 
@@ -185,40 +273,28 @@ for The Carpentries.
 
 ### The Carpentries workshops
 
-* Universitetet i Oslo (2012-2023)
+* Universitetet i Oslo (2012-2025)
 * Netherlands eScience Centre (2017)
 * Universitetet i Bergen (2014)
 * Science for Life Laboratory, Stockholm, Sverige (2014)
 
 ### Carpentries Instructor Training workshops
 
-* Universitetet i OslO (2016-2018)
+* Universitetet i Oslo (2016-2018)
 * The Carpentries - online (2016-2019)
 
-<!-- ## Lederroller -->
-## Verv
-
-* Leder, [Prosjekt Digitalt Læringsmiljø](https://www.uio.no/for-ansatte/arbeidsstotte/prosjekter/nestegenerasjons-digitalt-laringsmiljo/index.html) 2030, UiO (2023)
-* Styreleder, [Carpentry@UiO](https://uio-carpentry.github.io/about) (2019-2023)
-* Nestleder med ansvar for utdanning i Bioinformatikk,
-  [Senter for Bioinformatikk](https://www.mn.uio.no/sbi/english/about) (2018-)
-* Medlem av ledergruppe [Centre for Computing in Science Education](https://www.mn.uio.no/ccse/english/about) (CCSE, et SFU ved UiO) (2017-) 
-* Leder, Fagråd for eInfrastruktur, UiO (2016-2021)
-* Leder for ​​Styret [Forskerskole Digitalt Liv Norge](https://www.digitallifenorway.org/research-school/about/index.html) (2016-2020)
-* Medlem, så leder, Executive Council (styret) for [The Carpentries](https://carpentries.org/about/) (2018-2021)
-<!-- * Medlem, så leder, Ressursfordelingskomite Uniett Sigma2 (2014-2022) -->
-<!-- 
 
 ## Andre verv
- -->
+
 * Medlem Fagråd for IT i Utdanning, UiO (2022-)
 * Medlem Arbeidsgruppen Bachelorprogrammet Biovitenskap (2022-2023)
 * Medlem Arbeidsgruppen Masterplan for IT ved Universitetet i Oslo (2018-2019)
-<!-- * Medlem styringsgruppe Digital Scholarship Center, UiO (2020-) -->
+* Medlem styringsgruppe Digital Scholarship Center, UiO (2020-2023)
 
 ## Sensorerfaring
 
-* Internsensor for masteroppgaver ved Institutt for Informatikk, UiO (2018)
+* Internsensor for masteroppgaver ved Institutt for Informatikk og 
+  Institutt for Biovitenskap, UiO (2017-)
 * Eksternsensor for masteroppgave ved NMBU (Norges miljø- og biovitenskapelige universitet) (2023)
 
 ## Programmeringsspråk og verktøy
@@ -233,25 +309,151 @@ for The Carpentries.
 Github: <https://github.com/lexnederbragt>
 
 * [canvasCourseCli](https://github.com/lexnederbragt/canvasCourseCli): 
-Kommandolinjeverktøy for å laste ned, legge til og oppdatere innhold,
-sider og filer for kursrom i læringsplattformen Canvas.
-<!-- [SequenceTools](https://github.com/lexnederbragt/sequencetools): scripts to work with DNA sequence and related files.  
-[RepSeq](https://github.com/lexnederbragt/RepSeq): estimating copy numbers of assembled DNA pieces (contigs), Nederbragt et al 2010.   -->
+  Kommandolinjeverktøy for å laste ned, legge til og oppdatere innhold,
+  sider og filer for kursrom i læringsplattformen Canvas
+* [SequenceTools](https://github.com/lexnederbragt/sequencetools): 
+  skripter for å jobbe med DNA-sekvenser og relaterte filer
+* [RepSeq](https://github.com/lexnederbragt/RepSeq): 
+  estimering av kopienummer av DNA sekvenser sammensatt med assembly verktøy
+
+
+## Inviterte foredrag
+
+<!-- 
+Slide decks:
+
+* <http://www.figshare.com/collections/Slides_of_my_talks_presentations/3488832>
+* <http://www.slideshare.net/flxlex> 
+
+Selected presentations:
+-->
+
+* Keynote lecture "Digitalt læringsmiljø 2030: en oppdatering", IT konferansen UiO, Kragerø, 2025
+
+* "Cognitive Load: what is it and how can we take it in consideration when teaching?"
+  iEarth Digital Learning Forum (online), Norge 2023 
+
+* Keynote lecture "Learning from the Carpentries",  CarpentryConnect, Manchester 2019
+
+* "How I got infected by fish genomics - and how you can too" - Eijkman lecture
+Utrecht University, Nederland 2017
+
+* "Software Carpentry og Data Carpentry: opplæring i bruk og deling av forskningsdata – for forskere, av forskere, ved UiO"
+   Norsk nettverk for Forskningsadministrasjon (NARMA), Vårkonferanse, Lillestrøm 2017
+
+* "Local, central or cloud: why we chose to build our e-infrastructure for sequence analysis embedded in the university of Oslo HPC cluster" workshop "e-infrastructures for Massively Parallel Sequencing", Uppsala, 2015 <https://www.youtube.com/watch?v=g5JtEQPEQiI>
+
+* Keynote lecture "Software Carpentry: Trening i 'best practices' for beregningsbasert forskning", 
+  IT-konferansen UiO, Strømstad, 2015
+
+* "Coding & Best Practice in Programming: Why it matters so much in the NGS era", SeqAhead Scientific Meeting 2014 "NGS Data after the Gold Rush", Norwich, 2014 <http://www.slideshare.net/flxlex/140507-seq-aheadngscodingbestpractices>
+
+* "Experiences with Combining PacBio with Short Read Technology for Improved de novo Assembly of Complex Genomes", 4th Next Generation Sequencing Congress, London 2012 <http://www.slideshare.net/flxlex/131014-cees-holmenreproducibility>
+
+
+
+## Innlegg i media
+
+* ["Må du vite hvordan man bruker kunstig intelligens?"](https://www.uniforum.uio.no/leserbrev/2025/debatt-vil-du-lere-deg-kunstig-intelligens.html) - 
+  Uniforum 14.3.2025
+* ["Utdanningskvalitet: Hva kan vi forvente av UiOs framtidige rektorteam?"](https://www.khrono.no/utdanningskvalitet-hva-kan-vi-forvente-av-uios-framtidige-rektorteam/950556) - 
+  Khrono 13.3.2025 (med andre medlemmer av Pedagogisk Akademi)
 
 
 ## Språk
 
-* Nederlandsk: morsmål, utmerket muntlig/skrevet
-* Engelsk: utmerket muntlig/skrevet
-* Norsk: utmerket muntlig/skrevet
+* Nederlandsk: morsmål, utmerket muntlig/skriftlig
+* Engelsk: utmerket muntlig/skriftlig
+* Norsk: utmerket muntlig/skriftlig
+  * ‘Bergens test’ (Test i Norsk - Høyere nivå), 2005; resultat: 600 poeng (av 700)
 * Tysk: muntlig
 
 ## Frivillighetsarbeid
 
 * Leder, 'kodeklubben Bærum' (del av Lær Kidsa Koding), tilbyr kodingskurs til barn fra 8 til 14 (2016-2018)
-* Styremedlem Hiltonåsen boligsameiet, Slependen (2009-2015, varamedlem f.o.m 2021)
+* Styremedlem Hiltonåsen boligsameiet, Slependen (2009-2015, varamedlem f.o.m. 2021)
 <!-- * Styremedlem sangkoret 'Saudade', Utrecht, Nederland (2000-2001)
 * Styremedlem studenters rokblubb 'A.U.S.R. Orca', Utrecht, Nederland (1994-1999) -->
+
+
+
+## Søknader om forskningsmidler der jeg er oppført som samarbeidspartner
+
+### European Research council
+
+* ERC Consolidator Grant: **CICHLIDX**, an integrative approach towards the understanding of an adaptive radiation of East African cichlid fishes (PI: Walter Salzburger, Univ. of Basel)
+
+### Norges Forskningsråd
+
+* **REPEAT: Evolutionary and functional importance of simple repeats in
+the genome** 'Toppforsk' project (PI: Kjetill Jakobsen)  
+* **Aqua Genome Project** (PI: Kjetill Jakobsen)  
+* **Norwegian Sequencing Centre** Research Infrastructure, phase II (PI: Kjetill Jakobsen, Univ. of Oslo)  
+* **CodReseq**: Translating the cod genome for aquaculture (PI: Kjetill Jakobsen)  
+* **Haddoc**, assessment of long-term effects of oil exposure on early life stages of Atlantic haddock (PI: Sonic Meier, Inst. of Marine Research)  
+* **Genome dynamics in early eukaryotic evolution**: importance of enigmatic lineages (PI: Russel Orr, Univ. of Oslo)  
+* **The genomic and physiological basis of invasiveness in a harmful house-invader** (InHouse) (PI: Inger Skrede, Univ. of Oslo)  
+
+
+## Andre søknader
+
+* Ratatosk Course Mobility Grant "Bringing Software Carpentry basic computing skills training to more Nordic countries" Nordic eInfrastructure Collaboration (NeIC), 2018
+
+<!-- Listed in https://wiki.neic.no/w/ext/img_auth.php/c/c3/191220-Ratatosk-Final_report.pdf -->
+
+
+## Utvalgte blogginnlegg
+
+Min blogg: <https://lexnederbragt.com/blog>.
+
+* "Scaling Participatory live coding in an undergraduate computational biology course" <https://lexnederbragt.com/blog/2020-04-02-scaling-live-coding/>
+* "A new 1st semester bachelor course 'Introduction to Computational Modelling for the Biosciences'" <https://lexnederbragt.com/blog/2017-03-08-a-new-1st-semester-bachelor-course-introduction-to-computational-modelling-for-the-biosciences>
+* "Developments in high throughput sequencing – July 2016 edition" <https://lexnederbragt.com/blog/2016-07-08-developments-in-high-throughput-sequencing-july-2016-edition/>
+* "Active learning strategies for bioinformatics teaching" (2015)
+<https://lexnederbragt.com/blog/2015-08-31-active-learning-strategies-for-bioinformatics-teaching-2/>
+* "On graph-based representations of a (set of) genomes" (2015) <https://lexnederbragt.com/blog/2015-04-09-on-graph-based-representations-of-a-set-of-genomes/>
+* "On the benefits of ‘open’ for teaching" (2014)
+<https://lexnederbragt.com/blog/2014-11-04-on-the-benefits-of-open-for-teaching/>
+
+
+## Fagfellevurdering
+
+Noen av mine fagfellevurdering har jeg gjort tilgjenglig via Publons <https://publons.com/author/18712/alexander-j-nederbragt>
+
+Jeg har gjort fagfellevurdering for Nature Methods, Nature Scientific Data, Bioinformatics, BMC Bioinformatics, BMC Genomics, Animal Genetics, Gigascience, The Journal of Open Source Education, F1000 Research, PLOS Computational Biology, Nordic Journal of STEM Education
+
+<!-- Updated 31.7.2025 -->
+
+## Veiledning
+
+**PhD studenter**  
+Medveileder for 7 PhD studenter, Univ. i Oslo (2008-)
+
+**Masterstudenter**  
+Hovedveileder for 5 MSc studenter, Univ. i Oslo (2014-)  
+Medveileder for 7 MSc studenter, Univ. i Oslo (2013-)
+
+## Forskning
+
+Som PhD student i Nederland og postdoktor i USA studerte jeg tidlig utvikling av marine virvelløse arter.
+Fokus var å undersøke gener kjent fra tidlig utvikling i modellorganismer som mus, bananfluer mm,
+og se hvilken rolle disse hadde i, for eksempel mollusker.
+Forskningsfeltet het 'Evolutionary Developmental Biology' ('evo-devo)'.
+Mitt bidrag var å vise at noen av genene vi studerte 
+ble kooptert til nye funksjoner gjennom evolusjon.
+
+Som postdoktor, senere forsker, ved Universitetet i Oslo var hovedfokuset på
+sekvensiering av ukjente genomer, og sammensetning ('assembly') av disse til 
+referansegenomer. 
+Mitt bidrag var fokusert på bioinformatikken av det å sette sammen genomer
+basert på korte DNA sekvenser.
+Det største prosjektet jeg var med på var sekvensiering og sammensetning av genomet til
+atlantisk torsk i 2011. Jeg ledet prosjektet med å lage en forbedret versjon av genomet,
+dette kom ut i 2017.
+Av spesiell interesse var de store menger repeterende sekvenser ('Tandem Repeats')
+i genomer til torskefisker, noe som vi undersøkte i flere fiskearter.
+Min bioinformatikk kompetanse førte til at jeg videre ble med på flere prosjekter
+der genomsammensetning var et viktig fokus.
 
 
 ## Referanser
