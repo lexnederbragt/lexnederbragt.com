@@ -105,8 +105,8 @@ url-pretty: "https://lexnederbragt.com"  # eg. "deanattali.com/beautiful-jekyll"
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "lexnederbragt-com"
 
-# Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-112632107-1"
+# Fill in your Google Analytics tag to track your website using GA
+google_analytics: "G-EQE71KY5S2"
 
 # Google Tag Manager ID
 #gtm: ""
