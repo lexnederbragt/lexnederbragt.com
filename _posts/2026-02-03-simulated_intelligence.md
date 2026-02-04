@@ -5,8 +5,6 @@ subtitle: What's in a name?
 tags: [AI, genAI, education]
 ---
 
-
-
 I am very much interested in Artificial Intelligence (AI), both in general,
 and in what it means for (higher) education. 
 My focus is mostly on Generative AI, such as Large Language Models (LLMs),
@@ -19,7 +17,7 @@ I also have obtained API access to OpenAI's GPT models,
 provided by the university through the Microsoft Azure platform.
 I use this to write code (with the help of the Roocode plugin for Visual Studio Code).
 I also use commercial platforms (Google Gemini, Google AI search, Perplexity, ChatGPT)
-but so far have no paid subscription to any of them.
+but so far have no paid subscription to any of them[^AI_declaration].
 
 I hope to occasionally post some of my experiences, findings and opinions on this blog.
 Here is the first post!
@@ -115,3 +113,6 @@ Comments on this post are welcome on [LinkedIn](https://www.linkedin.com/posts/l
 [^cite_chatfield]: Chatfield, T (2025). AI and the future of pedagogy (White Paper). London: Sage. doi: 10.4135/wp520172 https://www.sagepub.com/explore-our-content/white-papers/2025/11/03/ai-and-the-future-of-pedagogy
 
 [^cite_Sherwoord]: A good example is David Sherwood, "Artificial Intelligence or Simulated Intelligence?" https://cogscisol.com/artificial-intelligence-or-simulated-intelligence/.
+
+
+[^AI_declaration]: Except for the image, no generative artificial intelligence tools were used in the writring of this blogpost.
