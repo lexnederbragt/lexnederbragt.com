@@ -2,7 +2,7 @@
 title: "Artificial, or simulated intelligence?"
 subtitle: "What's in a name?"
 date: 2026-02-03
-tags: [AI, genAI, education]
+categories: [AI, genAI, education]
 ---
 
 I am very much interested in Artificial Intelligence (AI), both in general,
