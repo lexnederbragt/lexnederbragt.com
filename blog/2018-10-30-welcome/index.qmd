@@ -1,0 +1,28 @@
+---
+title: "Welcome to my new website!"
+subtitle: ""
+date: 2018-10-30
+categories: [site]
+---
+
+![](../../img/512px-Welcome_heading.svg.png)
+
+A while ago I decided that I wanted a website that
+
+* I controlled by owning the domain
+* did not have any ads
+* was written in markdown
+* was under version control
+* allowed comments
+
+I looked around for templates and ended up using the one from Reproducible Research Oxford's [website](https://rroxford.github.io), which based it on [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) ([GitHub repo](https://github.com/daattali/beautiful-jekyll)).
+
+I also did not want to lose old blog post from my blog over at [wordpress.com](http://flxlexblog.wordpress.com). I managed to add all those previous posts to this website, automatically forwarding the reader to their original location (I learned it is possible to export all posts from wordpress.com and import them into this site, and I may end up doing that, but it is a bit more work as I need to fix links to images etc).
+
+So here it is: I own [lexnederbragt.com](https://lexnederbragt.com), and my blog is now at [lexnederbragt.com/blog](https://lexnederbragt.com/blog). The site is hosted on [GitHub](https://github.com/lexnederbragt/lexnederbragt.com/) which allows me to write draft blog posts and ask for feedback before I publish them (by adding new posts in separate branches). In principle, others may submit fixes (typos, broken links) through GitHub also (we'll see how eager people are to do that 😉).
+
+I am opening for comments through Disqus, but this is an experiment, I may turn it off if discussions get off-topic, derailed or otherwise unpleasant. Check out the [site policy](https://lexnederbragt.com/site_policy) before commenting!
+
+I have one technical issue with the site, and that is that links from the tags from the blog posts do not lead to a page where all posts with that tag are listed (it works when I render the site locally on my laptop, but not on the live site). If anyone has a solution for that, I would appreciate [your input](https://github.com/lexnederbragt/lexnederbragt.com/issues/3).
+
+(Image attribution: Sushiflinger [CC BY-SA 3.0 ](https://creativecommons.org/licenses/by-sa/3.0), from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Welcome_heading.svg))

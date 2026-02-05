@@ -109,10 +109,6 @@ I hope this may be a useful perspective for others as well.
 
 Comments on this post are welcome on [LinkedIn](https://www.linkedin.com/posts/lexnederbragt_artificial-or-simulated-intelligence-new-activity-7424469867698749440-5tCQ).
 
-
 [^cite_chatfield]: Chatfield, T (2025). AI and the future of pedagogy (White Paper). London: Sage. doi: 10.4135/wp520172 https://www.sagepub.com/explore-our-content/white-papers/2025/11/03/ai-and-the-future-of-pedagogy
-
 [^cite_Sherwoord]: A good example is David Sherwood, "Artificial Intelligence or Simulated Intelligence?" https://cogscisol.com/artificial-intelligence-or-simulated-intelligence/.
-
-
 [^AI_declaration]: Except for the image, no generative artificial intelligence tools were used in the writring of this blogpost.
