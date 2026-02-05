@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+## Summary
+
 I am a (Teaching) Professor at the University of Oslo (UiO),
 and have taught at the Faculty of Mathematics and Natural Sciences for many years.
 I am an experienced educator whose main focus is students' learning.

@@ -1,3 +1,5 @@
+date-format: long
+
 project:
   type: website
 
@@ -9,6 +11,8 @@ website:
         text: Home
       
     right:
+    - href: posts.qmd
+      text: "Blog"
     - text: "About"
       menu:
       - about.qmd
