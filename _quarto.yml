@@ -5,6 +5,13 @@ project:
 
 website:
   title: "Lex Nederbragt"
+  site-url: https://lexnederbragt.com
+  description: "Lex Nederbragt's personal website"
+  
+  google-analytics: "G-EQE71KY5S2"
+#  storage: none
+
+
   navbar:
     left:
       - href: index.qmd
@@ -51,6 +58,7 @@ website:
         - text: "Slides"
           href: https://figshare.com/collections/Slides_of_my_talks_presentations/3488832
           target: _blank
+
 
 format:
   html:
