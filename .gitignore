@@ -5,11 +5,6 @@ _site
 
 # general
 .DS_Store
-Thumbs.db
-ehthumbs.db
 
-# added by Lex
-_oldposts/
-assets_old_blog/
-.bundle/
-vendor/
+
+/.quarto/
