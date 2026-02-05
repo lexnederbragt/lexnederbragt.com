@@ -18,7 +18,7 @@ website:
         text: Home
       
     right:
-    - href: posts.qmd
+    - href: blog/index.qmd
       text: "Blog"
     - text: "About"
       menu:
