@@ -2,10 +2,6 @@
 title: "Lex Nederbragt"
 ---
 
-Welcome to my personal page!
+## Welcome to my personal page!
 
-My name is Lex Nederbragt and I work at [the University of Oslo](https://www.mn.uio.no/cees/english/people/technical/alexajo/), Norway.
-
-Read more [About Me](about.qmd), check out my [CV](cv.qmd) or my [Teaching Portfolio](https://lexnederbragt.github.io/soeknad_merittering/) (in Norwegian).
-
-You can also read my [Blog](blog/index.qmd).
+{{< include about.qmd >}}
