@@ -7,4 +7,4 @@ Created using [Quarto](quarto.org)
 ### Rendering and viewing the site
 
 * Preview locally: `quarto preview`
-* Publish changes: `quarto publish gh-pages`
+* Publish changes: push changes to github, the site then builds using Github Actions
