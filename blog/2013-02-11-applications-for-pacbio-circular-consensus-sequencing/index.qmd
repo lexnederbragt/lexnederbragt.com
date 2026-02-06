@@ -1,0 +1,12 @@
+---
+title: "Applications for PacBio circular consensus sequencing"
+date: 2013-02-11
+categories: [16s, ccs, metagenomics, pacbio, sanger]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2013/02/11/applications-for-pacbio-circular-consensus-sequencing.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2013/02/11/applications-for-pacbio-circular-consensus-sequencing.html">

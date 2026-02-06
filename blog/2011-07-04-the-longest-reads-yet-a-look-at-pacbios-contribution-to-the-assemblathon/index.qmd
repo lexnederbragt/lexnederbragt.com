@@ -1,0 +1,12 @@
+---
+title: "The longest reads yet: A look at PacBio's contribution to the assemblathon"
+date: 2011-07-04
+categories: [Bioinformatics, Next Generation Sequencing, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/07/04/the-longest-reads-yet-a-look-at-pacbios-contribution-to-the-assemblathon.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/07/04/the-longest-reads-yet-a-look-at-pacbios-contribution-to-the-assemblathon.html">

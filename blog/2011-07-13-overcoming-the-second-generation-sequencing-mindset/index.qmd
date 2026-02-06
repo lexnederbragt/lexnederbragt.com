@@ -1,0 +1,12 @@
+---
+title: "Overcoming the second generation sequencing mindset"
+date: 2011-07-13
+categories: [Next Generation Sequencing, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/07/13/overcoming-the-second-generation-sequencing-mindset.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/07/13/overcoming-the-second-generation-sequencing-mindset.html">

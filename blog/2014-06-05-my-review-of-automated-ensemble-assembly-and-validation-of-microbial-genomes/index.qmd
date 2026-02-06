@@ -1,0 +1,12 @@
+---
+title: "My review of 'Automated ensemble assembly and validation of microbial genomes'"
+date: 2014-06-05
+categories: [Bioinformatics, Reviews, assembly]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/06/05/my-review-of-automated-ensemble-assembly-and-validation-of-microbial-genomes.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/06/05/my-review-of-automated-ensemble-assembly-and-validation-of-microbial-genomes.html">

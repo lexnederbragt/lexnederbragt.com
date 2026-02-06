@@ -1,0 +1,12 @@
+---
+title: "De novo bacterial genome assembly: a solved problem?"
+date: 2013-07-05
+categories: [Bioinformatics, assembly, celera, hgap, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2013/07/05/de-novo-bacterial-genome-assembly-a-solved-problem.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2013/07/05/de-novo-bacterial-genome-assembly-a-solved-problem.html">

@@ -1,0 +1,12 @@
+---
+title: "Ion Torrent Mate Pairs and a single scaffold for E coli K12 substr. MG1655"
+date: 2012-03-02
+categories: [Bioinformatics, Next Generation Sequencing, assembly, Ion Torrent, newbler]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/03/02/ion-torrent-mate-pairs-and-a-single-scaffold-for-e-coli-k12-substr-mg1655.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/03/02/ion-torrent-mate-pairs-and-a-single-scaffold-for-e-coli-k12-substr-mg1655.html">

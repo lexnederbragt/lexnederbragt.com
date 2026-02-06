@@ -1,0 +1,12 @@
+---
+title: "Developments in next generation sequencing – October 2013 edition"
+date: 2013-10-01
+categories: [Next Generation Sequencing]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2013/10/01/developments-in-next-generation-sequencing-october-2013-edition.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2013/10/01/developments-in-next-generation-sequencing-october-2013-edition.html">

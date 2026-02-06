@@ -1,0 +1,12 @@
+---
+title: "Developments in high throughput sequencing – July 2016 edition"
+date: 2016-07-08
+categories: [Next Generation Sequencing, '454', Illumina, Ion Torrent, oxford nanopore, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/07/08/developments-in-high-throughput-sequencing-july-2016-edition.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/07/08/developments-in-high-throughput-sequencing-july-2016-edition.html">

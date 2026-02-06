@@ -1,0 +1,12 @@
+---
+title: "A hybrid model for a High-Performance Computing infrastructure for bioinformatics"
+date: 2015-04-13
+categories: [Bioinformatics, Next Generation Sequencing, HPC]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/04/13/a-hybrid-model-for-a-high-performance-computing-infrastructure-for-bioinformatics.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/04/13/a-hybrid-model-for-a-high-performance-computing-infrastructure-for-bioinformatics.html">

@@ -1,0 +1,12 @@
+---
+title: "Active learning strategies for bioinformatics teaching"
+date: 2015-08-31
+categories: [Bioinformatics, Experiences, Software Carpentry, Teaching]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/08/31/active-learning-strategies-for-bioinformatics-teaching-2.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/08/31/active-learning-strategies-for-bioinformatics-teaching-2.html">

@@ -1,0 +1,12 @@
+---
+title: "Notes from the ”FEBS-IUBMB workshop on education in molecular life sciences”"
+date: 2015-09-23
+categories: [Bioinformatics, Teaching]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/09/23/notes-from-the-febs-iubmb-workshop-on-education-in-molecular-life-sciences.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/09/23/notes-from-the-febs-iubmb-workshop-on-education-in-molecular-life-sciences.html">

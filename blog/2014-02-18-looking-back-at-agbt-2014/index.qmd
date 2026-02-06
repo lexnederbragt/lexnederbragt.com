@@ -1,0 +1,12 @@
+---
+title: "Looking back at AGBT 2014"
+date: 2014-02-18
+categories: [Bioinformatics, assembly, Illumina, Ion Torrent, oxford nanopore, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/02/18/looking-back-at-agbt-2014.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/02/18/looking-back-at-agbt-2014.html">

@@ -1,0 +1,12 @@
+---
+title: "Paper: error-correcting PacBio reads using high-quality short reads"
+date: 2012-07-01
+categories: [Bioinformatics, Next Generation Sequencing, assembly, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/07/01/paper-error-correcting-pacbio-reads-using-high-quality-short-reads.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/07/01/paper-error-correcting-pacbio-reads-using-high-quality-short-reads.html">

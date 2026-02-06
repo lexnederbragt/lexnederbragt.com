@@ -1,0 +1,12 @@
+---
+title: "Defending 'no-tweeting/blogging' requests at conferences"
+date: 2014-02-13
+categories: [Miscellaneous, blogging, twitter]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/02/13/defending-no-tweetingblogging-requests-at-conferences.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/02/13/defending-no-tweetingblogging-requests-at-conferences.html">

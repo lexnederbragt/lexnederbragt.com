@@ -1,0 +1,12 @@
+---
+title: "On being an instructor for Software and Data Carpentry"
+date: 2016-04-05
+categories: [Carpentry, Data Carpentry, Software Carpentry, Teaching]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/04/05/on-being-an-instructor-for-software-and-data-carpentry.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/04/05/on-being-an-instructor-for-software-and-data-carpentry.html">

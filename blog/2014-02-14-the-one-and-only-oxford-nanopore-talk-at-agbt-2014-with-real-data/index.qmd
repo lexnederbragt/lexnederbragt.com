@@ -1,0 +1,12 @@
+---
+title: "The one and only Oxford Nanopore talk at AGBT 2014 - with real data"
+date: 2014-02-14
+categories: [Bioinformatics, Next Generation Sequencing, assembly, MinIon, oxford nanopore]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/02/14/the-one-and-only-oxford-nanopore-talk-at-agbt-2014-with-real-data.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/02/14/the-one-and-only-oxford-nanopore-talk-at-agbt-2014-with-real-data.html">

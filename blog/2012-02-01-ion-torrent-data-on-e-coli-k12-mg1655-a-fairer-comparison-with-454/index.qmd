@@ -1,0 +1,12 @@
+---
+title: "Ion Torrent data on E. coli K12 MG1655 - a fairer comparison with 454"
+date: 2012-02-01
+categories: [Bioinformatics, Next Generation Sequencing, '454', Ion Torrent]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/02/01/ion-torrent-data-on-e-coli-k12-mg1655-a-fairer-comparison-with-454.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/02/01/ion-torrent-data-on-e-coli-k12-mg1655-a-fairer-comparison-with-454.html">

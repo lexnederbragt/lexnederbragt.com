@@ -1,0 +1,12 @@
+---
+title: "My review of 'MinION nanopore sequencing identifies the position and structure of a bacterial antibiotic resistance island'"
+date: 2014-12-10
+categories: [Bioinformatics, Next Generation Sequencing, Reviews, MinIon, oxford nanopore, reproducible science]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/12/10/my-review-of-minion-nanopore-sequencing-identifies-the-position-and-structure-of-a-bacterial-antibiotic-resistance-island.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/12/10/my-review-of-minion-nanopore-sequencing-identifies-the-position-and-structure-of-a-bacterial-antibiotic-resistance-island.html">

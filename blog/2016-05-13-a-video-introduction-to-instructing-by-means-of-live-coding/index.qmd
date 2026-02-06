@@ -1,0 +1,12 @@
+---
+title: "A video introduction to instructing by means of live coding"
+date: 2016-05-13
+categories: [Carpentry, Data Carpentry, Software Carpentry, Teaching]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/05/13/a-video-introduction-to-instructing-by-means-of-live-coding.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/05/13/a-video-introduction-to-instructing-by-means-of-live-coding.html">

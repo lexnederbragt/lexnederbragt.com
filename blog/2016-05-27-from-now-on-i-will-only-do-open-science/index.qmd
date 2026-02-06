@@ -1,0 +1,12 @@
+---
+title: "​From now on, I will only do open science"
+date: 2016-05-27
+categories: [Miscellaneous, open science]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/05/27/%E2%80%8Bfrom-now-on-i-will-only-do-open-science/">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/05/27/%E2%80%8Bfrom-now-on-i-will-only-do-open-science/">

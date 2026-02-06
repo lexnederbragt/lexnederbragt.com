@@ -1,0 +1,12 @@
+---
+title: "Carpentry week 2016 at the University of Oslo"
+date: 2016-04-11
+categories: [Carpentry, Data Carpentry, Software Carpentry, Teaching]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/04/11/carpentry-week-2016-at-the-university-of-oslo.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/04/11/carpentry-week-2016-at-the-university-of-oslo.html">

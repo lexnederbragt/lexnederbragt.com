@@ -1,0 +1,12 @@
+---
+title: "On graph-based representations of a (set of) genomes"
+date: 2015-04-09
+categories: [Bioinformatics, Next Generation Sequencing, assembly, graphs]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/04/09/on-graph-based-representations-of-a-set-of-genomes.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/04/09/on-graph-based-representations-of-a-set-of-genomes.html">

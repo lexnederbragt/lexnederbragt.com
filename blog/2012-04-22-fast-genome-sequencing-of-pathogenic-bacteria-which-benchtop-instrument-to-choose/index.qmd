@@ -1,0 +1,12 @@
+---
+title: "Fast genome sequencing of pathogenic bacteria - which benchtop instrument to choose?"
+date: 2012-04-22
+categories: [Bioinformatics, Next Generation Sequencing, '454', assembly, GS Junior, homopolymer, Illumina, Ion Torrent, Ion Torrent PGM, MiSeq, newbler]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/04/22/fast-genome-sequencing-of-pathogenic-bacteria-which-benchtop-instrument-to-choose.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/04/22/fast-genome-sequencing-of-pathogenic-bacteria-which-benchtop-instrument-to-choose.html">

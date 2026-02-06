@@ -1,0 +1,12 @@
+---
+title: "Developments in next generation sequencing - a visualisation"
+date: 2012-12-03
+categories: [Next Generation Sequencing, '454', GS FLX+, GS Junior, Illumina, Ion Proton, Ion Torrent, Ion Torrent PGM, MiSeq, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/12/03/developments-in-next-generation-sequencing-a-visualisation.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/12/03/developments-in-next-generation-sequencing-a-visualisation.html">

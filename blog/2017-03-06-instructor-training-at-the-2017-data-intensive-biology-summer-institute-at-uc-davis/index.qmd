@@ -1,0 +1,12 @@
+---
+title: "Instructor training at the 2017 Data Intensive Biology Summer Institute at UC Davis"
+date: 2017-03-06
+categories: [Bioinformatics, Next Generation Sequencing, Teaching, Software Carpentry]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2017/03/06/instructor-training-at-the-2017-data-intensive-biology-summer-institute-at-uc-davis.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2017/03/06/instructor-training-at-the-2017-data-intensive-biology-summer-institute-at-uc-davis.html">

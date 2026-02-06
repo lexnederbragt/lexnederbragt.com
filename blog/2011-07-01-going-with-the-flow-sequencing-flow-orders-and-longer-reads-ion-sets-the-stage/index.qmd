@@ -1,0 +1,12 @@
+---
+title: "Going with the flow: sequencing flow orders and longer reads - Ion sets the stage"
+date: 2011-07-01
+categories: [Next Generation Sequencing, Ion Torrent]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/07/01/going-with-the-flow-sequencing-flow-orders-and-longer-reads-ion-sets-the-stage.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/07/01/going-with-the-flow-sequencing-flow-orders-and-longer-reads-ion-sets-the-stage.html">

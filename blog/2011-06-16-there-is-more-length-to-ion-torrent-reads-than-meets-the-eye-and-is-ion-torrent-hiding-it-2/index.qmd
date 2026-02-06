@@ -1,0 +1,12 @@
+---
+title: "There is more (length) to Ion Torrent reads than meets the eye (and is Ion Torrent hiding it?)"
+date: 2011-06-16
+categories: [Bioinformatics, Next Generation Sequencing, Ion Torrent, sff]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/06/16/there-is-more-length-to-ion-torrent-reads-than-meets-the-eye-and-is-ion-torrent-hiding-it-2.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/06/16/there-is-more-length-to-ion-torrent-reads-than-meets-the-eye-and-is-ion-torrent-hiding-it-2.html">

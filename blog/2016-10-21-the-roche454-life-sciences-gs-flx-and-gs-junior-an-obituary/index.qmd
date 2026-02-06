@@ -1,0 +1,12 @@
+---
+title: "The Roche/454 Life Sciences GS FLX and GS Junior: an obituary"
+date: 2016-10-21
+categories: [Next Generation Sequencing, newbler]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2016/10/21/the-roche454-life-sciences-gs-flx-and-gs-junior-an-obituary.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2016/10/21/the-roche454-life-sciences-gs-flx-and-gs-junior-an-obituary.html">

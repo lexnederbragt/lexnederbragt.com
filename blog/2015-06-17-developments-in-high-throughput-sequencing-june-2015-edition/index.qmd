@@ -1,0 +1,12 @@
+---
+title: "Developments in high throughput sequencing – June 2015 edition"
+date: 2015-06-17
+categories: [Next Generation Sequencing, '454', GS FLX+, GS Junior, HiSeq, Illumina, Ion Proton, Ion Torrent, Ion Torrent PGM, MinIon, MiSeq, NextSeq500, oxford nanopore, pacbio, sanger, SOLiD]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/06/17/developments-in-high-throughput-sequencing-june-2015-edition.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/06/17/developments-in-high-throughput-sequencing-june-2015-edition.html">

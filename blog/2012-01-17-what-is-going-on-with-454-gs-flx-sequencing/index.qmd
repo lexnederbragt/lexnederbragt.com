@@ -1,0 +1,12 @@
+---
+title: "What is going on with 454 GS FLX+ sequencing?"
+date: 2012-01-17
+categories: [Next Generation Sequencing, '454', GS FLX+]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/01/17/what-is-going-on-with-454-gs-flx-sequencing.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/01/17/what-is-going-on-with-454-gs-flx-sequencing.html">

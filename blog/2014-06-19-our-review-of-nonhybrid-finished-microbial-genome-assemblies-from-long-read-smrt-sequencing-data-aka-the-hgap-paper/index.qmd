@@ -1,0 +1,12 @@
+---
+title: "Our review of 'Nonhybrid, finished microbial genome assemblies from long-read SMRT sequencing data', aka the HGAP paper"
+date: 2014-06-19
+categories: [Bioinformatics, Next Generation Sequencing, Reviews, hgap, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/06/19/our-review-of-nonhybrid-finished-microbial-genome-assemblies-from-long-read-smrt-sequencing-data-aka-the-hgap-paper.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/06/19/our-review-of-nonhybrid-finished-microbial-genome-assemblies-from-long-read-smrt-sequencing-data-aka-the-hgap-paper.html">

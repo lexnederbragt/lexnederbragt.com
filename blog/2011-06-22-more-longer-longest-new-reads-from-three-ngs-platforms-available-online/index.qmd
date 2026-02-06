@@ -1,0 +1,12 @@
+---
+title: "More, longer, longest: new reads from three NGS platforms available online"
+date: 2011-06-22
+categories: [Next Generation Sequencing, '454', GS FLX+, Illumina, Ion Torrent, MiSeq]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/06/22/more-longer-longest-new-reads-from-three-ngs-platforms-available-online.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/06/22/more-longer-longest-new-reads-from-three-ngs-platforms-available-online.html">

@@ -1,0 +1,12 @@
+---
+title: "Loman et al reflects the past, not the present - a rebuttal"
+date: 2012-05-09
+categories: [Bioinformatics, Next Generation Sequencing, Ion Torrent]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/05/09/loman-et-al-reflects-the-past-not-the-present-a-rebuttal.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/05/09/loman-et-al-reflects-the-past-not-the-present-a-rebuttal.html">

@@ -1,0 +1,12 @@
+---
+title: "Combining short and long reads: choosing between PacBioToCA and the new ALLPATHS_LG"
+date: 2012-08-06
+categories: [Bioinformatics, Next Generation Sequencing, ALLPATHS_LG, Illumina, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2012/08/06/combining-short-and-long-reads-choosing-between-pacbiotoca-and-the-new-allpaths_lg.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2012/08/06/combining-short-and-long-reads-choosing-between-pacbiotoca-and-the-new-allpaths_lg.html">

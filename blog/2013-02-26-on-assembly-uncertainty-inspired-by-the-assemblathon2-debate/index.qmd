@@ -1,0 +1,12 @@
+---
+title: "On assembly uncertainty (inspired by the Assemblathon2 debate)"
+date: 2013-02-26
+categories: [Bioinformatics, assembly]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2013/02/26/on-assembly-uncertainty-inspired-by-the-assemblathon2-debate.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2013/02/26/on-assembly-uncertainty-inspired-by-the-assemblathon2-debate.html">

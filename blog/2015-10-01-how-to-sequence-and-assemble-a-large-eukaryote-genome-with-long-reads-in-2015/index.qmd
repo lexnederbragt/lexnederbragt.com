@@ -1,0 +1,12 @@
+---
+title: "How to sequence and assemble a large eukaryote genome with long reads in 2015"
+date: 2015-10-01
+categories: [Bioinformatics, assembly, pacbio]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/10/01/how-to-sequence-and-assemble-a-large-eukaryote-genome-with-long-reads-in-2015.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2015/10/01/how-to-sequence-and-assemble-a-large-eukaryote-genome-with-long-reads-in-2015.html">

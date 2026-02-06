@@ -1,0 +1,12 @@
+---
+title: "Make Newbler open source"
+date: 2014-01-31
+categories: [Bioinformatics, Next Generation Sequencing, '454', newbler, reproducible science]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/01/31/make-newbler-open-source.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/01/31/make-newbler-open-source.html">

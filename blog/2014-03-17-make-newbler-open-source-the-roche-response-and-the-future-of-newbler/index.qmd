@@ -1,0 +1,12 @@
+---
+title: "Make Newbler open source: the Roche response and the future of Newbler"
+date: 2014-03-17
+categories: [Bioinformatics, Next Generation Sequencing, '454', newbler]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2014/03/17/make-newbler-open-source-the-roche-response-and-the-future-of-newbler.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2014/03/17/make-newbler-open-source-the-roche-response-and-the-future-of-newbler.html">

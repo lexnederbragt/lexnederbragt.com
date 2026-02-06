@@ -1,0 +1,12 @@
+---
+title: "IonTorrent: many long reads, still longer homopolymers"
+date: 2011-09-30
+categories: [Bioinformatics, Next Generation Sequencing, Ion Torrent]
+---
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2011/09/30/iontorrent-many-long-reads-still-longer-homopolymers.html">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2011/09/30/iontorrent-many-long-reads-still-longer-homopolymers.html">
