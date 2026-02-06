@@ -1,6 +1,7 @@
 ---
 title: "Experiences with the first edition of “Introduction to Computational Modelling for the Biosciences”"
 date: 2017-12-21
+categories: [Teaching, BIOS1100]
 ---
 
 
