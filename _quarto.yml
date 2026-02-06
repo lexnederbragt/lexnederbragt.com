@@ -1,0 +1,72 @@
+date-format: long
+
+project:
+  type: website
+
+website:
+  title: "Lex Nederbragt"
+  site-url: https://lexnederbragt.com
+  description: "Lex Nederbragt's personal website"
+  
+  google-analytics: "G-EQE71KY5S2"
+#  storage: none
+
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      
+    right:
+    - href: blog/index.qmd
+      text: "Blog"
+    - text: "About"
+      menu:
+      - about.qmd
+      - cv.qmd
+      - contact.qmd
+      - text: "Teaching portfolio"
+        href: https://lexnederbragt.github.io/soeknad_merittering/
+        target: _blank
+
+    - text: "More"
+      menu:
+        - text: "University of Oslo"
+          href: https://personer.uio.no/alexajo
+          target: _blank
+        - text: "LinkedIn"
+          href: https://linkedin.com/in/lexnederbragt
+          target: _blank
+        - text: "ORCID"
+          href: https://orcid.org/0000-0001-5539-0999
+          target: _blank
+        - text: "Google Scholar"
+          href: https://scholar.google.no/citations?user=lSNc07gAAAAJ&hl=en
+          target: _blank
+        - text: "GitHub"
+          href: https://github.com/lexnederbragt
+          target: _blank
+        - text: "Impactstory"
+          href: https://profiles.impactstory.org/u/lexnederbragt
+          target: _blank
+        - text: "Figshare"
+          href: https://figshare.com/authors/Lex_Nederbragt/100720
+          target: _blank
+        - text: "Peer review"
+          href: https://publons.com/author/18712/alexander-j-nederbragt
+          target: _blank
+        - text: "Slides"
+          href: https://figshare.com/collections/Slides_of_my_talks_presentations/3488832
+          target: _blank
+
+
+format:
+  html:
+    theme:
+      - flatly
+      - brand
+    css: styles.css
+    toc: true
+
+
+

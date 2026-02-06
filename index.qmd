@@ -1,0 +1,7 @@
+---
+title: "Lex Nederbragt"
+---
+
+## Welcome to my personal page!
+
+{{< include about.qmd >}}

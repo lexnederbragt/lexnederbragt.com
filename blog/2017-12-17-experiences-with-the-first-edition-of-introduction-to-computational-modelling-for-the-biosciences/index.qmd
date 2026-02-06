@@ -1,0 +1,12 @@
+---
+title: "Experiences with the first edition of “Introduction to Computational Modelling for the Biosciences”"
+date: 2017-12-21
+---
+
+
+```{=html}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to the new site</title>
+<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2017/12/21/experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences">
+<link rel="canonical" href="https://flxlexblog.wordpress.com/2017/12/21/experiences-with-the-first-edition-of-introduction-to-computational-modelling-for-the-biosciences">

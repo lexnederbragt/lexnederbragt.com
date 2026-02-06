@@ -1,0 +1,13 @@
+---
+title: "The title"
+subtitle: "some subtitle"
+categories: [tag1, tag2]
+date: 2100-01-01
+draft: true
+---
+
+![](../../img/512px-Welcome_heading.svg.png)
+
+[Link to 'welcome' post](../2018-10-30-welcome/index.qmd)
+
+Comments on this post are welcome on [LinkedIn](https://www.linkedin.com/in/lexnederbragt/).
