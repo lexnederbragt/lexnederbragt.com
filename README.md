@@ -6,4 +6,5 @@ Created using [Quarto](quarto.org)
 
 ### Rendering and viewing the site
 
-To be written
+* Preview locally: `quarto preview`
+* Publish changes: `quarto publish gh-pages`

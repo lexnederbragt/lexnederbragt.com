@@ -1,6 +1,12 @@
 ---
 title: CV
+toc-depth: 2
 ---
+
+<!-- 
+* Kopier fra CV/latest/CV_no.qmd
+* TODO vurder dele opp i flere nivå 3 overskrifter
+ -->
 
 Februar 2026
 
@@ -239,7 +245,7 @@ som ble publisert i Nordic Journal of STEM Education: <https://doi.org/10.5324/n
 Fullstendig publikasjonsliste finnes [på min hjemmeside](https://lexnederbragt.com/cv#publikasjonsliste).
  -->
 
-## Innvilgede utdanningsfaglige utviklingsprosjekter (2019-)
+## Innvilgede utdanningsfaglige utviklingsprosjekter
 
 * Prosjekt "Skreddersydde chatboter i utdanningen" (2025-, 500 000 NOK)
   * [Utlysing av midler til IT i utdanning 2025](https://www-int.usit.uio.no/om/it-dir/strategi/masterplan/sk/sk-itu/portefolje/2025/om-utlysingen)
@@ -454,15 +460,16 @@ Min bioinformatikk kompetanse førte til at jeg videre ble med på flere prosjek
 der genomsammensetning var et viktig fokus.
 
 
-## Referanser
+## Publikasjonsliste
 
-
-Publikasjonsliste
---------------------
+<!-- 
+* Kopier fra github repo list_of_publications 
+* Øk overskriftsnivå til tre: ###
+-->
 
 See også min [Google Scholar profil](https://scholar.google.no/citations?user=lSNc07gAAAAJ&hl=en) eller [ORCID side](http://orcid.org/0000-0001-5539-0999).
 
-# Peer-reviewed publications
+### Peer-reviewed publications
 Reinar, W. B., Tørresen, O. K., **Nederbragt, A. J.**, Matschiner, M.,
 Jentoft, S., & Jakobsen, K. S. (2023). Teleost genomic repeat landscapes
 in light of diversification rates and ecology. *Mobile DNA*, *14*(1),
@@ -770,7 +777,7 @@ AndréE. (1996). The stringlike genes of the limpet Patella vulgata.
 *Gene*, *172*(2), 261–265.
 <https://doi.org/10.1016/0378-1119(96)00164-3>
 
-# Conference Contributions
+### Conference Contributions
 Eliassen, J. E., Bøe, M. V., Nederbragt, L., & Gregers, T. F. (2021).
 Motivasjon for beregningsorientert biologi og sammenhengen med
 matematikk R2 fra videregående opplæring. *Nordic Journal of STEM
@@ -782,7 +789,7 @@ class="nocase">Lektorstudenter utvikler unik kompetanse og bidrar til
 master</span>. *Nordic Journal of STEM Education*, *3*(1), 23–27.
 <https://doi.org/10.5324/njsteme.v3i1.2992>
 
-# Book chapters
+### Book chapters
 Tørresen, O. K., Rise, M. L., Jin, X., Star, B., MacKenzie, S.,
 Jakobsen, K. S., **Nederbragt, A. J.**, & Jentoft, S. (2016). 3 - An
 improved version of the Atlantic cod genome and advancements in
@@ -796,13 +803,13 @@ sequencing technology: Generation of the first version of the Atlantic
 cod genome. In *Genomics in Aquaculture* (pp. 1–20). San Diego: Academic
 Press. <https://doi.org/10.1016/B978-0-12-801418-9.00001-9>
 
-# Thesis
+### Thesis
 **Nederbragt, A. J.** (2002). *<span class="nocase">The evolution of
 developmental programs : a case study in the gastropod mollusc Patella
 vulgata</span>* (Dissertation). Retrieved from
 <http://dspace.library.uu.nl/handle/1874/213>
 
-# Software publications
+### Software publications
 Crusoe, M. R., Alameldin, H. F., Awad, S., Boucher, E., Caldwell, A.,
 Cartwright, R., Charbonneau, A., Constantinides, B., Edvenson, G., Fay,
 S., Fenton, J., Fenzl, T., Fish, J., Garcia-Gutierrez, L., Garland, P.,
@@ -818,7 +825,7 @@ Zhang, Q., zyme, en, & Brown, C. T. (2015). The khmer software package:
 Enabling efficient nucleotide sequence analysis. *F1000Research*.
 <https://doi.org/10.12688/f1000research.6924.1>
 
-# Published lesson materials
+### Published lesson materials
 Word, K., Sane, M., Barnes, K., Brown, S. M., Michonneau, F., Koch, C.,
 Harris, R. M., Becker, E., Ballsun-Stanton, B., Capes, G., Hodges, T.,
 Njambi, S., Stevens, S., Kamvar, Z. N., Li, A., Deardorff, A., Eranti,

@@ -1,5 +1,6 @@
 ---
 title: "Lex Nederbragt"
+toc: false
 ---
 
 ## Welcome to my personal page!

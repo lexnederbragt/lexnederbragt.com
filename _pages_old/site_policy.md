@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /site_policy
 title: Posting and commenting policy
 ---
 

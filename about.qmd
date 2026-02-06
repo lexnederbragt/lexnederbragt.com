@@ -1,8 +1,10 @@
 ---
-title: "About"
+title: ""
 ---
 
-I am an Associate Teaching Professor ('Førstelektor') at the University of Oslo (UiO),
+## About me
+
+I am a (Teaching) Professor ('Dosent') in Biology at the University of Oslo (UiO),
 and have taught at the Faculty of Mathematics and Natural Sciences for many years.
 I am an experienced educator whose main focus is students' learning.
 I am interested in how we can increase educational competence
