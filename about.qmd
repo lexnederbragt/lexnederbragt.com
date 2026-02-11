@@ -26,6 +26,8 @@ of biological problems using programming in Python.
 My work at UiO resulted in me being appointed as 'Merittert Utdanner'
 ('distinguished educator') at the university in 2023. 
 Read my application (in Norwegian) [here](https://lexnederbragt.github.io/soeknad_merittering).
+In 2025 I was awarded the Olav Thon Foundation
+'National award for outstanding teaching in the mathematical/natural sciences and medical fields'.
 
 ## Manuscripts I am most proud of
 
