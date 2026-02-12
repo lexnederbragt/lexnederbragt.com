@@ -10,7 +10,34 @@
 <atom:link href="https://lexnederbragt.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lex Nederbragt&#39;s personal website</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Tue, 03 Feb 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 12 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Moving my website to Quarto</title>
+  <link>https://lexnederbragt.com/blog/2026-02-12-moving-to-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://lexnederbragt.com/img/quarto-thumbnail-2.jpg" class="img-fluid" width="300"></p>
+<p>This website (lexnederbragt.com), including this blog, are now made using Quarto.</p>
+<p>Quarto is an <a href="https://quarto.org">“open-source scientific and technical publishing system”</a>. Text is written in plain text (Quarto) markdown, and converted using modern tools to html and other formats.</p>
+<p>Previously, I used a Jekyll-based setup, but that was becoming increasingly harder to manage technically.</p>
+<p>I am really fond of Quarto. It allows me to write plain text, convert to multiple formats, such as websites, slide decks, PDF reports, and word documents. Quarto also allows me to easily include code, which also can be executed. For example, I use Quarto to programmatically create a slide deck by parsing the results of a questionnaire (downloaded in text format) that I send out each year.</p>
+<p>Using plain text also enables the use of version control to keep track of changes (in my case, using git and GitHub). I am now using Quarto for most of my work.</p>
+<p>For this particular website, I made a <a href="https://quarto.org/docs/websites/">Quarto website</a>, and added a blog as per <a href="https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/">this post</a>. Porting the existing content over was fairly straightforward. Some of that work involved converting between different text formats, and this I was able to outsource to GPT-5-codex. The project ‘lives’ on GitHub and rendering is done automatically upon new commits through <a href="https://quarto.org/docs/publishing/github-pages.html#github-action">GitHub Actions</a>.</p>
+<p>The source of this site can be found on <a href="https://github.com/lexnederbragt/lexnederbragt.com">GitHub</a>.</p>
+<p>Comments? Questions? <a href="../../contact.html">Reach out to me</a>.</p>
+
+
+
+ ]]></description>
+  <category>quarto</category>
+  <category>admin</category>
+  <guid>https://lexnederbragt.com/blog/2026-02-12-moving-to-quarto/</guid>
+  <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Artificial, or simulated intelligence?</title>
   <link>https://lexnederbragt.com/blog/2026-02-03-simulated_intelligence/</link>
@@ -755,33 +782,6 @@ Redirecting to the new site
   <category>HPC</category>
   <guid>https://lexnederbragt.com/blog/2015-04-13-a-hybrid-model-for-a-high-performance-computing-infrastructure-for-bioinformatics/</guid>
   <pubDate>Mon, 13 Apr 2015 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>On graph-based representations of a (set of) genomes</title>
-  <link>https://lexnederbragt.com/blog/2015-04-09-on-graph-based-representations-of-a-set-of-genomes/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-&lt;!DOCTYPE html&gt;
-<meta charset="utf-8">
-<title>
-Redirecting to the new site
-</title>
-<meta http-equiv="refresh" content="0; URL=https://flxlexblog.wordpress.com/2015/04/09/on-graph-based-representations-of-a-set-of-genomes.html">
-<p><link rel="canonical" href="https://flxlexblog.wordpress.com/2015/04/09/on-graph-based-representations-of-a-set-of-genomes.html"></p>
-
-
-
- ]]></description>
-  <category>Bioinformatics</category>
-  <category>Next Generation Sequencing</category>
-  <category>assembly</category>
-  <category>graphs</category>
-  <guid>https://lexnederbragt.com/blog/2015-04-09-on-graph-based-representations-of-a-set-of-genomes/</guid>
-  <pubDate>Thu, 09 Apr 2015 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
