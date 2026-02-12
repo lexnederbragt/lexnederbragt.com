@@ -1,0 +1,41 @@
+---
+title: "Moving my website to Quarto"
+categories: [quarto, admin]
+date: 2026-02-12
+---
+
+![](../../img/quarto-thumbnail-2.jpg){width=300}
+
+This website (lexnederbragt.com), including this blog,
+are now made using Quarto.
+
+Quarto is an ["open-source scientific and technical publishing system"](https://quarto.org).
+Text is written in plain text (Quarto) markdown, 
+and converted using modern tools to html and other formats.
+
+Previously, I used a Jekyll-based setup, but that was becoming increasingly 
+harder to manage technically.
+
+I am really fond of Quarto.
+It allows me to write plain text, convert to multiple formats,
+such as websites, slide decks, PDF reports, and word documents.
+Quarto also allows me to easily include code,
+which also can be executed.
+For example, I use Quarto to programmatically create a slide deck by
+parsing the results of a questionnaire (downloaded in text format)
+that I send out each year.
+
+Using plain text also enables the use of version control to keep track of changes
+(in my case, using git and GitHub).
+I am now using Quarto for most of my work.
+
+For this particular website, I made a [Quarto website](https://quarto.org/docs/websites/), and added a blog as per [this post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/).
+Porting the existing content over was fairly straightforward.
+Some of that work involved converting between different text formats,
+and this I was able to outsource to GPT-5-codex.
+The project 'lives' on GitHub and rendering is done automatically upon new commits
+through [GitHub Actions](https://quarto.org/docs/publishing/github-pages.html#github-action).
+
+The source of this site can be found on [GitHub](https://github.com/lexnederbragt/lexnederbragt.com).
+
+Comments? Questions? [Reach out to me](../../contact.qmd).
