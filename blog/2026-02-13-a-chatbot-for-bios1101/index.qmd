@@ -14,7 +14,7 @@ This blog post is available both in English and in Norwegian
 ::: {.panel-tabset}
 ## English
 
-I have previously blogged a bit about the course I am responsible for: [BIOS1100 - Introduction to computational models for life sciences]((https://lexnederbragt.com/blog/#category=BIOS1100). The course has now changed its course code to BIOS1101 because the content has been somewhat changed. Beginner programming in Python is still taught to analyze and model biologically relevant problems. But now we have also included a simple introduction to classes and objects in Python.[^AI_declaration]
+I have previously blogged a bit about the course I am responsible for: [BIOS1100 - Introduction to computational models for life sciences](https://lexnederbragt.com/blog/#category=BIOS1100). The course has now changed its course code to BIOS1101 because the content has been somewhat changed. Beginner programming in Python is still taught to analyze and model biologically relevant problems. But now we have also included a simple introduction to classes and objects in Python.[^AI_declaration]
 
 
 [^AI_declaration]: Apart from the image and the English translation, no generative artificial intelligence tools were used directly to create this blog post. GPT-5.1 Thinking (via GPT UiO) was asked to give feedback on an earlier draft, which led to some improvements in the text.
