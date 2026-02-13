@@ -79,7 +79,7 @@ The instruction had relatively little information about Python programming, only
 
 All in all, we think this tailor-made chatbot has worked very well. We offered the students a tool that led to the sensible use of AI: to support their learning. And we will further develop this tool in the future. However, the wording ‘we offered’ is important here: it was up to the students to use the chatbot, rather than asking regular ChatGPT (or other models) for a solution.
 
-This is something I see as an important aspect of AI in education: we should focus even more on teaching students to learn, on the metacognitive aspect. This is not really new, and we have been discussing this for years, but generative AI brings this need to the forefront even more.
+This is something I see as an important aspect of AI in education: we should focus even more on teaching students how to learn, on the metacognitive aspect. This is not really new, and we have been discussing this for years, but generative AI brings this need to the forefront even more.
 
 ## Norsk
 
